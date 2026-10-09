@@ -1,0 +1,123 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>第10回 ワーク用ページ｜文章と画像を組み合わせて、伝わる資料を作る</title><style>
+:root{--ink:#1B1B2F;--ind:#2E2A5E;--acc:#4B3FD6;--cor:#E8573D;--grn:#1E8E5A;--tint:#F3F1FF;--line:#CFCBEF;--bg:#fff}
+@media (prefers-color-scheme:dark){:root{--ink:#EDEDF7;--ind:#CFCBFF;--acc:#9A92FF;--cor:#FF8A70;--grn:#4FD39A;--tint:#262447;--line:#43407A;--bg:#15142B}}
+*{box-sizing:border-box}
+body{overflow-wrap:anywhere;margin:0;background:var(--bg);color:var(--ink);font-family:"BIZ UDPGothic","Yu Gothic","Hiragino Sans","Meiryo",sans-serif;line-height:1.7;font-size:17px}
+main{max-width:760px;margin:0 auto;padding:16px}
+h1{font-size:1.45rem;color:var(--ind);margin:.4em 0 .2em}
+h2{font-size:1.25rem;color:var(--ind);border-bottom:3px solid var(--acc);padding-bottom:.2em;margin-top:2em}
+h3{font-size:1.05rem;margin:1.2em 0 .3em;color:var(--acc)}
+.lead{background:var(--tint);border-radius:14px;padding:12px 14px}
+.step{border:2px solid var(--line);border-radius:14px;padding:10px 12px;margin:12px 0}
+.step .t{font-weight:bold;color:var(--ind)}
+.step .m{font-size:.85rem;color:var(--acc);font-weight:bold}
+textarea{width:100%;font:inherit;font-size:16px;line-height:1.6;border:2px solid var(--line);border-radius:10px;padding:10px;background:var(--tint);color:var(--ink);resize:vertical}
+button.copy{display:block;width:100%;margin:8px 0 2px;padding:14px;border:0;border-radius:12px;background:var(--acc);color:#fff;font:inherit;font-weight:bold;font-size:1.05rem;cursor:pointer}
+button.copy.done{background:var(--grn)}
+button.copy.fail{background:var(--cor)}
+.msg{font-size:.88rem;min-height:1.3em;color:var(--ind)}
+.note{font-size:.9rem;color:var(--ind)}
+.warn{background:#FEF3D9;color:#5b3d00;border-radius:12px;padding:10px 12px;margin:10px 0}
+@media (prefers-color-scheme:dark){.warn{background:#4a3a14;color:#ffe9b0}}
+details{border:2px solid var(--line);border-radius:12px;padding:8px 12px;margin:10px 0}
+summary{font-weight:bold;cursor:pointer;color:var(--ind)}
+ul.chk{padding-left:1.2em}
+.imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.imgs figure{margin:0;text-align:center}
+.imgs img{width:100%;height:auto;border:2px solid var(--line);border-radius:10px;background:#fff}
+.imgs figcaption{font-size:.85rem}
+a.dl{display:inline-block;margin-top:4px;padding:6px 10px;border:2px solid var(--acc);border-radius:10px;color:var(--acc);font-weight:bold;text-decoration:none;font-size:.9rem}
+table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:4px 6px}th{background:var(--tint)}
+.foot{font-size:.8rem;color:var(--ind);margin:2.5em 0 1em}
+</style></head><body><main>
+<h1>第10回 ワーク用ページ｜文章と画像を組み合わせて、伝わる資料を作る</h1>
+<div class="lead"><p><b>使い方：コピー → ChatGPTに貼り付け → 送信</b>。このページとChatGPTを切り替えて使います。講義からは退出せず、講師が案内した時刻に講義画面へ戻ります。</p>
+<p>コピーボタンが使えないときは、枠の中の文字を長押し（パソコンはドラッグ）して選択し、コピーできます。ChatGPTへのログインは事前に済ませてください。</p>
+<p class="note">このページは<b>コピーを助ける補助教材</b>です。お題・手順・時間・完成条件・答え合わせは、講義のスライドに載っています。入力・ログイン・回答の提出はありません。登場する情報はすべて架空です。</p></div>
+
+<h2>ワーク①　本文を確認してから、案内画像を作る</h2>
+<p class="note">材料（架空）：予約は前日16時までに共通フォーム／受取・返却は受付（9〜17時）／返却は当日17時まで／一人1点／予約方法がわからなければ総務</p>
+<h3>① 1〜3分：本文を作らせる（新しい会話で。目立たせたい内容に合うものを1つ選ぶ）</h3>
+<div class="step"><div class="t">重点：予約期限　〔入力文＋材料〕</div>
+<textarea id="t1" readonly rows="12">次の情報から、社員向けの備品貸出案内に載せる短い文章を作ってください。見出しと、予約・受取・返却・利用条件に分けてください。いちばん目立たせたいのは予約期限です。時刻や条件は変えず、材料にない情報は加えないでください。
+
+【材料】
+・予約は利用前日の16時までに、共通フォームから行う。
+・受取場所と返却場所は受付。
+・受付時間は9〜17時。
+・返却は利用当日の17時まで。
+・同時に借りられるのは一人1点。
+・予約方法がわからない場合は総務へ相談する。</textarea>
+<button class="copy" type="button" onclick="copyText('t1',this)">入力文と材料をコピー</button><div class="msg" aria-live="polite"></div></div>
+<div class="step"><div class="t">重点：返却期限　〔入力文＋材料〕</div>
+<textarea id="t2" readonly rows="12">次の情報から、社員向けの備品貸出案内に載せる短い文章を作ってください。見出しと、予約・受取・返却・利用条件に分けてください。いちばん目立たせたいのは返却期限です。時刻や条件は変えず、材料にない情報は加えないでください。
+
+【材料】
+・予約は利用前日の16時までに、共通フォームから行う。
+・受取場所と返却場所は受付。
+・受付時間は9〜17時。
+・返却は利用当日の17時まで。
+・同時に借りられるのは一人1点。
+・予約方法がわからない場合は総務へ相談する。</textarea>
+<button class="copy" type="button" onclick="copyText('t2',this)">入力文と材料をコピー</button><div class="msg" aria-live="polite"></div></div>
+<div class="step"><div class="t">重点：予約・受取・返却の順番　〔入力文＋材料〕</div>
+<textarea id="t3" readonly rows="12">次の情報から、社員向けの備品貸出案内に載せる短い文章を作ってください。見出しと、予約・受取・返却・利用条件に分けてください。いちばん目立たせたいのは予約・受取・返却の順番です。時刻や条件は変えず、材料にない情報は加えないでください。
+
+【材料】
+・予約は利用前日の16時までに、共通フォームから行う。
+・受取場所と返却場所は受付。
+・受付時間は9〜17時。
+・返却は利用当日の17時まで。
+・同時に借りられるのは一人1点。
+・予約方法がわからない場合は総務へ相談する。</textarea>
+<button class="copy" type="button" onclick="copyText('t3',this)">入力文と材料をコピー</button><div class="msg" aria-live="polite"></div></div>
+<h3>② 3〜6分：同じ会話で案内画像を作る</h3>
+<div class="step"><div class="t">入力文（画像を作る）</div>
+<textarea id="t4" readonly rows="5">今確認した文章を使い、縦長の案内画像を1枚作ってください。上に見出しと重要情報、中央に予約・受取・返却のイラスト付き手順、下に利用条件と相談先を置いてください。白背景で大きな文字にし、時刻や条件は変えないでください。</textarea>
+<button class="copy" type="button" onclick="copyText('t4',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<div class="warn">画像ができるまでの時間は保証できません。<b>6分の時点で完成していなければ</b>、下の共通見本画像を使ってください。画像生成が使えない・回数の上限に達した場合は、共通見本の気になる点を言葉にする練習に切り替えます（これは「画像を作った」ことにはなりません）。</div>
+<h3>共通見本画像（保存して使えます。制作側で用意した見本で、ChatGPTの出力ではありません）</h3>
+<div class="imgs"><figure><img src="./img/sample-1-reserve.png" alt="共通見本画像（重点：予約期限）"><figcaption>共通見本画像（重点：予約期限）</figcaption><a class="dl" href="./img/sample-1-reserve.png" download="共通見本_重点1予約期限.png">画像を保存</a></figure><figure><img src="./img/sample-2-return.png" alt="見本（重点：返却期限）／修正例"><figcaption>見本（重点：返却期限）／修正例</figcaption><a class="dl" href="./img/sample-2-return.png" download="見本_重点2返却期限.png">画像を保存</a></figure><figure><img src="./img/sample-3-order.png" alt="見本（重点：順番）"><figcaption>見本（重点：順番）</figcaption><a class="dl" href="./img/sample-3-order.png" download="見本_重点3順番.png">画像を保存</a></figure><figure><img src="./img/explain-errors.png" alt="説明用：誤りを入れた見本"><figcaption>説明用：誤りを入れた見本</figcaption><a class="dl" href="./img/explain-errors.png" download="説明用_誤りを入れた見本.png">画像を保存</a></figure><figure><img src="./img/explain-drift.png" alt="説明用：意図せず変わった例"><figcaption>説明用：意図せず変わった例</figcaption><a class="dl" href="./img/explain-drift.png" download="説明用_意図せず変わった例.png">画像を保存</a></figure></div>
+<details><summary>自己確認の基準（スライドと同じ）</summary><ul class="chk"><li>予約は前日16時まで</li><li>返却は当日17時まで（受付時間と混同していない）</li><li>一人1点と相談先が残っている</li><li>選んだ重点が目立つ</li><li>文字の誤りや情報の欠落を見つけられた</li><li>後で直す箇所を1つ決めた</li></ul></details>
+
+<h2>ワーク②　修正して、前と後を比べる</h2>
+<p class="note">ワーク①の画像、または共通見本の画像を使います。</p>
+<div class="step"><div class="t">入力枠（修正指示）　〔【どこを、どう変えるか】を書き換える〕</div>
+<textarea id="t5" readonly rows="7">この案内画像を修正してください。
+変更する部分：【どこを、どう変えるか】
+変更しない部分：予約期限、受付時間、返却期限、一人1点の条件、相談先。
+指定した箇所以外の文章と配置は、できるだけ維持してください。</textarea>
+<button class="copy" type="button" onclick="copyText('t5',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<div class="step"><div class="t">記入例（返却期限を目立たせる場合）</div>
+<textarea id="t6" readonly rows="8">この案内画像を修正してください。
+変更する部分：返却期限を、画像の上部に大きく表示する。
+変更しない部分：予約期限、受付時間、返却期限、一人1点の条件、相談先。
+指定した箇所以外の文章と配置は、できるだけ維持してください。</textarea>
+<button class="copy" type="button" onclick="copyText('t6',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<details><summary>自己確認の基準（スライドと同じ）</summary><ul class="chk"><li>狙った変更が反映された</li><li>維持する条件が残った（予約期限・受付時間・返却期限・一人1点・相談先）</li><li>新しい誤りが生じていない</li><li>どちらの版を採用するか判断できた（悪化したら前の版を採用してよい）</li></ul></details>
+<p class="note">画像の編集が使えない場合：共通見本の改善点を選び、文字の会話で具体的な修正指示を作ってください（画像の修正を体験したことにはなりません）。</p>
+
+<h2>予備ワーク（講師の案内がある場合のみ）　経験のある社員向けに変更する</h2>
+<div class="step"><div class="t">① 初めて使う社員向けの案内を作る　〔入力文＋材料〕</div>
+<textarea id="t7" readonly rows="12">次の情報から、初めて使う社員向けの備品貸出案内の文章を作ってください。予約・受取・返却の手順を、やさしく説明してください。時刻や条件は変えず、材料にない情報は加えないでください。
+
+【材料】
+・予約は利用前日の16時までに、共通フォームから行う。
+・受取場所と返却場所は受付。
+・受付時間は9〜17時。
+・返却は利用当日の17時まで。
+・同時に借りられるのは一人1点。
+・予約方法がわからない場合は総務へ相談する。</textarea>
+<button class="copy" type="button" onclick="copyText('t7',this)">入力文と材料をコピー</button><div class="msg" aria-live="polite"></div></div>
+<div class="step"><div class="t">② 利用経験のある社員向けに変更する（同じ会話で）</div>
+<textarea id="t8" readonly rows="3">この案内を、利用経験のある社員向けに変更してください。説明を減らし、予約期限、返却期限、一人1点の条件を目立たせてください。時刻や条件は変えないでください。</textarea>
+<button class="copy" type="button" onclick="copyText('t8',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<p class="foot">AI研修 ワーク用コピー教材（初版）。講師ノートや案件の内部資料は含みません。入力・ログイン・回答の提出はありません。</p>
+</main><script>
+function copyText(id,btn){var t=document.getElementById(id);var s=t.value;var m=btn.parentNode.querySelector('.msg');
+function ok(){btn.classList.remove('fail');btn.classList.add('done');m.textContent='コピーしました。ChatGPTの入力欄に貼り付けてください。';}
+function fb(){try{t.removeAttribute('readonly');t.focus();t.select();t.setSelectionRange(0,t.value.length);var r=document.execCommand('copy');t.setAttribute('readonly','');if(r){ok();return;}}catch(e){}
+btn.classList.add('fail');m.textContent='コピーできませんでした。上の枠の文字を長押し（パソコンはドラッグ）して選択し、コピーしてください。';}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(s).then(ok,fb);}else{fb();}}
+document.querySelectorAll('textarea').forEach(function(t){t.style.height='auto';t.style.height=Math.min(t.scrollHeight+6,520)+'px';});
+</script></body></html>

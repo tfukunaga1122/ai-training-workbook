@@ -1,0 +1,173 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>第12回 ワーク用ページ｜自分の仕事で、AIを使ってみる</title><style>
+:root{--ink:#1B1B2F;--ind:#2E2A5E;--acc:#4B3FD6;--cor:#E8573D;--grn:#1E8E5A;--tint:#F3F1FF;--line:#CFCBEF;--bg:#fff}
+@media (prefers-color-scheme:dark){:root{--ink:#EDEDF7;--ind:#CFCBFF;--acc:#9A92FF;--cor:#FF8A70;--grn:#4FD39A;--tint:#262447;--line:#43407A;--bg:#15142B}}
+*{box-sizing:border-box}
+body{overflow-wrap:anywhere;margin:0;background:var(--bg);color:var(--ink);font-family:"BIZ UDPGothic","Yu Gothic","Hiragino Sans","Meiryo",sans-serif;line-height:1.7;font-size:17px}
+main{max-width:760px;margin:0 auto;padding:16px}
+h1{font-size:1.45rem;color:var(--ind);margin:.4em 0 .2em}
+h2{font-size:1.25rem;color:var(--ind);border-bottom:3px solid var(--acc);padding-bottom:.2em;margin-top:2em}
+h3{font-size:1.05rem;margin:1.2em 0 .3em;color:var(--acc)}
+.lead{background:var(--tint);border-radius:14px;padding:12px 14px}
+.step{border:2px solid var(--line);border-radius:14px;padding:10px 12px;margin:12px 0}
+.step .t{font-weight:bold;color:var(--ind)}
+.step .m{font-size:.85rem;color:var(--acc);font-weight:bold}
+textarea{width:100%;font:inherit;font-size:16px;line-height:1.6;border:2px solid var(--line);border-radius:10px;padding:10px;background:var(--tint);color:var(--ink);resize:vertical}
+button.copy{display:block;width:100%;margin:8px 0 2px;padding:14px;border:0;border-radius:12px;background:var(--acc);color:#fff;font:inherit;font-weight:bold;font-size:1.05rem;cursor:pointer}
+button.copy.done{background:var(--grn)}
+button.copy.fail{background:var(--cor)}
+.msg{font-size:.88rem;min-height:1.3em;color:var(--ind)}
+.note{font-size:.9rem;color:var(--ind)}
+.warn{background:#FEF3D9;color:#5b3d00;border-radius:12px;padding:10px 12px;margin:10px 0}
+@media (prefers-color-scheme:dark){.warn{background:#4a3a14;color:#ffe9b0}}
+details{border:2px solid var(--line);border-radius:12px;padding:8px 12px;margin:10px 0}
+summary{font-weight:bold;cursor:pointer;color:var(--ind)}
+ul.chk{padding-left:1.2em}
+.imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.imgs figure{margin:0;text-align:center}
+.imgs img{width:100%;height:auto;border:2px solid var(--line);border-radius:10px;background:#fff}
+.imgs figcaption{font-size:.85rem}
+a.dl{display:inline-block;margin-top:4px;padding:6px 10px;border:2px solid var(--acc);border-radius:10px;color:var(--acc);font-weight:bold;text-decoration:none;font-size:.9rem}
+table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:4px 6px}th{background:var(--tint)}
+.foot{font-size:.8rem;color:var(--ind);margin:2.5em 0 1em}
+</style></head><body><main>
+<h1>第12回 ワーク用ページ｜自分の仕事で、AIを使ってみる</h1>
+<div class="lead"><p><b>使い方：コピー → ChatGPTに貼り付け → 送信</b>。このページとChatGPTを切り替えて使います。講義からは退出せず、講師が案内した時刻に講義画面へ戻ります。</p>
+<p>コピーボタンが使えないときは、枠の中の文字を長押し（パソコンはドラッグ）して選択し、コピーできます。ChatGPTへのログインは事前に済ませてください。</p>
+<p class="note">このページは<b>コピーを助ける補助教材</b>です。お題・手順・時間・完成条件・答え合わせは、講義のスライドに載っています。入力・ログイン・回答の提出はありません。登場する情報はすべて架空です。</p></div>
+
+<h2>ワーク①　未完了を整理して、引き継ぎ文を作る</h2>
+<h3>元データ（問い合わせ対応の記録・50件・架空）　〔一括コピー〕</h3>
+<div class="step"><div class="t">元データ（50件）</div>
+<textarea id="t22" readonly rows="10">案件ID,問い合わせ区分,対応状況,問い合わせ内容
+Q-001,変更,完了,会議室Cの予約を別の部屋に変えたい
+Q-002,その他,完了,貸出ルールについて意見がある
+Q-003,予約,未対応,台車を明日の午前に借りたい
+Q-004,予約,完了,会議室Cを来週火曜の午後に使いたい
+Q-005,予約,完了,プロジェクターを明日の午後に借りたい
+Q-006,利用方法,完了,プロジェクターの接続方法がわからない
+Q-007,利用方法,完了,貸出できる備品の一覧を見たい
+Q-008,予約,確認中,カメラを今週金曜の午前に借りたい
+Q-009,予約,完了,モニターを来週水曜の午後に借りたい
+Q-010,その他,完了,共用備品の追加を希望する
+Q-011,その他,未対応,備品の汚れについて報告したい
+Q-012,利用方法,未対応,予約の確認画面の見方がわからない
+Q-013,取消,完了,カメラの貸出予約を取り消したい
+Q-014,利用方法,確認中,会議室の鍵の受け取り方を知りたい
+Q-015,予約,完了,会議室Aを来週火曜の午前に使いたい
+Q-016,変更,確認中,プロジェクターの貸出日を火曜から水曜へ変えたい
+Q-017,利用方法,完了,共通フォームにログインできない場合の対処を知りたい
+Q-018,利用方法,未対応,受付時間外に受け取る方法を知りたい
+Q-019,利用方法,完了,返却のときの手順を知りたい
+Q-020,取消,未対応,モニターの予約をキャンセルしたい
+Q-021,変更,未対応,ノートパソコンの返却日を1日延ばしたい
+Q-022,利用方法,確認中,共通フォームの入力方法がわからない
+Q-023,変更,未対応,会議室Aの利用人数を増やしたい
+Q-024,その他,確認中,備品の破損を見つけたので連絡したい
+Q-025,利用方法,完了,備品の返却場所を知りたい
+Q-026,取消,完了,ノートパソコンの予約を取り消したい
+Q-027,予約,確認中,スクリーンを今週木曜に借りたい
+Q-028,予約,確認中,マイクを来週木曜の午前に借りたい
+Q-029,利用方法,完了,予約の空き状況の見方を知りたい
+Q-030,予約,未対応,会議室Aを再来週月曜の午後に使いたい
+Q-031,変更,完了,カメラの貸出を午前から午後に変えたい
+Q-032,利用方法,確認中,入力画面で修正ボタンの場所がわからない
+Q-033,取消,確認中,プロジェクターの貸出をキャンセルしたい
+Q-034,変更,完了,マイクの貸出日を木曜から金曜へ変えたい
+Q-035,予約,完了,会議室Aを来月初めの午前に使いたい
+Q-036,予約,完了,会議室Bを今週木曜の午後に使いたい
+Q-037,予約,未対応,会議室Bを来週金曜の午前に使いたい
+Q-038,変更,完了,モニターの受取日を前倒しにしたい
+Q-039,予約,完了,タブレットを来週水曜の終日借りたい
+Q-040,予約,完了,ホワイトボードを明後日の午前に借りたい
+Q-041,変更,完了,会議室Aの予約を午前から午後に変えたい
+Q-042,取消,完了,タブレットの貸出をキャンセルしたい
+Q-043,変更,完了,台車の借りる日を翌週に変えたい
+Q-044,予約,完了,ノートパソコンを金曜の終日借りたい
+Q-045,取消,未対応,会議室Cの予約を取り消したい
+Q-046,変更,確認中,会議室Bの予約時間を1時間遅らせたい
+Q-047,予約,確認中,延長コードを来週月曜に借りたい
+Q-048,その他,確認中,会議室の空調について要望がある
+Q-049,取消,完了,会議室Aの木曜の予約をキャンセルしたい
+Q-050,取消,完了,会議室Bの予約をキャンセルしたい</textarea>
+<button class="copy" type="button" onclick="copyText('t22',this)">50件を一括コピー</button><div class="msg" aria-live="polite"></div></div>
+<h3>区分の意味（確認用・必要ならChatGPTに一緒に伝えてもよい）</h3>
+<div class="step"><div class="t">問い合わせ区分の意味</div>
+<textarea id="t23" readonly rows="9">予約：新しく備品の貸出や会議室の利用を申し込む
+変更：すでにある予約の日時や内容を変える
+取消：すでにある予約をやめる
+利用方法：使い方や手順を知りたい（質問）
+その他：上のどれにも当てはまらない（要望・報告など）</textarea>
+<button class="copy" type="button" onclick="copyText('t23',this)">区分の意味をコピー</button><div class="msg" aria-live="polite"></div></div>
+<h3>入力文</h3>
+<div class="step"><div class="t">① 0〜2分：新しい会話で先に送る（続けて、上の元データを貼る）</div>
+<textarea id="t24" readonly rows="4">以下は問い合わせ対応の記録（50件）です。列は案件ID・問い合わせ区分・対応状況・問い合わせ内容。確認中と未対応を未完了とします。まず受け取ったとだけ答えて。</textarea>
+<button class="copy" type="button" onclick="copyText('t24',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<div class="step"><div class="t">② 2〜4分：未完了の抽出・集計</div>
+<textarea id="t25" readonly rows="3">未完了（確認中・未対応）を抽出し、合計と区分別・状態別の件数を表に。案件IDも全部並べて。完了は除く。</textarea>
+<button class="copy" type="button" onclick="copyText('t25',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<div class="step"><div class="t">③ 4〜6分：引き継ぎ文（【全体像／具体的な対応】のどちらか先に伝えるほうを自分で選ぶ）</div>
+<textarea id="t26" readonly rows="3">次の担当者向けの引き継ぎ文を作って。【件数の全体像／残っている対応】を先に。記録にない約束は書かない。</textarea>
+<button class="copy" type="button" onclick="copyText('t26',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<div class="step"><div class="t">④ 6〜8分：1か所修正</div>
+<textarea id="t27" readonly rows="3">【直したい箇所】を【どう直すか】に変更して。集計の数字は変えないで。</textarea>
+<button class="copy" type="button" onclick="copyText('t27',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<details><summary>自己確認：検算済みの数字（制作側でプログラムにより検算。全50件を手で数え直す必要はありません）</summary>
+<p>全50件＝完了28＋確認中12＋未対応10。<b>未完了は22件</b>（確認中12・未対応10）。</p>
+<table><tr><th>区分</th><th>確認中</th><th>未対応</th><th>計</th></tr><tr><td>予約</td><td>4</td><td>3</td><td>7</td></tr><tr><td>変更</td><td>2</td><td>2</td><td>4</td></tr><tr><td>取消</td><td>1</td><td>2</td><td>3</td></tr><tr><td>利用方法</td><td>3</td><td>2</td><td>5</td></tr><tr><td>その他</td><td>2</td><td>1</td><td>3</td></tr><tr><th>計</th><th>12</th><th>10</th><th>22</th></tr></table>
+<p>代表例（未完了）：Q-003（予約・未対応）、Q-011（その他・未対応）、Q-012（利用方法・未対応）、Q-008（予約・確認中）、Q-014（利用方法・確認中）、Q-016（変更・確認中）</p></details>
+
+<h2>ワーク②　自分の仕事で試し、直す</h2>
+<h3>入力枠（5項目を自分で埋める）</h3>
+<div class="step"><div class="t">入力枠</div>
+<textarea id="t28" readonly rows="9">今回試す仕事：
+結果を使う人：
+使う材料：
+欲しい結果の形：
+よい結果か判断する条件：
+
+この材料を使って、上の結果を作ってください。</textarea>
+<button class="copy" type="button" onclick="copyText('t28',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<div class="step"><div class="t">追加の指示の入力枠</div>
+<textarea id="t29" readonly rows="3">【直したい箇所】を【どう直すか】に変更してください。【残したい内容】は変えないでください。</textarea>
+<button class="copy" type="button" onclick="copyText('t29',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<h3>練習用の短い材料（架空。題材①〜④で使えます。実在の顧客情報・社内の機密資料は使わないでください）</h3>
+<div class="step"><div class="t">① 作業メモ（→ 引き継ぎ文を作る）</div>
+<textarea id="t30" readonly rows="10">・備品貸出の月次集計は、10月分まで完了。11月分は未着手。
+・共通フォームの入力項目の見直し案を作成中。総務の確認待ち。
+・会議室Bの鍵の受け渡し方法について、利用者から質問が2件。回答は未送信。
+・備品の追加希望（モニター）は予算確認中。
+・毎週月曜に未返却の備品を確認する。今週分は実施済み。</textarea>
+<button class="copy" type="button" onclick="copyText('t30',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<div class="step"><div class="t">② 問い合わせと対応ルール（→ 返信案を作る）</div>
+<textarea id="t31" readonly rows="12">【問い合わせ】
+共通フォームに入力したのに、予約の確認メールが届きません。どうすればよいですか。
+【対応ルール】
+・確認メールは入力から1時間以内に届く。
+・届かないときは、入力したメールアドレスに誤りがないか確認してもらう。
+・誤りがなければ総務へ連絡してもらう。
+・予約は入力した時点で受け付けられる。</textarea>
+<button class="copy" type="button" onclick="copyText('t31',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<div class="step"><div class="t">③ 候補と条件（→ 条件に沿って比べる）</div>
+<textarea id="t32" readonly rows="9">【条件】8人で会議をする。プロジェクターを使う。
+【候補】
+・会議室A：定員6人、窓あり、プロジェクターなし
+・会議室B：定員10人、窓なし、プロジェクターあり
+・会議室C：定員4人、窓あり、プロジェクターあり</textarea>
+<button class="copy" type="button" onclick="copyText('t32',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<div class="step"><div class="t">④ 長い説明（→ 初めて読む人向けに直す）</div>
+<textarea id="t33" readonly rows="6">備品を借りるときは、まず共通フォームに、借りたい備品の名前と、利用する日を入力します。入力は、利用の前日の16時までに行います。利用の当日は、受付で備品を受け取ります。受付時間は9時から17時までです。使い終わったら、当日の17時までに、受付へ返却します。同時に借りられる備品は、一人1点までです。</textarea>
+<button class="copy" type="button" onclick="copyText('t33',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
+<p class="note">⑤ 前半の問い合わせ記録を別の目的で整理する場合は、上の「元データ（50件）」を使います。題材が決まらない場合の共通課題：前半の50件の記録で、引き継ぎ文から「上司への状況報告」に用途を変える。</p>
+<details><summary>自己確認の基準（スライドと同じ）</summary><ul class="chk"><li>今回試す仕事と、結果を使う人が書けた</li><li>判断条件を、実行の前に書いた</li><li>実際の結果がある</li><li>修正版がある（前と後を見比べた）</li><li>次に使う場面を一文、残した</li></ul></details>
+
+<h2>予備ワーク（講師の案内がある場合のみ）　自分の指示を、固定と差し替えに分ける</h2>
+<p>ワーク②の自分の指示を、固定する条件（目的・結果の形・判断条件・守るルール）と、差し替える材料に分けてメモし、新しい会話で別の材料（上の練習用材料など）に使い直します。固定の条件に日付・名前・場所などを混ぜないでください。</p>
+<p class="foot">AI研修 ワーク用コピー教材（初版）。講師ノートや案件の内部資料は含みません。入力・ログイン・回答の提出はありません。</p>
+</main><script>
+function copyText(id,btn){var t=document.getElementById(id);var s=t.value;var m=btn.parentNode.querySelector('.msg');
+function ok(){btn.classList.remove('fail');btn.classList.add('done');m.textContent='コピーしました。ChatGPTの入力欄に貼り付けてください。';}
+function fb(){try{t.removeAttribute('readonly');t.focus();t.select();t.setSelectionRange(0,t.value.length);var r=document.execCommand('copy');t.setAttribute('readonly','');if(r){ok();return;}}catch(e){}
+btn.classList.add('fail');m.textContent='コピーできませんでした。上の枠の文字を長押し（パソコンはドラッグ）して選択し、コピーしてください。';}
+if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(s).then(ok,fb);}else{fb();}}
+document.querySelectorAll('textarea').forEach(function(t){t.style.height='auto';t.style.height=Math.min(t.scrollHeight+6,520)+'px';});
+</script></body></html>
