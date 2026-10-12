@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="AI研修 第3回。長く複雑なプロンプトの型と、ワークの手順・自己確認の基準をまとめた受講者用ページです。">
+<title>第3回 ワーク用ページ｜AI研修</title>
+<style>
+:root{--ink:#123537;--muted:#52696a;--green:#087e83;--paper:#f3f7f4;--line:#c9dad6;--white:#fff;--amber:#8b5316;--soft:#fff3dc}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.8 "Yu Gothic UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif}a{color:#086b72;text-underline-offset:4px}button,summary{touch-action:manipulation}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #b56b0c;outline-offset:4px}header{background:var(--ink);color:white;padding:48px 24px 34px}header>div,main,nav>div{max-width:860px;margin:auto}.eyebrow{font-size:14px;letter-spacing:.12em;color:#bce5dc;margin:0 0 10px}h1{font-size:clamp(28px,6vw,43px);line-height:1.35;letter-spacing:.03em;margin:0 0 14px}header p{max-width:680px;margin-bottom:0;color:#e1efea}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.chips span{font-size:13px;border:1px solid #638884;padding:3px 12px;border-radius:30px}nav{position:sticky;top:0;background:#fffefbef;border-bottom:1px solid var(--line);z-index:5}nav>div{display:flex;padding:10px 16px;gap:9px}nav a{flex:1;text-align:center;padding:8px 5px;font-size:15px;text-decoration:none;font-weight:700;border-radius:8px}nav a:hover{background:#e5f1eb}main{padding:28px 20px 60px}h2{font-size:28px;line-height:1.4;margin:0 0 8px}h3{font-size:20px;line-height:1.5;margin:0}.intro{padding:22px 24px;background:var(--white);border-left:5px solid var(--green)}.intro p{margin:0 0 12px}.intro p:last-child{margin:0}.small{font-size:14px;color:var(--muted)}.lesson{padding-top:45px}.lesson-head{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:18px}.lesson-head p{margin:6px 0 0}.kicker{font-weight:700;color:var(--green);font-size:14px;letter-spacing:.06em}.step{padding:24px;background:var(--white);border:1px solid var(--line);border-radius:12px;margin:14px 0}.step-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}.num{flex:none;width:32px;height:32px;background:var(--green);border-radius:50%;color:#fff;display:grid;place-items:center;font-size:17px;font-weight:bold}.time{font-size:13px;color:var(--muted);font-weight:600}.step p{margin:12px 0}.prompt{padding:17px 18px;background:#eef6f2;border-left:3px solid var(--green);white-space:pre-wrap;overflow-wrap:anywhere;user-select:text;font-size:18px;line-height:1.8;margin:14px 0 12px}.copy{border:0;border-radius:7px;background:var(--green);color:white;font-family:inherit;font-size:15px;font-weight:700;line-height:1.5;padding:11px 20px;min-height:44px;cursor:pointer}.copy:hover{background:#09656b}.copy:disabled{opacity:.8}.look{font-size:15px;color:#405d5a;padding-top:4px}.label{font-weight:700;display:block;font-size:14px;margin-bottom:5px}.choices{margin-top:14px;border-top:1px solid var(--line);padding-top:14px}.choices p{font-weight:600}.source{border:2px solid var(--green);padding:18px 22px;background:#eaf4ef;border-radius:10px}.source p{margin:0}.check{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}.check summary{padding:19px 24px;font-size:18px;font-weight:700;cursor:pointer;list-style-position:inside;background:#e2efe7}.check .inside{padding:6px 24px 24px}.check ul{padding-left:1.3em}.check li{margin:10px 0}.note{padding:14px 18px;background:var(--soft);color:#62421c;font-size:15px;border-radius:8px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pair div{background:#f2f7f4;padding:14px 18px;border-radius:8px}.pair h3{font-size:17px}.pair ul{padding-left:1.2em}.finish{margin-top:20px;font-weight:700;color:#075f64}.extra{border-top:1px solid var(--line);margin-top:30px}.status{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#123537;color:#fff;padding:12px 22px;border-radius:10px;z-index:10;max-width:90%;text-align:center;box-shadow:0 4px 20px #0003;pointer-events:none}.status:empty{display:none}footer{padding:25px 20px;border-top:1px solid var(--line);text-align:center;font-size:13px;color:var(--muted)}noscript p{padding:15px;background:var(--soft)}@media(max-width:560px){body{font-size:16px}header{padding:30px 20px}main{padding:22px 14px 44px}.intro{padding:18px}.step{padding:19px 17px}h2{font-size:25px}h3{font-size:19px}.prompt{font-size:17px;padding:15px}.pair{grid-template-columns:1fr}.check .inside{padding:5px 18px 20px}.check summary{padding:17px 18px}nav a{font-size:14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{nav,.copy,.status{display:none}header{background:#fff;color:#123537}header p,.eyebrow{color:#123537}details .inside{display:block}.step{break-inside:avoid}main{max-width:100%}}
+.sym{display:grid;gap:8px;margin:14px 0}.sym>div{display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:10px;padding:12px 16px}.sym code{font-family:"BIZ UDGothic",Consolas,monospace;font-size:17px;font-weight:700;color:var(--green);white-space:nowrap}@media(max-width:560px){.sym>div{grid-template-columns:1fr;gap:4px}}
+</style>
+</head>
+<body>
+<header><div><p class="eyebrow">AI研修 · 第3回</p><h1>長く複雑な<br>プロンプトを組み立てる。</h1><p>ワークで使う「型」を、ここからコピーできます。講師の説明を聞いた後、指定されたワークに進んでください。</p><div class="chips"><span>ログイン不要の教材ページ</span><span>スマートフォン対応</span><span>提出・回答の送信なし</span></div></div></header>
+<nav aria-label="ワークを選択"><div><a href="#work1">ワーク①</a><a href="#work2">ワーク②</a><a href="#extra">予備ワーク</a><a href="#marks">記号</a></div></nav>
+<main>
+<div class="intro"><p><strong>使い方は「コピー → ChatGPTに貼り付け → 【　】を書き換えて送信」</strong></p><p>型の中に、<strong>【ここに、〜を書く】</strong>という所が1か所あります。貼り付けた後、その行を自分の言葉に書き換えてから送ってください。書き換えが難しい場合は、そのまま送っても大丈夫です。</p><p>パソコンのChatGPTでは、Enterだけで送信されます。改行は<strong>Shift＋Enter</strong>です。入力欄の右上の矢印で、入力欄を広げて全体を確かめられます。</p><p class="small">ChatGPTへのログインは事前に済ませてください。コピーボタンが使えない場合は、緑色の枠内の文章を長押し・選択してコピーできます。講義からは退出せず、講師が案内した時刻に講義画面へ戻ります。</p></div>
+<noscript><p>コピーボタンにはJavaScriptを使用します。ボタンが動かない場合も、枠内の文章を選択してコピーできます。</p></noscript>
+
+<section id="work1" class="lesson" aria-labelledby="w1title">
+<div class="lesson-head"><span class="kicker">ワーク① · 10分</span><h2 id="w1title">1回の依頼で、3つの場所向けの文章を作る</h2><p>さくら花店の体験会の案内を、店頭掲示用・SNS投稿用・スタッフ向け連絡の3つにまとめて作ります（架空の設定です）。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜3分</span><h3>型を貼り付け、【　】を書き換えて送る</h3></div></div><p>ChatGPTで<strong>新しい会話</strong>を開き、次の型を貼り付けます。「# 条件」の中の<strong>【ここに、自分で条件を1つ書く】</strong>を書き換えてから送信します。</p><div class="prompt" id="w1p1"># 役割
+あなたは、さくら花店のスタッフです。
+
+# 目的
+初心者向け花束づくり体験会の案内を、3つの場所に合わせて作る
+
+# 材料
+"""
+店舗名：さくら花店
+企画：初心者向け花束づくり体験会
+日時：来週土曜日 14:00〜15:00
+場所：さくら花店の店舗内
+参加費：1人1,000円
+定員：6名
+持ち物：不要
+申込方法：店頭スタッフに伝える
+割引・特典・電話申込・オンライン申込：なし
+準備するもの：花材、ひも、作業机、案内掲示
+"""
+
+# 条件
+- 材料にないことは書かない
+- **日時・参加費・定員・申込方法は、3つすべてに入れる**
+- 【ここに、自分で条件を1つ書く】
+
+# 出力の形
+## 1. 店頭掲示用
+見出しをつけて、本文は150字程度
+## 2. SNS投稿用
+100字程度。最後に、参加を呼びかける1文
+## 3. スタッフ向け連絡
+箇条書き。準備するものと、当日までにすること</div><button class="copy" data-copy="w1p1">型をコピー</button><p class="look"><span class="label">【　】に書く条件の例</span>やさしい言葉づかいで／初めての人の不安に答える内容を入れる／日時は材料の書き方のまま書く</p></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">3〜5分</span><h3>3つの見出しに分かれたか確かめる</h3></div></div><p>送る文章はありません。回答を読み、次の点を確かめます。</p><ul><li>「店頭掲示用」「SNS投稿用」「スタッフ向け連絡」の3つの見出しがあるか。</li><li>自分で書いた条件が、回答に反映されているか。</li></ul></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">5〜8分</span><h3>スタッフ向け連絡を、表に変えてもらう</h3></div></div><p><strong>同じ会話</strong>で続けて送ります。</p><div class="prompt" id="w1p3">## 3. スタッフ向け連絡 を、表に変えてください。列は「時間」「やること」「担当」。材料にないことは「要確認」と書いてください。</div><button class="copy" data-copy="w1p3">入力文をコピー</button><p class="look">材料には担当者が書いていません。「担当」の列を、AIが想像で埋めていないかを見ます。</p></article>
+<details class="check"><summary>8〜10分：答え合わせと自己修正</summary><div class="inside"><p><strong>文面が見本と違っても、条件を満たしていればできています。</strong></p><ul><li>3つの見出し（店頭掲示用・SNS投稿用・スタッフ向け連絡）に分かれている。</li><li>3つすべてに、日時・参加費・定員・申込方法が入っている。</li><li>長さが、それぞれの指定に近い。</li><li>表の「担当」が「要確認」になっている（材料に担当者は書いていない）。</li></ul><p>実際に試したところ、「# 出力の形」に書いた見出しが、そのまま回答の見出しになりました。表では、担当と準備の時間が「要確認」になり、申込みの受付だけが材料どおり「店頭スタッフ」になっていました。</p><p class="note">「来週土曜日」が「10月24日（土）」のような日付に書き換わることがあります。材料の書き方のままにしたいときは、条件に1行足します。</p><div class="prompt" id="w1fix">日時は、材料の書き方のまま「来週土曜日 14:00〜15:00」と書いてください。それ以外は変えないでください。</div><button class="copy" data-copy="w1fix">修正の入力文をコピー</button><p class="finish">確認が終わったら、講義画面に戻ります。</p></div></details>
+<details class="check"><summary>早く終わったら：条件を1つ足して直す</summary><div class="inside"><p>同じ会話で、条件を1つ足して直してもらいます。直す所と、変えないものを一緒に伝えます。</p><div class="prompt" id="w1ex">SNS投稿用に、初めての人が安心できる一言を足してください。日時・参加費・定員・申込方法は変えないでください。</div><button class="copy" data-copy="w1ex">入力文をコピー</button></div></details>
+</section>
+
+<section id="work2" class="lesson" aria-labelledby="w2title">
+<div class="lesson-head"><span class="kicker">ワーク② · 10分</span><h2 id="w2title">当日マニュアルを作り、1回磨く</h2><p>役割・手順・見本・出力の形・確認が入った型で、体験会の当日マニュアルを作ります（架空の設定です）。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜3分</span><h3>型を貼り付け、【　】を書き換えて送る</h3></div></div><p>ChatGPTで<strong>新しい会話</strong>を開き、次の型を貼り付けます。「# 手順」の3の<strong>【ここに、入れてほしい観点を1つ書く】</strong>を書き換えてから送信します。</p><div class="prompt" id="w2p1"># 役割
+あなたは、お店の業務マニュアルを、初めての人にもわかるように書くのが得意な担当者です。
+
+# 目的
+体験会の当日、初めて担当するスタッフが、迷わず動けるマニュアルを作る
+
+# 材料
+"""
+【体験会の情報】
+日時：来週土曜日 14:00〜15:00 ／ 場所：さくら花店の店舗内 ／ 定員：6名
+準備するもの：花材、ひも、作業机、案内掲示
+
+【当日の流れメモ】
+13:30 スタッフ集合。作業机を並べる（6席）
+13:45 花材・ひも・案内掲示を確認
+14:00 受付。開始のあいさつ
+14:10〜14:45 花束づくり（スタッフが見本を見せながら進める）
+14:45〜15:00 仕上げ。片付けの案内
+片付けの担当：未定
+"""
+
+# 手順
+1. 材料を読み、当日の流れを時間順に並べる
+2. それぞれの時間に、スタッフがやることを書く
+3. 注意点には、【ここに、入れてほしい観点を1つ書く】を入れる
+4. 材料にないことや、決まっていないことは「要確認」と書く
+
+# 出力の形
+表にする。列は「時間」「やること」「注意点」
+
+# 見本（この書き方にそろえる。内容は使わない）
+| 9:00 | 店を開ける | 入口の掲示を確認する |
+
+# 確認
+出力の前に、次の点を満たしているか確かめ、満たしていない所は直してください。
+- 材料にない時刻や作業を足していない
+- 決まっていないことは「要確認」になっている
+- **見本の内容は使っていない**</div><button class="copy" data-copy="w2p1">型をコピー</button><p class="look"><span class="label">【　】に書く観点の例</span>初めて参加するお客様への声かけ／安全のための注意／時間が押したときの対応</p></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">3〜5分</span><h3>表の形と「要確認」を確かめる</h3></div></div><p>送る文章はありません。回答を読み、次の点を確かめます。</p><ul><li>列が「時間」「やること」「注意点」の表になっているか。</li><li>片付けの担当が「要確認」になっているか。</li></ul></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">5〜8分</span><h3>弱い点を挙げてもらい、1つ選んで直す</h3></div></div><p><strong>同じ会話</strong>で、まず次の文章を送ります。</p><div class="prompt" id="w2p3a">このマニュアルの弱い点を3つ挙げてください。</div><button class="copy" data-copy="w2p3a">入力文をコピー</button><p>挙がった3つの中から、直したいものを<strong>自分で1つ選び</strong>、次の文章の【　】を書き換えて送ります。</p><div class="prompt" id="w2p3b">【選んだ弱い点】を直してください。時刻は変えないでください。</div><button class="copy" data-copy="w2p3b">入力文をコピー</button><p class="look">選ぶのは人です。どれを直すと、初めてのスタッフが一番助かるかを考えて選びます。</p></article>
+<details class="check"><summary>8〜10分：答え合わせと自己修正</summary><div class="inside"><p><strong>文面が見本と違っても、条件を満たしていればできています。</strong></p><ul><li>列が「時間」「やること」「注意点」の表になっている。</li><li>時刻と作業が、当日の流れメモどおり（材料にない時刻や作業を足していない）。</li><li>片付けの担当が「要確認」になっている。</li><li>見本の「店を開ける」が、マニュアルに入っていない。</li></ul><p>実際に試したところ、表の形・「要確認」・見本の扱いは、すべて指定どおりになりました。弱い点を3つ挙げてもらうと、次の3つが挙がりました。</p><div class="pair"><div><h3>挙がった弱い点（例）</h3><ul><li>役割分担が決まっていない</li><li>作業の説明が具体的でない</li><li>お客様への対応が十分でない</li></ul></div><div><h3>ここに注目</h3><ul><li>自分では気づかない改善点が見つかる</li><li>どれを直すかは、人が選ぶ</li><li>時刻や担当は、最後に人が確かめる</li></ul></div></div><p>材料にない時刻や作業が足されていたら、次の入力文で直します。</p><div class="prompt" id="w2fix">材料の「当日の流れメモ」にない時刻や作業は削ってください。決まっていないことは「要確認」と書いてください。表の列は「時間」「やること」「注意点」のままにしてください。</div><button class="copy" data-copy="w2fix">修正の入力文をコピー</button><p class="finish">確認が終わったら、講義画面に戻ります。</p></div></details>
+<details class="check"><summary>早く終わったら：案を3つ出して、1つ選ぶ</summary><div class="inside"><p>同じ会話で送り、3つの案から自分で1つ選びます。</p><div class="prompt" id="w2ex">14:00 受付の行の注意点を、方向の違う書き方で3案出してください。表のほかの行は変えないでください。</div><button class="copy" data-copy="w2ex">入力文をコピー</button><p class="look">選んだら「2案目にしてください」のように伝えます。</p></div></details>
+</section>
+
+<section id="extra" class="lesson extra" aria-labelledby="extitle"><div class="lesson-head"><span class="kicker">予備ワーク · 約10分 · 講師の案内がある場合のみ</span><h2 id="extitle">使ったプロンプトを、使い回せる型にする</h2><p>本編60分とは別の予備課題です。通常は実施しません。</p></div>
+<article class="step"><span class="time">0〜3分</span><h3>型にしてもらう</h3><p><strong>ワーク②の会話の続き</strong>で、次の文章を送ります。</p><div class="prompt" id="ex1">最初に送ったプロンプトを、ほかの体験会でも使える型にしてください。企画ごとに変わる所は【　】にしてください。</div><button class="copy" data-copy="ex1">入力文をコピー</button></article>
+<article class="step"><span class="time">3〜6分</span><h3>【　】の所を確かめる</h3><p>【　】になった所が、日時・定員など、企画ごとに変わる所になっているかを確かめます。</p></article>
+<article class="step"><span class="time">6〜8分</span><h3>型をメモに保存する</h3><p>回答の型をコピーして、メモ帳などに保存します。名前の例：<strong>体験会_当日マニュアル_v1</strong></p></article>
+<details class="check"><summary>8〜10分：見直す</summary><div class="inside"><ul><li>企画ごとに変わる所（日時・定員など）が【　】になっている。</li><li>役割・手順・出力の形・確認は、そのまま残っている。</li></ul><p>うまくいったプロンプトは、型にして残しておくと、次から書く手間が省けます（第11回で詳しく練習します）。</p></div></details>
+</section>
+
+<section id="marks" class="lesson extra" aria-labelledby="mktitle"><div class="lesson-head"><span class="kicker">今日の記号 · 早見表</span><h2 id="mktitle">記号の役割（マークダウン）</h2><p>記号は、AIにも人にも読み違いを減らすための目印です。記号は半角で入力します。</p></div>
+<div class="sym" role="table" aria-label="記号の早見表">
+<div role="row"><code role="cell"># 見出し</code><span role="cell">見出し。ここから新しいまとまり。<strong>##</strong>で一段小さい見出し</span></div>
+<div role="row"><code role="cell">- 項目</code><span role="cell">箇条書き。順番に意味がないものを並べる</span></div>
+<div role="row"><code role="cell">1. 2. 3.</code><span role="cell">番号つきの手順。順番どおりに進めてほしいとき</span></div>
+<div role="row"><code role="cell">**大事**</code><span role="cell">強調。特に大事な所だけに使う（アスタリスク2つで挟む）</span></div>
+<div role="row"><code role="cell">"""〜"""</code><span role="cell">材料を囲む。指示と混ざらないようにする（```や&lt;材料&gt;〜&lt;/材料&gt;でもよい）</span></div>
+</div>
+<p class="small">長いプロンプトの型：# 役割／# 目的／# 背景／# 材料／# 手順／# 条件／# 出力の形／# 確認。毎回すべてそろえる必要はありません。</p>
+</section>
+<div class="intro" style="margin-top:40px"><p><strong>今日の基本は、区切る・組み立てる・質を上げる・磨く。</strong></p><p>記号で区切り、型で組み立て、見本や確認で質を上げ、案を出して選んで磨きます。最後に確かめるのは、人です。</p><p class="small">このページは入力文のコピー用教材です。回答の提出や個人情報の入力はありません。ChatGPTへ送る内容は、ご自身で確認してください。</p></div>
+</main><footer>AI研修 第3回 ワーク用ページ · v1 · 2026年10月13日<br>演習の設定はすべて架空です。</footer><div class="status" id="status" role="status" aria-live="polite"></div>
+<script>
+let messageTimer;
+function showMessage(text){const s=document.getElementById('status');s.textContent=text;clearTimeout(messageTimer);messageTimer=setTimeout(()=>{s.textContent=''},4500)}
+async function copyPrompt(button){const target=document.getElementById(button.dataset.copy);const text=target.textContent.trim();try{if(!navigator.clipboard||!window.isSecureContext)throw new Error('manual');await navigator.clipboard.writeText(text);const original=button.textContent;button.textContent='コピーしました';setTimeout(()=>{button.textContent=original},2200);showMessage('コピーしました。ChatGPTの入力欄に貼り付けてください。')}catch(e){const range=document.createRange();range.selectNodeContents(target);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);showMessage('文章を選択しました。長押し、または右クリックでコピーしてください。')}}
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',()=>copyPrompt(button)));
+</script>
+</body></html>
