@@ -63,11 +63,12 @@
 <article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">3〜4分</span><h3>合計の行と、件数を確かめる</h3></div></div><p>送る文章はありません。表の一番下の「合計」の行と、表の下に書かれた件数を見ます。<strong>件数が20件</strong>なら、取りこぼしはありません。</p></article>
 <article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">4〜6分</span><h3>曜日ごとの集計を頼む</h3></div></div><p><strong>同じ会話</strong>で続けて送ります。</p><div class="prompt" id="w1p3">同じデータで、曜日ごとに金額を合計してください。金額の大きい順に並べ、一番下に合計の行を入れてください。</div><button class="copy" data-copy="w1p3">入力文をコピー</button><p class="look">分け方が違っても、合計は①の表と同じになるはずです。</p></article>
 <article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">6〜8分</span><h3>「花束」だけ、自分で足して検算する</h3></div></div><p>電卓やスマートフォンの計算機で、<strong>花束の行の金額</strong>（10行）を足します。答えの表の「花束」の金額と同じか確かめます。</p><div class="sum">13,200 ＋ 8,800 ＋ 15,400 ＋ 24,200 ＋ 19,800 ＋ 6,600 ＋ 11,000 ＋ 17,600 ＋ 26,400 ＋ 22,000</div><p class="look">上の10個は、材料の「花束」の行から金額だけを抜き出したものです。</p></article>
-<details class="check"><summary>8〜10分：答え合わせと自己修正</summary><div class="inside"><ul><li>列が「分類」「数量」「金額」で、金額の大きい順。</li><li>合計の行がある（金額の合計は、①の表と③の表で同じ）。</li><li>件数が20件。</li><li>自分で足した「花束」の金額が、表と同じ。</li></ul>
+<article class="step"><div class="step-head"><span class="num">5</span><div><span class="time">8〜9分</span><h3>土日だけに絞り込み、件数を確かめる</h3></div></div><p><strong>同じ会話</strong>で送ります。対象になった件数が<strong>9件</strong>なら、正しく絞り込めています。</p><div class="prompt" id="w1p5">土曜日と日曜日だけで、分類ごとに合計してください。対象になった件数も書いてください。</div><button class="copy" data-copy="w1p5">入力文をコピー</button></article>
+<details class="check"><summary>9〜10分：答え合わせと自己修正</summary><div class="inside"><ul><li>列が「分類」「数量」「金額」で、金額の大きい順。</li><li>合計の行がある（金額の合計は、①の表と③の表で同じ）。</li><li>件数が20件。土日に絞ると9件（162,100円）。</li><li>自分で足した「花束」の金額が、表と同じ。</li></ul>
 <table class="ans"><tr><th>分類</th><th>数量</th><th>金額</th></tr><tr><td>花束</td><td class="n">75</td><td class="n">165,000</td></tr><tr><td>アレンジ</td><td class="n">20</td><td class="n">70,000</td></tr><tr><td>鉢植え</td><td class="n">14</td><td class="n">39,200</td></tr><tr><td>体験会</td><td class="n">6</td><td class="n">6,000</td></tr><tr class="total"><td>合計（20件）</td><td class="n">115</td><td class="n">280,200</td></tr></table>
 <table class="ans"><tr><th>曜日</th><th>金額</th></tr><tr><td>土</td><td class="n">88,800</td></tr><tr><td>日</td><td class="n">73,300</td></tr><tr><td>金</td><td class="n">40,000</td></tr><tr><td>水</td><td class="n">38,200</td></tr><tr><td>木</td><td class="n">33,300</td></tr><tr><td>火</td><td class="n">6,600</td></tr><tr class="total"><td>合計</td><td class="n">280,200</td></tr></table>
 <p>月曜日は定休日なので、データがありません。「月曜日 0円」の行があったら、AIが足した行です。数量の合計115は、花束などの「個」と体験会の「名」が混ざった数です。</p><p>「分析中」が出ずにすぐ答えが返ってきたときや、数字が合わないときは、同じ会話で次の文章を送ります。</p><div class="prompt" id="w1fix">計算の道具を使って、もう一度計算し直してください。集計に使った件数も書いてください。</div><button class="copy" data-copy="w1fix">修正の入力文をコピー</button><p class="finish">確認が終わったら、講義画面に戻ります。ワーク②で、この会話の続きを使います。<strong>会話は閉じずに残しておいてください。</strong></p></div></details>
-<details class="check"><summary>早く終わったら：土日だけに絞り込む</summary><div class="inside"><p>同じ会話で送ります。対象になった件数が<strong>9件</strong>なら、正しく絞り込めています。</p><div class="prompt" id="w1ex">土曜日と日曜日だけで、分類ごとに合計してください。対象になった件数も書いてください。</div><button class="copy" data-copy="w1ex">入力文をコピー</button></div></details>
+<details class="check"><summary>早く終わったら：花束がよく売れる曜日を調べる</summary><div class="inside"><p>同じ会話で送ります。</p><div class="prompt" id="w1ex">花束だけで、曜日ごとに合計してください。</div><button class="copy" data-copy="w1ex">入力文をコピー</button></div></details>
 </section>
 
 <section id="work2" class="lesson" aria-labelledby="w2title">
@@ -106,7 +107,7 @@
 - 計算の道具を使って、分類ごとに金額を合計した表（一番下に合計）
 - 金額の大きい順の棒グラフ。棒の上に金額を表示</div><button class="copy" data-copy="w2alt">続きから始める依頼をコピー</button></div></details></article>
 <article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">2〜4分</span><h3>分析を頼み、数字を確かめる</h3></div></div><p><strong>同じ会話</strong>で続けて送ります。</p><div class="prompt" id="w2p2">このデータから言えることを、数字つきで3つ挙げてください。土日と平日の1日あたりの売上の比較を、必ず1つ入れてください。計算して確かめてください。</div><button class="copy" data-copy="w2p2">入力文をコピー</button><p class="look">土日は4日、平日は7日です。土日の合計を4で割った数が、答えと同じか確かめます。</p></article>
-<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">4〜7分</span><h3>次の一手を相談する</h3></div></div><p><strong>同じ会話</strong>で、次の「次の一手の相談」を貼り付けて送ります。</p><div class="prompt" id="w2p3"># 目的
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">4〜7分</span><h3>次の一手を相談し、打ち手を1つ選ぶ</h3></div></div><p><strong>同じ会話</strong>で、次の「次の一手の相談」を貼り付けて送ります。</p><div class="prompt" id="w2p3"># 目的
 ここまでの集計と分析の結果をもとに、さくら花店の来月の売上を伸ばす打ち手を考える
 
 # 条件
@@ -118,25 +119,25 @@
 - 打ち手（1行）
 - もとにしたデータ（どの数字か）
 - 考えられる理由（データには書いていないので、「仮説」と書く）
-- 効果を確かめる方法（来月、何を、どの数字で比べるか）</div><button class="copy" data-copy="w2p3">次の一手の相談をコピー</button></article>
-<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">7〜8分</span><h3>打ち手を1つ選び、理由をメモに書く</h3></div></div><p>送る文章はありません。3つの打ち手から<strong>自分で1つ選び</strong>、選んだ理由を1行でメモ（紙やメモ帳）に書きます。</p><p class="look">例：「平日のミニ花束。費用が小さく、平日1日あたりの売上で効果を確かめやすいから」</p></article>
-<details class="check"><summary>8〜10分：答え合わせと自己修正</summary><div class="inside"><ul><li>棒グラフが、金額の大きい順（花束→アレンジ→鉢植え→体験会）。</li><li>1日あたりの売上：土日 約40,500円／平日 約16,900円（土日4日・平日7日で計算）。</li><li>打ち手それぞれに、もとにしたデータ・仮説・確かめ方が書かれている。</li><li>理由が「仮説」として書かれている（データで言い切っていない）。</li><li>打ち手を選んだのは自分（理由を1行で言える）。</li></ul>
+- 効果を確かめる方法（来月、何を、どの数字で比べるか）</div><button class="copy" data-copy="w2p3">次の一手の相談をコピー</button><p>答えが出たら、3つの打ち手から<strong>自分で1つ選び</strong>、選んだ理由を1行でメモ（紙やメモ帳）に書きます。</p><p class="look">例：「平日のミニ花束。費用が小さく、平日1日あたりの売上で効果を確かめやすいから」</p></article>
+<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">7〜9分</span><h3>選んだ打ち手の弱い点を聞き、対策を1つ考える</h3></div></div><p><strong>同じ会話</strong>で、次の文章の【　】を選んだ打ち手に書き換えて送ります。</p><div class="prompt" id="w2p4">選んだ打ち手は「【ここに、選んだ打ち手を書く】」です。この打ち手の弱い点を3つ挙げてください。</div><button class="copy" data-copy="w2p4">入力文をコピー</button><p>挙がった弱い点から1つ選び、その対策を自分で考えて、メモに1行書きます。</p><p class="look">弱い点を知ったうえで、決めるのは人です（第8回でくわしく練習します）。</p></article>
+<details class="check"><summary>9〜10分：答え合わせと自己修正</summary><div class="inside"><ul><li>棒グラフが、金額の大きい順（花束→アレンジ→鉢植え→体験会）。</li><li>1日あたりの売上：土日 約40,500円／平日 約16,900円（土日4日・平日7日で計算）。</li><li>打ち手それぞれに、もとにしたデータ・仮説・確かめ方が書かれている。</li><li>理由が「仮説」として書かれている（データで言い切っていない）。</li><li>打ち手を選んだのは自分（理由を1行で言える）。</li><li>弱い点の1つに、自分で対策を考えた。</li></ul>
 <div class="memo"><b>分析の正しい数字</b><ul><li>花束：165,000円で、全体の約59%（58.9%）</li><li>1日あたり：土日 40,525円（162,100円÷4日）／平日 約16,871円（118,100円÷7日）→ 約2.4倍</li><li>売上がいちばん多い日：10月11日（土）47,400円</li><li>アレンジ：1個3,500円（花束は2,200円）で、金額の25%</li></ul></div>
 <p>実際に試したところ、打ち手として「平日限定の手頃なミニ花束を、店頭の手書きPOPで知らせる」「土日に人気の花束を多めに、目立つ場所に並べる」「花束と小さな鉢植えのセット」の3つが、データ・仮説・確かめ方つきで出てきました。打ち手の中身は毎回変わります。</p><p>理由を言い切っていたときは、次の文章で直します。</p><div class="prompt" id="w2fix">それぞれの「考えられる理由」を、データで確かめていない「仮説」として書き直してください。ほかの所は変えないでください。</div><button class="copy" data-copy="w2fix">修正の入力文をコピー</button><p class="finish">確認が終わったら、講義画面に戻ります。</p></div></details>
-<details class="check"><summary>早く終わったら：選んだ打ち手の弱い点を聞く</summary><div class="inside"><div class="prompt" id="w2ex">選んだ打ち手は「【ここに、選んだ打ち手を書く】」です。この打ち手の弱い点を3つ挙げてください。</div><button class="copy" data-copy="w2ex">入力文をコピー</button><p class="look">【　】を選んだ打ち手に書き換えて送ります。弱い点を知ったうえで、決めるのは人です（第8回でくわしく練習します）。</p></div></details>
+<details class="check"><summary>早く終わったら：確かめ方を、来月の表の形にする</summary><div class="inside"><div class="prompt" id="w2ex">選んだ打ち手の確かめ方を、来月使う表の形にしてください。列の名前と、比べる数字を書いてください。</div><button class="copy" data-copy="w2ex">入力文をコピー</button><p class="look">来月、同じ形の表で比べれば、打ち手が効いたかを数字で確かめられます。</p></div></details>
 </section>
 
 <section id="extra" class="lesson extra" aria-labelledby="extitle"><div class="lesson-head"><span class="kicker">予備ワーク · 5〜10分 · 講師の案内がある場合のみ</span><h2 id="extitle">条件を変えて、集計し直す</h2><p>本編60分とは別の予備課題です。通常は実施しません。目的は、絞り込みを使い、知りたいことに合わせて集計し直すことです。</p></div>
-<article class="step"><span class="time">0〜3分</span><h3>土日だけで集計する</h3><p><strong>ワーク①の会話の続き</strong>で送ります。</p><div class="prompt" id="ex1">土曜日と日曜日だけで、分類ごとに金額を合計してください。対象になった件数も書いてください。</div><button class="copy" data-copy="ex1">入力文をコピー</button></article>
+<article class="step"><span class="time">0〜3分</span><h3>売上が多い日の上位3つを出す</h3><p><strong>ワーク①の会話の続き</strong>で送ります。</p><div class="prompt" id="ex1">日付ごとに金額を合計し、多い順に上位3日を出してください。日付と曜日も書いてください。</div><button class="copy" data-copy="ex1">入力文をコピー</button></article>
 <article class="step"><span class="time">3〜5分</span><h3>花束だけで、週ごとに比べる</h3><p><strong>同じ会話</strong>で送ります。</p><div class="prompt" id="ex2">花束だけで、1週目（10/1〜10/5）と2週目（10/7〜10/12）の金額を比べてください。</div><button class="copy" data-copy="ex2">入力文をコピー</button></article>
-<details class="check"><summary>見直す</summary><div class="inside"><ul><li>土日の対象の件数が9件。</li><li>花束：1週目 81,400円／2週目 83,600円。</li></ul><p>知りたいことが変わったら、集計の「何ごとに」と「絞り込み」を変えます。</p></div></details>
+<details class="check"><summary>見直す</summary><div class="inside"><ul><li>上位3日：10/11（土）47,400円・10/4（土）41,400円・10/5（日）37,300円。</li><li>花束：1週目 81,400円／2週目 83,600円。</li></ul><p>知りたいことが変わったら、集計の「何ごとに」と「絞り込み」を変えます。</p></div></details>
 </section>
 
 <section id="guide" class="lesson extra" aria-labelledby="gdtitle"><div class="lesson-head"><span class="kicker">今日のポイント · 早見表</span><h2 id="gdtitle">集計・検算・相談の早見表</h2><p>画面は2026年10月時点のものです。表示の名前は、変わることがあります。</p></div>
 <div class="how"><div><b>データの形</b>1行に1件／1行目は見出し／数字の欄には数字だけ（「円」は見出しに）／同じものは同じ言葉で</div><div><b>集計の頼み方</b>何を（金額を）・何ごとに（分類ごとに）・どう計算する（合計する）＋「計算の道具を使って」</div><div><b>検算の3つ</b>合計の行が元の合計と同じか／件数が元の行の数と同じか／1つの分類だけ自分で足す</div><div><b>グラフが表示されないとき</b>答えの下のファイル名（〜.png）を押すと開く。保存は、開いた画面の右上の「↓」（スマートフォンは長押し）</div><div><b>言えること・言えないこと</b>データから計算できることが「言えること」。なぜ売れたか・来月も売れるかは「言えないこと」</div><div><b>次の一手の相談</b>データ → 仮説 → 打ち手 → 確かめ方。提案は仮説。選ぶのは人。大きく変えず、小さく試す</div></div>
 </section>
 <div class="intro" style="margin-top:40px"><p><strong>今日の基本は、集計する・確かめる・次の一手を相談する。</strong></p><p>形を整えて渡し、何を・何ごとに・どう計算するかを伝え、合計と件数で検算します。データから言えることを土台に、仮説と確かめ方つきで打ち手を相談し、小さく試します。最後に確かめるのは、人です。</p><p class="small">このページは入力文のコピー用教材です。回答の提出や個人情報の入力はありません。ChatGPTへ送る内容は、ご自身で確認してください。お客様の名前・電話番号・住所や社外秘の数字は、データに入れないでください。</p></div>
-</main><footer>AI研修 第6回 ワーク用ページ · v1 · 2026年10月13日<br>演習の設定とデータはすべて架空です。</footer><div class="status" id="status" role="status" aria-live="polite"></div>
+</main><footer>AI研修 第6回 ワーク用ページ · v2 · 2026年10月13日<br>演習の設定とデータはすべて架空です。</footer><div class="status" id="status" role="status" aria-live="polite"></div>
 <script>
 let messageTimer;
 function showMessage(text){const s=document.getElementById('status');s.textContent=text;clearTimeout(messageTimer);messageTimer=setTimeout(()=>{s.textContent=''},4500)}
