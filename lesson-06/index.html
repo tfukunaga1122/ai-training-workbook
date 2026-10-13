@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="AI研修 第6回。売上データの集計・グラフ・分析・次の一手の相談のワーク手順と、自己確認の基準をまとめた受講者用ページです。">
+<title>第6回 ワーク用ページ｜AI研修</title>
+<style>
+:root{--ink:#123537;--muted:#52696a;--green:#087e83;--paper:#f3f7f4;--line:#c9dad6;--white:#fff;--amber:#8b5316;--soft:#fff3dc}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.8 "Yu Gothic UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif}a{color:#086b72;text-underline-offset:4px}button,summary{touch-action:manipulation}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #b56b0c;outline-offset:4px}header{background:var(--ink);color:white;padding:48px 24px 34px}header>div,main,nav>div{max-width:860px;margin:auto}.eyebrow{font-size:14px;letter-spacing:.12em;color:#bce5dc;margin:0 0 10px}h1{font-size:clamp(28px,6vw,43px);line-height:1.35;letter-spacing:.03em;margin:0 0 14px}header p{max-width:680px;margin-bottom:0;color:#e1efea}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.chips span{font-size:13px;border:1px solid #638884;padding:3px 12px;border-radius:30px}nav{position:sticky;top:0;background:#fffefbef;border-bottom:1px solid var(--line);z-index:5}nav>div{display:flex;padding:10px 16px;gap:9px}nav a{flex:1;text-align:center;padding:8px 5px;font-size:15px;text-decoration:none;font-weight:700;border-radius:8px}nav a:hover{background:#e5f1eb}main{padding:28px 20px 60px}h2{font-size:28px;line-height:1.4;margin:0 0 8px}h3{font-size:20px;line-height:1.5;margin:0}.intro{padding:22px 24px;background:var(--white);border-left:5px solid var(--green)}.intro p{margin:0 0 12px}.intro p:last-child{margin:0}.small{font-size:14px;color:var(--muted)}.lesson{padding-top:45px}.lesson-head{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:18px}.lesson-head p{margin:6px 0 0}.kicker{font-weight:700;color:var(--green);font-size:14px;letter-spacing:.06em}.step{padding:24px;background:var(--white);border:1px solid var(--line);border-radius:12px;margin:14px 0}.step-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}.num{flex:none;width:32px;height:32px;background:var(--green);border-radius:50%;color:#fff;display:grid;place-items:center;font-size:17px;font-weight:bold}.time{font-size:13px;color:var(--muted);font-weight:600}.step p{margin:12px 0}.prompt{padding:17px 18px;background:#eef6f2;border-left:3px solid var(--green);white-space:pre-wrap;overflow-wrap:anywhere;user-select:text;font-size:18px;line-height:1.8;margin:14px 0 12px}.copy{border:0;border-radius:7px;background:var(--green);color:white;font-family:inherit;font-size:15px;font-weight:700;line-height:1.5;padding:11px 20px;min-height:44px;cursor:pointer}.copy:hover{background:#09656b}.copy:disabled{opacity:.8}.look{font-size:15px;color:#405d5a;padding-top:4px}.label{font-weight:700;display:block;font-size:14px;margin-bottom:5px}.choices{margin-top:14px;border-top:1px solid var(--line);padding-top:14px}.choices p{font-weight:600}.source{border:2px solid var(--green);padding:18px 22px;background:#eaf4ef;border-radius:10px}.source p{margin:0}.check{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}.check summary{padding:19px 24px;font-size:18px;font-weight:700;cursor:pointer;list-style-position:inside;background:#e2efe7}.check .inside{padding:6px 24px 24px}.check ul{padding-left:1.3em}.check li{margin:10px 0}.note{padding:14px 18px;background:var(--soft);color:#62421c;font-size:15px;border-radius:8px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pair div{background:#f2f7f4;padding:14px 18px;border-radius:8px}.pair h3{font-size:17px}.pair ul{padding-left:1.2em}.finish{margin-top:20px;font-weight:700;color:#075f64}.extra{border-top:1px solid var(--line);margin-top:30px}.status{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#123537;color:#fff;padding:12px 22px;border-radius:10px;z-index:10;max-width:90%;text-align:center;box-shadow:0 4px 20px #0003;pointer-events:none}.status:empty{display:none}footer{padding:25px 20px;border-top:1px solid var(--line);text-align:center;font-size:13px;color:var(--muted)}noscript p{padding:15px;background:var(--soft)}@media(max-width:560px){body{font-size:16px}header{padding:30px 20px}main{padding:22px 14px 44px}.intro{padding:18px}.step{padding:19px 17px}h2{font-size:25px}h3{font-size:19px}.prompt{font-size:17px;padding:15px}.pair{grid-template-columns:1fr}.check .inside{padding:5px 18px 20px}.check summary{padding:17px 18px}nav a{font-size:14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{nav,.copy,.status{display:none}header{background:#fff;color:#123537}header p,.eyebrow{color:#123537}details .inside{display:block}.step{break-inside:avoid}main{max-width:100%}}
+.memo{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:15px;margin:14px 0}.memo b{display:block;margin-bottom:4px}.memo ul{margin:0;padding-left:1.2em}
+.ans{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px;background:#fff}.ans th,.ans td{border:1px solid var(--line);padding:7px 10px;text-align:left}.ans th{background:#e2efe7}.ans td.n{text-align:right;font-variant-numeric:tabular-nums}.ans tr.total td{font-weight:700;background:#f2f7f4}
+.how{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.how div{background:#f2f7f4;border-radius:8px;padding:12px 16px;font-size:15px}.how b{display:block;margin-bottom:4px}@media(max-width:560px){.how{grid-template-columns:1fr}}
+.sum{font-family:"BIZ UDGothic",Consolas,monospace;font-size:15px;background:#fff;border:1px dashed var(--line);border-radius:8px;padding:10px 14px;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<header><div><p class="eyebrow">AI研修 · 第6回</p><h1>数字を集計して、<br>表とグラフにする。</h1><p>ワークで使う「型」とデータを、ここからコピーできます。講師の説明を聞いた後、指定されたワークに進んでください。</p><div class="chips"><span>ログイン不要の教材ページ</span><span>スマートフォン対応</span><span>提出・回答の送信なし</span></div></div></header>
+<nav aria-label="ワークを選択"><div><a href="#work1">ワーク①</a><a href="#work2">ワーク②</a><a href="#extra">予備ワーク</a><a href="#guide">早見表</a></div></nav>
+<main>
+<div class="intro"><p><strong>使い方は「コピー → ChatGPTに貼り付け → 送信」</strong></p><p>今日の型には、売上データ（20件）がすでに入っています。書き換える所はありません。そのまま貼り付けて送ってください。</p><p>パソコンのChatGPTでは、Enterだけで送信されます。改行は<strong>Shift＋Enter</strong>です。計算の道具を使うので、答えが出るまで<strong>15秒〜1分ほど</strong>かかります。「分析中」と出ている間は、右の「スキップ」を押さずに待ってください。</p><p class="small">ChatGPTへのログインは事前に済ませてください。コピーボタンが使えない場合は、緑色の枠内の文章を長押し・選択してコピーできます。講義からは退出せず、講師が案内した時刻に講義画面へ戻ります。</p></div>
+<noscript><p>コピーボタンにはJavaScriptを使用します。ボタンが動かない場合も、枠内の文章を選択してコピーできます。</p></noscript>
+
+<section id="work1" class="lesson" aria-labelledby="w1title">
+<div class="lesson-head"><span class="kicker">ワーク① · 10分</span><h2 id="w1title">売上データを、集計表にする</h2><p>さくら花店の売上データ（10月1日〜12日・20件。架空の設定です）を集計します。目的は、集計を頼み、表の形を指定して、検算で確かめられるようになることです。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜3分</span><h3>思考量をMediumにして、「集計の依頼」を送る</h3></div></div><p>ChatGPTで<strong>新しい会話</strong>を開き、入力欄の右のつまみを<strong>Medium</strong>（「中程度」と出ることもあります）にします。次の「集計の依頼」を貼り付けて送信します。</p><div class="prompt" id="w1p1"># 目的
+売上データを、分類ごとに集計する
+
+# 材料
+"""
+日付,曜日,分類,数量,金額
+10/1,水,花束,6,13200
+10/1,水,鉢植え,2,5600
+10/2,木,花束,4,8800
+10/2,木,アレンジ,3,10500
+10/3,金,花束,7,15400
+10/3,金,アレンジ,2,7000
+10/4,土,花束,11,24200
+10/4,土,体験会,6,6000
+10/4,土,鉢植え,4,11200
+10/5,日,花束,9,19800
+10/5,日,アレンジ,5,17500
+10/7,火,花束,3,6600
+10/8,水,鉢植え,3,8400
+10/8,水,花束,5,11000
+10/9,木,アレンジ,4,14000
+10/10,金,花束,8,17600
+10/11,土,花束,12,26400
+10/11,土,アレンジ,6,21000
+10/12,日,花束,10,22000
+10/12,日,鉢植え,5,14000
+"""
+
+# 手順
+計算の道具を使って計算する
+
+# 出力の形
+- 表にする。列は「分類」「数量」「金額」
+- 金額の大きい順に並べる
+- 一番下に「合計」の行を入れる
+- 金額は3けたごとにカンマを入れる
+- 表の下に、集計に使った件数を書く</div><button class="copy" data-copy="w1p1">集計の依頼をコピー</button><p class="look">「分析中」→「分析済み」と出れば、計算の道具を使ったしるしです。</p></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">3〜4分</span><h3>合計の行と、件数を確かめる</h3></div></div><p>送る文章はありません。表の一番下の「合計」の行と、表の下に書かれた件数を見ます。<strong>件数が20件</strong>なら、取りこぼしはありません。</p></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">4〜6分</span><h3>曜日ごとの集計を頼む</h3></div></div><p><strong>同じ会話</strong>で続けて送ります。</p><div class="prompt" id="w1p3">同じデータで、曜日ごとに金額を合計してください。金額の大きい順に並べ、一番下に合計の行を入れてください。</div><button class="copy" data-copy="w1p3">入力文をコピー</button><p class="look">分け方が違っても、合計は①の表と同じになるはずです。</p></article>
+<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">6〜8分</span><h3>「花束」だけ、自分で足して検算する</h3></div></div><p>電卓やスマートフォンの計算機で、<strong>花束の行の金額</strong>（10行）を足します。答えの表の「花束」の金額と同じか確かめます。</p><div class="sum">13,200 ＋ 8,800 ＋ 15,400 ＋ 24,200 ＋ 19,800 ＋ 6,600 ＋ 11,000 ＋ 17,600 ＋ 26,400 ＋ 22,000</div><p class="look">上の10個は、材料の「花束」の行から金額だけを抜き出したものです。</p></article>
+<details class="check"><summary>8〜10分：答え合わせと自己修正</summary><div class="inside"><ul><li>列が「分類」「数量」「金額」で、金額の大きい順。</li><li>合計の行がある（金額の合計は、①の表と③の表で同じ）。</li><li>件数が20件。</li><li>自分で足した「花束」の金額が、表と同じ。</li></ul>
+<table class="ans"><tr><th>分類</th><th>数量</th><th>金額</th></tr><tr><td>花束</td><td class="n">75</td><td class="n">165,000</td></tr><tr><td>アレンジ</td><td class="n">20</td><td class="n">70,000</td></tr><tr><td>鉢植え</td><td class="n">14</td><td class="n">39,200</td></tr><tr><td>体験会</td><td class="n">6</td><td class="n">6,000</td></tr><tr class="total"><td>合計（20件）</td><td class="n">115</td><td class="n">280,200</td></tr></table>
+<table class="ans"><tr><th>曜日</th><th>金額</th></tr><tr><td>土</td><td class="n">88,800</td></tr><tr><td>日</td><td class="n">73,300</td></tr><tr><td>金</td><td class="n">40,000</td></tr><tr><td>水</td><td class="n">38,200</td></tr><tr><td>木</td><td class="n">33,300</td></tr><tr><td>火</td><td class="n">6,600</td></tr><tr class="total"><td>合計</td><td class="n">280,200</td></tr></table>
+<p>月曜日は定休日なので、データがありません。「月曜日 0円」の行があったら、AIが足した行です。数量の合計115は、花束などの「個」と体験会の「名」が混ざった数です。</p><p>「分析中」が出ずにすぐ答えが返ってきたときや、数字が合わないときは、同じ会話で次の文章を送ります。</p><div class="prompt" id="w1fix">計算の道具を使って、もう一度計算し直してください。集計に使った件数も書いてください。</div><button class="copy" data-copy="w1fix">修正の入力文をコピー</button><p class="finish">確認が終わったら、講義画面に戻ります。ワーク②で、この会話の続きを使います。<strong>会話は閉じずに残しておいてください。</strong></p></div></details>
+<details class="check"><summary>早く終わったら：土日だけに絞り込む</summary><div class="inside"><p>同じ会話で送ります。対象になった件数が<strong>9件</strong>なら、正しく絞り込めています。</p><div class="prompt" id="w1ex">土曜日と日曜日だけで、分類ごとに合計してください。対象になった件数も書いてください。</div><button class="copy" data-copy="w1ex">入力文をコピー</button></div></details>
+</section>
+
+<section id="work2" class="lesson" aria-labelledby="w2title">
+<div class="lesson-head"><span class="kicker">ワーク② · 10分</span><h2 id="w2title">グラフで読み解き、次の一手を相談する</h2><p>ワーク①の集計から、グラフと分析を作り、データにもとづいて来月の打ち手をAIと相談します（架空の設定です）。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜2分</span><h3>棒グラフを作ってもらう</h3></div></div><p>ワーク①の<strong>同じ会話</strong>で送ります。</p><div class="prompt" id="w2p1">分類ごとの金額を、金額の大きい順の棒グラフにしてください。棒の上に金額を表示してください。</div><button class="copy" data-copy="w2p1">入力文をコピー</button><p class="note">答えの中に「画像を利用できません — 再試行」と出たときは、答えの下に出ている<strong>ファイル名（〜.png）を押す</strong>と、グラフが開きます。開いた画面は、右上の「×」で閉じます。</p>
+<p class="note"><strong>ワーク①が途中だった人・会話を閉じてしまった人は</strong>、代わりに下の「続きから始める依頼」を<strong>新しい会話</strong>に貼り付けて送ってください（思考量はMedium）。</p>
+<details class="check" style="margin:12px 0 0"><summary>続きから始める依頼（ワーク①が途中だった人用）</summary><div class="inside"><div class="prompt" id="w2alt"># 目的
+売上データを集計し、分類ごとの金額を棒グラフにする
+
+# 材料
+"""
+日付,曜日,分類,数量,金額
+10/1,水,花束,6,13200
+10/1,水,鉢植え,2,5600
+10/2,木,花束,4,8800
+10/2,木,アレンジ,3,10500
+10/3,金,花束,7,15400
+10/3,金,アレンジ,2,7000
+10/4,土,花束,11,24200
+10/4,土,体験会,6,6000
+10/4,土,鉢植え,4,11200
+10/5,日,花束,9,19800
+10/5,日,アレンジ,5,17500
+10/7,火,花束,3,6600
+10/8,水,鉢植え,3,8400
+10/8,水,花束,5,11000
+10/9,木,アレンジ,4,14000
+10/10,金,花束,8,17600
+10/11,土,花束,12,26400
+10/11,土,アレンジ,6,21000
+10/12,日,花束,10,22000
+10/12,日,鉢植え,5,14000
+"""
+
+# 出力の形
+- 計算の道具を使って、分類ごとに金額を合計した表（一番下に合計）
+- 金額の大きい順の棒グラフ。棒の上に金額を表示</div><button class="copy" data-copy="w2alt">続きから始める依頼をコピー</button></div></details></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">2〜4分</span><h3>分析を頼み、数字を確かめる</h3></div></div><p><strong>同じ会話</strong>で続けて送ります。</p><div class="prompt" id="w2p2">このデータから言えることを、数字つきで3つ挙げてください。土日と平日の1日あたりの売上の比較を、必ず1つ入れてください。計算して確かめてください。</div><button class="copy" data-copy="w2p2">入力文をコピー</button><p class="look">土日は4日、平日は7日です。土日の合計を4で割った数が、答えと同じか確かめます。</p></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">4〜7分</span><h3>次の一手を相談する</h3></div></div><p><strong>同じ会話</strong>で、次の「次の一手の相談」を貼り付けて送ります。</p><div class="prompt" id="w2p3"># 目的
+ここまでの集計と分析の結果をもとに、さくら花店の来月の売上を伸ばす打ち手を考える
+
+# 条件
+- スタッフは4人。大きな費用はかけられない
+- 打ち手は3つ。互いに違う方向にする
+
+# 出力の形
+打ち手ごとに、次の4つを書く
+- 打ち手（1行）
+- もとにしたデータ（どの数字か）
+- 考えられる理由（データには書いていないので、「仮説」と書く）
+- 効果を確かめる方法（来月、何を、どの数字で比べるか）</div><button class="copy" data-copy="w2p3">次の一手の相談をコピー</button></article>
+<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">7〜8分</span><h3>打ち手を1つ選び、理由をメモに書く</h3></div></div><p>送る文章はありません。3つの打ち手から<strong>自分で1つ選び</strong>、選んだ理由を1行でメモ（紙やメモ帳）に書きます。</p><p class="look">例：「平日のミニ花束。費用が小さく、平日1日あたりの売上で効果を確かめやすいから」</p></article>
+<details class="check"><summary>8〜10分：答え合わせと自己修正</summary><div class="inside"><ul><li>棒グラフが、金額の大きい順（花束→アレンジ→鉢植え→体験会）。</li><li>1日あたりの売上：土日 約40,500円／平日 約16,900円（土日4日・平日7日で計算）。</li><li>打ち手それぞれに、もとにしたデータ・仮説・確かめ方が書かれている。</li><li>理由が「仮説」として書かれている（データで言い切っていない）。</li><li>打ち手を選んだのは自分（理由を1行で言える）。</li></ul>
+<div class="memo"><b>分析の正しい数字</b><ul><li>花束：165,000円で、全体の約59%（58.9%）</li><li>1日あたり：土日 40,525円（162,100円÷4日）／平日 約16,871円（118,100円÷7日）→ 約2.4倍</li><li>売上がいちばん多い日：10月11日（土）47,400円</li><li>アレンジ：1個3,500円（花束は2,200円）で、金額の25%</li></ul></div>
+<p>実際に試したところ、打ち手として「平日限定の手頃なミニ花束を、店頭の手書きPOPで知らせる」「土日に人気の花束を多めに、目立つ場所に並べる」「花束と小さな鉢植えのセット」の3つが、データ・仮説・確かめ方つきで出てきました。打ち手の中身は毎回変わります。</p><p>理由を言い切っていたときは、次の文章で直します。</p><div class="prompt" id="w2fix">それぞれの「考えられる理由」を、データで確かめていない「仮説」として書き直してください。ほかの所は変えないでください。</div><button class="copy" data-copy="w2fix">修正の入力文をコピー</button><p class="finish">確認が終わったら、講義画面に戻ります。</p></div></details>
+<details class="check"><summary>早く終わったら：選んだ打ち手の弱い点を聞く</summary><div class="inside"><div class="prompt" id="w2ex">選んだ打ち手は「【ここに、選んだ打ち手を書く】」です。この打ち手の弱い点を3つ挙げてください。</div><button class="copy" data-copy="w2ex">入力文をコピー</button><p class="look">【　】を選んだ打ち手に書き換えて送ります。弱い点を知ったうえで、決めるのは人です（第8回でくわしく練習します）。</p></div></details>
+</section>
+
+<section id="extra" class="lesson extra" aria-labelledby="extitle"><div class="lesson-head"><span class="kicker">予備ワーク · 5〜10分 · 講師の案内がある場合のみ</span><h2 id="extitle">条件を変えて、集計し直す</h2><p>本編60分とは別の予備課題です。通常は実施しません。目的は、絞り込みを使い、知りたいことに合わせて集計し直すことです。</p></div>
+<article class="step"><span class="time">0〜3分</span><h3>土日だけで集計する</h3><p><strong>ワーク①の会話の続き</strong>で送ります。</p><div class="prompt" id="ex1">土曜日と日曜日だけで、分類ごとに金額を合計してください。対象になった件数も書いてください。</div><button class="copy" data-copy="ex1">入力文をコピー</button></article>
+<article class="step"><span class="time">3〜5分</span><h3>花束だけで、週ごとに比べる</h3><p><strong>同じ会話</strong>で送ります。</p><div class="prompt" id="ex2">花束だけで、1週目（10/1〜10/5）と2週目（10/7〜10/12）の金額を比べてください。</div><button class="copy" data-copy="ex2">入力文をコピー</button></article>
+<details class="check"><summary>見直す</summary><div class="inside"><ul><li>土日の対象の件数が9件。</li><li>花束：1週目 81,400円／2週目 83,600円。</li></ul><p>知りたいことが変わったら、集計の「何ごとに」と「絞り込み」を変えます。</p></div></details>
+</section>
+
+<section id="guide" class="lesson extra" aria-labelledby="gdtitle"><div class="lesson-head"><span class="kicker">今日のポイント · 早見表</span><h2 id="gdtitle">集計・検算・相談の早見表</h2><p>画面は2026年10月時点のものです。表示の名前は、変わることがあります。</p></div>
+<div class="how"><div><b>データの形</b>1行に1件／1行目は見出し／数字の欄には数字だけ（「円」は見出しに）／同じものは同じ言葉で</div><div><b>集計の頼み方</b>何を（金額を）・何ごとに（分類ごとに）・どう計算する（合計する）＋「計算の道具を使って」</div><div><b>検算の3つ</b>合計の行が元の合計と同じか／件数が元の行の数と同じか／1つの分類だけ自分で足す</div><div><b>グラフが表示されないとき</b>答えの下のファイル名（〜.png）を押すと開く。保存は、開いた画面の右上の「↓」（スマートフォンは長押し）</div><div><b>言えること・言えないこと</b>データから計算できることが「言えること」。なぜ売れたか・来月も売れるかは「言えないこと」</div><div><b>次の一手の相談</b>データ → 仮説 → 打ち手 → 確かめ方。提案は仮説。選ぶのは人。大きく変えず、小さく試す</div></div>
+</section>
+<div class="intro" style="margin-top:40px"><p><strong>今日の基本は、集計する・確かめる・次の一手を相談する。</strong></p><p>形を整えて渡し、何を・何ごとに・どう計算するかを伝え、合計と件数で検算します。データから言えることを土台に、仮説と確かめ方つきで打ち手を相談し、小さく試します。最後に確かめるのは、人です。</p><p class="small">このページは入力文のコピー用教材です。回答の提出や個人情報の入力はありません。ChatGPTへ送る内容は、ご自身で確認してください。お客様の名前・電話番号・住所や社外秘の数字は、データに入れないでください。</p></div>
+</main><footer>AI研修 第6回 ワーク用ページ · v1 · 2026年10月13日<br>演習の設定とデータはすべて架空です。</footer><div class="status" id="status" role="status" aria-live="polite"></div>
+<script>
+let messageTimer;
+function showMessage(text){const s=document.getElementById('status');s.textContent=text;clearTimeout(messageTimer);messageTimer=setTimeout(()=>{s.textContent=''},4500)}
+async function copyPrompt(button){const target=document.getElementById(button.dataset.copy);const text=target.textContent.trim();try{if(!navigator.clipboard||!window.isSecureContext)throw new Error('manual');await navigator.clipboard.writeText(text);const original=button.textContent;button.textContent='コピーしました';setTimeout(()=>{button.textContent=original},2200);showMessage('コピーしました。ChatGPTの入力欄に貼り付けてください。')}catch(e){const range=document.createRange();range.selectNodeContents(target);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);showMessage('文章を選択しました。長押し、または右クリックでコピーしてください。')}}
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',()=>copyPrompt(button)));
+</script>
+</body></html>
