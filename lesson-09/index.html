@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="AI研修 第9回。言葉で画像を作り、確かめ、一部分だけを直して保存するワークの手順と、練習用の画像、自己確認の基準をまとめた受講者用ページです。">
+<title>第9回 ワーク用ページ｜AI研修</title>
+<style>
+:root{--ink:#123537;--muted:#52696a;--green:#087e83;--paper:#f3f7f4;--line:#c9dad6;--white:#fff;--amber:#8b5316;--soft:#fff3dc}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.8 "Yu Gothic UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif}a{color:#086b72;text-underline-offset:4px}button,summary{touch-action:manipulation}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #b56b0c;outline-offset:4px}header{background:var(--ink);color:white;padding:48px 24px 34px}header>div,main,nav>div{max-width:860px;margin:auto}.eyebrow{font-size:14px;letter-spacing:.12em;color:#bce5dc;margin:0 0 10px}h1{font-size:clamp(28px,6vw,43px);line-height:1.35;letter-spacing:.03em;margin:0 0 14px}header p{max-width:680px;margin-bottom:0;color:#e1efea}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.chips span{font-size:13px;border:1px solid #638884;padding:3px 12px;border-radius:30px}nav{position:sticky;top:0;background:#fffefbef;border-bottom:1px solid var(--line);z-index:5}nav>div{display:flex;padding:10px 16px;gap:9px}nav a{flex:1;text-align:center;padding:8px 5px;font-size:15px;text-decoration:none;font-weight:700;border-radius:8px}nav a:hover{background:#e5f1eb}main{padding:28px 20px 60px}h2{font-size:28px;line-height:1.4;margin:0 0 8px}h3{font-size:20px;line-height:1.5;margin:0}.intro{padding:22px 24px;background:var(--white);border-left:5px solid var(--green)}.intro p{margin:0 0 12px}.intro p:last-child{margin:0}.small{font-size:14px;color:var(--muted)}.lesson{padding-top:45px}.lesson-head{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:18px}.lesson-head p{margin:6px 0 0}.kicker{font-weight:700;color:var(--green);font-size:14px;letter-spacing:.06em}.step{padding:24px;background:var(--white);border:1px solid var(--line);border-radius:12px;margin:14px 0}.step-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}.num{flex:none;width:32px;height:32px;background:var(--green);border-radius:50%;color:#fff;display:grid;place-items:center;font-size:17px;font-weight:bold}.time{font-size:13px;color:var(--muted);font-weight:600}.step p{margin:12px 0}.prompt{padding:17px 18px;background:#eef6f2;border-left:3px solid var(--green);white-space:pre-wrap;overflow-wrap:anywhere;user-select:text;font-size:18px;line-height:1.8;margin:14px 0 12px}.copy{border:0;border-radius:7px;background:var(--green);color:white;font-family:inherit;font-size:15px;font-weight:700;line-height:1.5;padding:11px 20px;min-height:44px;cursor:pointer}.copy:hover{background:#09656b}.copy:disabled{opacity:.8}.look{font-size:15px;color:#405d5a;padding-top:4px}.label{font-weight:700;display:block;font-size:14px;margin-bottom:5px}.choices{margin-top:14px;border-top:1px solid var(--line);padding-top:14px}.choices p{font-weight:600}.source{border:2px solid var(--green);padding:18px 22px;background:#eaf4ef;border-radius:10px}.source p{margin:0}.check{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}.check summary{padding:19px 24px;font-size:18px;font-weight:700;cursor:pointer;list-style-position:inside;background:#e2efe7}.check .inside{padding:6px 24px 24px}.check ul{padding-left:1.3em}.check li{margin:10px 0}.note{padding:14px 18px;background:var(--soft);color:#62421c;font-size:15px;border-radius:8px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pair div{background:#f2f7f4;padding:14px 18px;border-radius:8px}.pair h3{font-size:17px}.pair ul{padding-left:1.2em}.finish{margin-top:20px;font-weight:700;color:#075f64}.extra{border-top:1px solid var(--line);margin-top:30px}.status{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#123537;color:#fff;padding:12px 22px;border-radius:10px;z-index:10;max-width:90%;text-align:center;box-shadow:0 4px 20px #0003;pointer-events:none}.status:empty{display:none}footer{padding:25px 20px;border-top:1px solid var(--line);text-align:center;font-size:13px;color:var(--muted)}noscript p{padding:15px;background:var(--soft)}@media(max-width:560px){body{font-size:16px}header{padding:30px 20px}main{padding:22px 14px 44px}.intro{padding:18px}.step{padding:19px 17px}h2{font-size:25px}h3{font-size:19px}.prompt{font-size:17px;padding:15px}.pair{grid-template-columns:1fr}.check .inside{padding:5px 18px 20px}.check summary{padding:17px 18px}nav a{font-size:14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{nav,.copy,.status{display:none}header{background:#fff;color:#123537}header p,.eyebrow{color:#123537}details .inside{display:block}.step{break-inside:avoid}main{max-width:100%}}
+.memo{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:15px;margin:14px 0}.memo b{display:block;margin-bottom:4px}.memo ul{margin:0;padding-left:1.2em}
+.how{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.how div{background:#f2f7f4;border-radius:8px;padding:12px 16px;font-size:15px}.how b{display:block;margin-bottom:4px}@media(max-width:560px){.how{grid-template-columns:1fr}}
+
+.imgbox{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;margin:12px 0;text-align:center}.imgbox img{max-width:100%;height:auto;border:1px solid var(--line)}
+.dl{display:inline-block;margin-top:10px;background:var(--green);color:#fff;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:7px;min-height:44px;box-sizing:border-box}.dl:hover{background:#09656b}
+ol.ops{padding-left:1.4em}ol.ops li{margin:6px 0}
+</style>
+</head>
+<body>
+<header><div><p class="eyebrow">AI研修 · 第9回</p><h1>言葉で画像を、<br>作る・直す。</h1><p>ワークで使う「型」と練習用の画像を、ここからコピー・保存できます。講師の説明を聞いた後、指定されたワークに進んでください。</p><div class="chips"><span>ログイン不要の教材ページ</span><span>スマートフォン対応</span><span>提出・回答の送信なし</span></div></div></header>
+<nav aria-label="ワークを選択"><div><a href="#work1">ワーク①</a><a href="#work2">ワーク②</a><a href="#extra">予備ワーク</a><a href="#guide">早見表</a></div></nav>
+<main>
+<div class="intro"><p><strong>使い方は「コピー → ChatGPTに貼り付け → 送信」</strong></p><p>今日は<strong>通常のチャット</strong>を使います（一時チャットでは画像を作れません）。画像ができるまで<strong>40秒〜1分ほど</strong>かかります。できあがるまで、次の依頼は送らずに待ってください。</p><p>画像を作れる枚数には上限があります（無料プランは特に少ない）。ワーク①・②とも、<strong>画像を作るのは1回ずつ</strong>です。画像が作れなかったときは、下の<a href="#practice">練習用元画像</a>を使ってください。</p><p class="small">ChatGPTへのログインは事前に済ませてください。コピーボタンが使えない場合は、緑色の枠内の文章を長押し・選択してコピーできます。講義からは退出せず、講師が案内した時刻に講義画面へ戻ります。</p></div>
+<noscript><p>コピーボタンにはJavaScriptを使用します。ボタンが動かない場合も、枠内の文章を選択してコピーできます。</p></noscript>
+
+<section id="work1" class="lesson" aria-labelledby="w1title">
+<div class="lesson-head"><span class="kicker">ワーク① · 10分</span><h2 id="w1title">自分の構図を足して画像を作り、確かめる</h2><p>さくら花店（架空の店です）の体験会の案内に添える、イメージ画像を作ります。目的は、6つの材料を指定して画像を作り、依頼と見比べて、直す所を決められるようになることです。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜3分</span><h3>「画像の依頼」の【構図】を書き換えて送る</h3></div></div><p>ChatGPTで<strong>通常のチャット</strong>の<strong>新しい会話</strong>を開きます。次の「画像の依頼」をコピーして貼り付け、<strong>【ここに、構図を自分で書く】</strong>を書き換えてから送ります。</p><div class="prompt" id="w1p1">体験会の案内に添える、イメージ画像を1枚作ってください。
+
+# 被写体
+小さな花束（1つ）
+
+# 背景
+明るい花店の店内の、木の作業台の上
+
+# 構図
+【ここに、構図を自分で書く】
+
+# 色と光
+ピンク、クリーム色、淡い緑。窓からの自然な光で、明るく
+
+# 画風
+やわらかいイラスト。明るく、親しみやすい雰囲気
+
+# 比率
+正方形
+
+# 入れないもの
+- 画像の中に、文字やロゴは入れない
+- 人は描かない
+- 実際の写真と取り違えられるような写真風にはしない</div><button class="copy" data-copy="w1p1">画像の依頼をコピー</button><p class="look">構図の例：少し上から見て、花束が中央／真上から見下ろして、作業台全体／花束を右に寄せて、左を空ける</p><p class="note">「ラフスケッチを作成」などと出ている間は、待ちます。画像ができるまでの間に、下の確認ポイントを読んでおきましょう。</p></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">3〜5分</span><h3>できた画像を、依頼と見比べる</h3></div></div><p>送る文章はありません。画像を押すと大きく表示されます。次の点を、自分の目で確かめます。</p><ul><li>色はピンク・クリーム色・淡い緑で、明るく親しみやすいか</li><li>自分で書いた構図になっているか</li><li>画像の中に、文字・ロゴ・人が入っていないか</li><li>不自然な所（花びらや葉の形、物が浮いている・くっついている、読めない文字のような模様）はないか</li></ul></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">5〜7分</span><h3>AIにも見比べてもらう（画像は作らない）</h3></div></div><p><strong>同じ会話</strong>で送ります。文章で答えが返ってくるので、作れる枚数は減りません。</p><div class="prompt" id="w1p3">この画像を、依頼した内容と比べて、合っていない所と、不自然な所を挙げてください。画像は作らないでください。</div><button class="copy" data-copy="w1p3">入力文をコピー</button></article>
+<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">7〜9分</span><h3>直したい所を1か所決め、「直す依頼」を書いて残す</h3></div></div><p>直したい所を<strong>1か所だけ</strong>決めます。次の「直す依頼」をコピーし、【　】を書き換えて、メモ帳などに残します。<strong>送るのはワーク②です</strong>（ここでは送りません）。</p><div class="prompt" id="w1p4">【直す所】を、【どう直すか】にしてください。
+【変えない所1】・【変えない所2】・【変えない所3】は変えないでください。
+画像の中に、文字・ロゴ・人は入れないでください。</div><button class="copy" data-copy="w1p4">直す依頼をコピー</button><p class="look">書き換えの例：「麻ひものリボンを、淡い緑のリボンにしてください。花束の形・構図・画風は変えないでください。画像の中に、文字・ロゴ・人は入れないでください。」</p></article>
+<details class="check"><summary>9〜10分：確認ポイント（答え合わせ）</summary><div class="inside"><ul><li>色がピンク・クリーム色・淡い緑で、明るく親しみやすい。</li><li>画像の中に、文字・ロゴ・人が入っていない。</li><li>自分で書いた構図になっているか、確かめた。</li><li>直す所を1か所決め、「直す依頼」を書いた。</li></ul>
+<div class="memo"><b>実際に試した例（構図：少し上から見て、花束が中央）</b><ul><li>色・文字・人・正方形は、依頼どおり</li><li>AIの指摘：「小さな花束」なのに大きく豪華／「少し上から」なのに、ほぼ正面／花束が台の上に立っているように見える</li><li>直す所の例：麻ひものリボンを、淡い緑のリボンに</li></ul></div>
+<p>AIの指摘をすべて直そうとせず、1か所に絞ります。どこを直すかを決めるのは自分です。</p><p class="finish">確認が終わったら、講義画面に戻ります。ワーク②で、この会話の続きを使います。<strong>会話は閉じずに残しておいてください。</strong></p></div></details>
+<details class="check"><summary>画像が作れなかったとき</summary><div class="inside"><p>下の<a href="#practice">練習用元画像</a>を保存し、新しい会話に入力欄の「＋」→「写真やファイルを追加」で添付します。③の文章の「依頼した内容」を「体験会の案内に添える画像」に変えて送り、④へ進みます。</p></div></details>
+<details class="check"><summary>早く終わったら：画像を保存する</summary><div class="inside"><ul><li><strong>パソコン</strong>：画像を押して開き、右上の「↓」（ダウンロード）を押す。</li><li><strong>スマートフォン</strong>：画像を長押しして「保存」（または、開いた画面の共有ボタンから保存）。</li></ul><p class="look">保存したら、名前を「体験会案内_花束_v1」のように、わかりやすく変えておきます。</p></div></details>
+</section>
+
+<section id="work2" class="lesson" aria-labelledby="w2title">
+<div class="lesson-head"><span class="kicker">ワーク② · 10分</span><h2 id="w2title">1か所だけ直して保存し、添える文章を作る</h2><p>ワーク①の画像（または練習用元画像）を、1か所だけ直します。目的は、変えない条件を付けて画像の一部分だけを直し、前後を比べて保存できるようになることです。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜2分</span><h3>直す画像を、押して開く</h3></div></div><ul><li><strong>ワーク①の画像を使う</strong>：ワーク①の<strong>同じ会話</strong>で、画像を押して開きます。</li><li><strong>練習用元画像を使う</strong>：下の<a href="#practice">練習用元画像</a>を保存し、<strong>新しい会話</strong>に「＋」→「写真やファイルを追加」で添付して、次の文章を送ります。送ったあと、会話に出た画像を押して開きます。</li></ul><div class="prompt" id="w2p1">この画像を、あとで直します。まだ何もしないでください。</div><button class="copy" data-copy="w2p1">入力文をコピー（練習用元画像の人だけ）</button></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">2〜5分</span><h3>「コメント」で直したい所を指して、直してもらう</h3></div></div><ol class="ops"><li>開いた画面の下に並ぶボタンから、<strong>「コメント」</strong>を押す</li><li>画像の<strong>直したい所をクリック</strong>（スマートフォンはタップ）すると、入力欄が出る</li><li>ワーク①で書いた<strong>「直す依頼」を貼り付け</strong>、右の「↑」を押す</li><li>下の<strong>「送信」</strong>を押す（できるまで約1分）</li></ol><p class="note">ワーク①で「直す依頼」を書けなかった人は、上の<a href="#w1p4">直す依頼</a>をコピーして【　】を書き換えてください。練習用元画像なら、例：「リボンの色を、淡い緑からクリーム色にしてください。花束の形と大きさ・構図・画風は変えないでください。」</p></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">5〜7分</span><h3>直す前と後を比べて、保存する</h3></div></div><p>直す前の画像と、直した画像を並べて見比べます。頼んだ所が変わったか、変えない所が変わっていないかを確かめ、気に入ったほうを保存します。</p><ul><li><strong>パソコン</strong>：画像を押して開き、右上の「↓」（ダウンロード）を押す。</li><li><strong>スマートフォン</strong>：画像を長押しして「保存」。</li></ul></article>
+<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">7〜9分</span><h3>画像に添える紹介文を書いてもらう</h3></div></div><p><strong>同じ会話</strong>で送ります（画像は作られません）。</p><div class="prompt" id="w2p4">この画像に添える、体験会の紹介文を、SNS向けに3行で書いてください。画像にないことは書かないでください。</div><button class="copy" data-copy="w2p4">入力文をコピー</button><p class="look">日時・料金・申込方法は、AIに任せず、自分で確かめて書き足します。AIで作った画像には「※画像はイメージです」を添えます。</p></article>
+<details class="check"><summary>9〜10分：答え合わせと自己修正</summary><div class="inside"><ul><li>頼んだ所が、頼んだとおりに変わった。</li><li>変えない所が、変わっていない（変わった所があれば、メモしておく）。</li><li>画像の中に、文字・ロゴ・人が入っていない。</li><li>画像を保存できた。</li><li>紹介文に、日時・料金など、画像にないことが書かれていない。</li></ul>
+<div class="memo"><b>実際に試した例</b><ul><li>ワーク①のイラストを、コメントで直す（麻ひも → 淡い緑のリボン）：リボンだけが変わり、花束も背景も、ほぼそのまま</li><li>練習用元画像（写真風）のリボンをクリーム色に：リボンは変わったが、花束が少し小さくなり、写る範囲も変わった</li><li>紹介文：「ピンクとクリーム色の花々で彩る、花束づくり体験会」など3行。日時や料金は書かれなかった</li></ul></div>
+<p>画像によっては、指した所以外も変わることがあります。変わってほしくない所が変わったときは、その所を「変えない所」に足して、もう一度試します。</p><p class="finish">確認が終わったら、講義画面に戻ります。</p></div></details>
+<details class="check"><summary>画像が作れなかったとき（上限に達したとき）</summary><div class="inside"><p>「直す依頼」を書き、どこが変わりそうかを予想してメモします。④の紹介文は、直す前の画像で行ってかまいません。</p></div></details>
+<details class="check"><summary>早く終わったら：言葉だけの方法と比べる</summary><div class="inside"><p>同じ会話で、「直す依頼」をそのまま貼って送ります（コメントは使わない）。コメントで直したときと、変わり方を比べます。画像をもう1回作るので、上限に注意してください。</p></div></details>
+</section>
+
+<section id="practice" class="lesson" aria-labelledby="prtitle">
+<div class="lesson-head"><span class="kicker">練習用元画像 · 必要な人だけ</span><h2 id="prtitle">練習用元画像（架空のイメージ）</h2><p>花束にリボンを結んでいる手元の、写真風のイメージ画像です。AIで作った架空の画像で、実際の店・人・商品ではありません。</p></div>
+<div class="imgbox"><img src="img/renshu-motogazo.jpg" alt="木の作業台の上で、淡い緑のリボンで花束を結んでいる手元の写真風イメージ" width="1448" height="1086" loading="lazy"><br><a class="dl" href="img/renshu-motogazo.jpg" download="練習用元画像_花束.jpg">画像をダウンロード</a></div>
+<ul><li><strong>パソコン</strong>：上の「画像をダウンロード」を押す（「ダウンロード」フォルダに保存されます）。</li><li><strong>スマートフォン</strong>：画像を長押しして「写真に保存」（または「画像を保存」）。</li></ul>
+</section>
+
+<section id="extra" class="lesson extra" aria-labelledby="extitle"><div class="lesson-head"><span class="kicker">予備ワーク · 5〜10分 · 講師の案内がある場合のみ</span><h2 id="extitle">同じ構図で、画風だけを変える</h2><p>本編60分とは別の予備課題です。通常は実施しません。画像を2回作るので、上限に達している人は見るだけでかまいません。</p></div>
+<article class="step"><span class="time">0〜3分</span><h3>水彩画にする</h3><p><strong>ワーク①の会話の続き</strong>で送ります。</p><div class="prompt" id="ex1">同じ構図と色のまま、画風だけを水彩画に変えてください。</div><button class="copy" data-copy="ex1">入力文をコピー</button></article>
+<article class="step"><span class="time">3〜6分</span><h3>切り絵のようなイラストにする</h3><p><strong>同じ会話</strong>で送ります。</p><div class="prompt" id="ex2">同じ構図と色のまま、画風だけを、切り絵のような平面的なイラストに変えてください。</div><button class="copy" data-copy="ex2">入力文をコピー</button></article>
+<details class="check"><summary>見直す</summary><div class="inside"><ul><li>構図と色は、ほぼ同じまま。</li><li>3枚のうち、体験会の案内に一番合うものと、その理由を一言で言える。</li></ul></div></details>
+</section>
+
+<section id="guide" class="lesson extra" aria-labelledby="gdtitle"><div class="lesson-head"><span class="kicker">今日のポイント · 早見表</span><h2 id="gdtitle">画像を作る・直すの早見表</h2><p>画面は2026年10月時点のものです。表示の名前は、変わることがあります。</p></div>
+<div class="how"><div><b>画像を作る</b>入力欄の「＋」→「画像を作成」→ どんな画像かを書いて送る。「〜の画像を作ってください」でもよい。一時チャットでは作れない</div><div><b>6つの材料</b>被写体・背景・構図・色と光・画風・比率。入れないもの（文字・ロゴ・人）も書く</div><div><b>確かめる</b>材料と1つずつ見比べる。不自然な所も見る。「合っていない所と、不自然な所を挙げてください。画像は作らないでください」</div><div><b>直す</b>画像を押して開く →「コメント」→ 直したい所をクリック → 直し方を書いて「↑」→「送信」。一度に1か所</div><div><b>変えない条件</b>「花束の形・構図・画風は変えないでください」のように、6つの材料に沿って書く</div><div><b>保存と使い方</b>開いた画面の右上の「↓」。直したら前と後を比べる。添える文章の日時・料金は自分で確かめる。「※画像はイメージです」</div></div>
+</section>
+<div class="intro" style="margin-top:40px"><p><strong>今日の基本は、作る・確かめる・直す。</strong></p><p>6つの材料と入れないものを書いて画像を作り、依頼と見比べて確かめます。直すときは、どこを・どう・残すものを伝え、一度に1か所だけ。直したら前と後を比べて、気に入ったほうを保存します。</p><p class="small">このページは入力文のコピー用教材です。回答の提出や個人情報の入力はありません。実在の人物・他社のロゴや作品に似せた画像は作らないでください。お客様や他人が写った写真は、ChatGPTに渡さないでください。</p></div>
+</main><footer>AI研修 第9回 ワーク用ページ · v1 · 2026年10月13日<br>演習の設定と画像はすべて架空です。</footer>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+<script>
+let messageTimer;
+function showMessage(text){const s=document.getElementById('status');s.textContent=text;clearTimeout(messageTimer);messageTimer=setTimeout(()=>{s.textContent=''},4500)}
+async function copyPrompt(button){const target=document.getElementById(button.dataset.copy);const text=target.textContent.trim();try{if(!navigator.clipboard||!window.isSecureContext)throw new Error('manual');await navigator.clipboard.writeText(text);const original=button.textContent;button.textContent='コピーしました';setTimeout(()=>{button.textContent=original},2200);showMessage('コピーしました。ChatGPTの入力欄に貼り付けてください。')}catch(e){const range=document.createRange();range.selectNodeContents(target);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);showMessage('文章を選択しました。長押し、または右クリックでコピーしてください。')}}
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',()=>copyPrompt(button)));
+</script>
+</body></html>
