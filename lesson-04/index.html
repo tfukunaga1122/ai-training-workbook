@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="AI研修 第4回。調べものの型と、思考量を選ぶワークの手順・自己確認の基準をまとめた受講者用ページです。">
+<title>第4回 ワーク用ページ｜AI研修</title>
+<style>
+:root{--ink:#123537;--muted:#52696a;--green:#087e83;--paper:#f3f7f4;--line:#c9dad6;--white:#fff;--amber:#8b5316;--soft:#fff3dc}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.8 "Yu Gothic UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif}a{color:#086b72;text-underline-offset:4px}button,summary{touch-action:manipulation}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #b56b0c;outline-offset:4px}header{background:var(--ink);color:white;padding:48px 24px 34px}header>div,main,nav>div{max-width:860px;margin:auto}.eyebrow{font-size:14px;letter-spacing:.12em;color:#bce5dc;margin:0 0 10px}h1{font-size:clamp(28px,6vw,43px);line-height:1.35;letter-spacing:.03em;margin:0 0 14px}header p{max-width:680px;margin-bottom:0;color:#e1efea}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.chips span{font-size:13px;border:1px solid #638884;padding:3px 12px;border-radius:30px}nav{position:sticky;top:0;background:#fffefbef;border-bottom:1px solid var(--line);z-index:5}nav>div{display:flex;padding:10px 16px;gap:9px}nav a{flex:1;text-align:center;padding:8px 5px;font-size:15px;text-decoration:none;font-weight:700;border-radius:8px}nav a:hover{background:#e5f1eb}main{padding:28px 20px 60px}h2{font-size:28px;line-height:1.4;margin:0 0 8px}h3{font-size:20px;line-height:1.5;margin:0}.intro{padding:22px 24px;background:var(--white);border-left:5px solid var(--green)}.intro p{margin:0 0 12px}.intro p:last-child{margin:0}.small{font-size:14px;color:var(--muted)}.lesson{padding-top:45px}.lesson-head{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:18px}.lesson-head p{margin:6px 0 0}.kicker{font-weight:700;color:var(--green);font-size:14px;letter-spacing:.06em}.step{padding:24px;background:var(--white);border:1px solid var(--line);border-radius:12px;margin:14px 0}.step-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}.num{flex:none;width:32px;height:32px;background:var(--green);border-radius:50%;color:#fff;display:grid;place-items:center;font-size:17px;font-weight:bold}.time{font-size:13px;color:var(--muted);font-weight:600}.step p{margin:12px 0}.prompt{padding:17px 18px;background:#eef6f2;border-left:3px solid var(--green);white-space:pre-wrap;overflow-wrap:anywhere;user-select:text;font-size:18px;line-height:1.8;margin:14px 0 12px}.copy{border:0;border-radius:7px;background:var(--green);color:white;font-family:inherit;font-size:15px;font-weight:700;line-height:1.5;padding:11px 20px;min-height:44px;cursor:pointer}.copy:hover{background:#09656b}.copy:disabled{opacity:.8}.look{font-size:15px;color:#405d5a;padding-top:4px}.label{font-weight:700;display:block;font-size:14px;margin-bottom:5px}.choices{margin-top:14px;border-top:1px solid var(--line);padding-top:14px}.choices p{font-weight:600}.source{border:2px solid var(--green);padding:18px 22px;background:#eaf4ef;border-radius:10px}.source p{margin:0}.check{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}.check summary{padding:19px 24px;font-size:18px;font-weight:700;cursor:pointer;list-style-position:inside;background:#e2efe7}.check .inside{padding:6px 24px 24px}.check ul{padding-left:1.3em}.check li{margin:10px 0}.note{padding:14px 18px;background:var(--soft);color:#62421c;font-size:15px;border-radius:8px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pair div{background:#f2f7f4;padding:14px 18px;border-radius:8px}.pair h3{font-size:17px}.pair ul{padding-left:1.2em}.finish{margin-top:20px;font-weight:700;color:#075f64}.extra{border-top:1px solid var(--line);margin-top:30px}.status{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#123537;color:#fff;padding:12px 22px;border-radius:10px;z-index:10;max-width:90%;text-align:center;box-shadow:0 4px 20px #0003;pointer-events:none}.status:empty{display:none}footer{padding:25px 20px;border-top:1px solid var(--line);text-align:center;font-size:13px;color:var(--muted)}noscript p{padding:15px;background:var(--soft)}@media(max-width:560px){body{font-size:16px}header{padding:30px 20px}main{padding:22px 14px 44px}.intro{padding:18px}.step{padding:19px 17px}h2{font-size:25px}h3{font-size:19px}.prompt{font-size:17px;padding:15px}.pair{grid-template-columns:1fr}.check .inside{padding:5px 18px 20px}.check summary{padding:17px 18px}nav a{font-size:14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{nav,.copy,.status{display:none}header{background:#fff;color:#123537}header p,.eyebrow{color:#123537}details .inside{display:block}.step{break-inside:avoid}main{max-width:100%}}
+.cards{display:grid;gap:10px;margin:14px 0}.card{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:14px 16px}.card p{margin:0 0 8px;font-weight:600}.card fieldset{border:0;margin:0;padding:0;display:flex;gap:8px;flex-wrap:wrap}.card legend{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.card label{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:30px;padding:6px 14px;font-size:15px;cursor:pointer;min-height:40px;background:#f7faf8}.card input{width:18px;height:18px;accent-color:var(--green)}.card label:has(input:checked){background:#dff0ea;border-color:var(--green);font-weight:700}
+.ans{width:100%;border-collapse:collapse;margin:12px 0;font-size:15px;background:#fff}.ans th,.ans td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}.ans th{background:#e2efe7}
+.how{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.how div{background:#f2f7f4;border-radius:8px;padding:12px 16px;font-size:15px}.how b{display:block;margin-bottom:4px}@media(max-width:560px){.how{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div><p class="eyebrow">AI研修 · 第4回</p><h1>調べてもらう・<br>考えてもらう。</h1><p>ワークで使う「型」を、ここからコピーできます。講師の説明を聞いた後、指定されたワークに進んでください。</p><div class="chips"><span>ログイン不要の教材ページ</span><span>スマートフォン対応</span><span>提出・回答の送信なし</span></div></div></header>
+<nav aria-label="ワークを選択"><div><a href="#work1">ワーク①</a><a href="#work2">ワーク②</a><a href="#extra">予備ワーク</a><a href="#guide">操作の場所</a></div></nav>
+<main>
+<div class="intro"><p><strong>使い方は「コピー → ChatGPTに貼り付け → 【　】を書き換えて送信」</strong></p><p>型の中の<strong>【　】</strong>は、選んだ言葉に書き換えてから送ってください。迷ったら、例の1つ目をそのまま使って大丈夫です。</p><p>パソコンのChatGPTでは、Enterだけで送信されます。改行は<strong>Shift＋Enter</strong>です。</p><p class="small">ChatGPTへのログインは事前に済ませてください。コピーボタンが使えない場合は、緑色の枠内の文章を長押し・選択してコピーできます。講義からは退出せず、講師が案内した時刻に講義画面へ戻ります。</p></div>
+<noscript><p>コピーボタンにはJavaScriptを使用します。ボタンが動かない場合も、枠内の文章を選択してコピーできます。</p></noscript>
+
+<section id="work1" class="lesson" aria-labelledby="w1title">
+<div class="lesson-head"><span class="kicker">ワーク① · 10分</span><h2 id="w1title">範囲と期間を絞り、出典つきで調べる</h2><p>さくら花店が、体験会の参加者に配る「切り花を長持ちさせる方法」のメモの材料を調べます（架空の設定です）。目的は、調べる範囲を自分で指定し、出典と日付で答えを確かめることです。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜3分</span><h3>型を貼り付け、【範囲】を選んで送る</h3></div></div><p>ChatGPTで<strong>新しい会話</strong>を開き、次の型を貼り付けます。「# 範囲」の<strong>【　】の行</strong>を、下の3つから1つ選んで書き換えてから送信します。</p><div class="prompt" id="w1p1"># 調べること
+切り花を長持ちさせる方法（家庭で、花束を飾るとき）
+
+# 範囲
+【公的機関のページを中心に／花の業界団体のページを中心に／花の専門店のページを中心に　から1つ選んで書き換える】
+
+# 期間
+ここ3年以内の情報を優先する
+
+# 出力の形
+表にする。列は「方法」「理由」「出典」「出典の日付」
+方法は5つまで
+
+# 確認
+- 見つからないことは「見つからない」と書く
+- 出典によって言っていることが違う所は、分けて書く
+- 出典の日付がわからない場合は「不明」と書く</div><button class="copy" data-copy="w1p1">型をコピー</button><p class="look"><span class="label">【範囲】の選び方（どれか1つ）</span>公的機関のページを中心に／花の業界団体のページを中心に／花の専門店のページを中心に</p><p class="note">答えが出るまで、30秒〜1分ほどかかることがあります。答えに出典（リンク）が付かなかったときは、同じ会話で「ウェブで調べて、出典つきで答えてください」と送ってください。</p></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">3〜6分</span><h3>出典を1つ開いて確かめる</h3></div></div><p>送る文章はありません。答えの表の「出典」の中から<strong>1つ</strong>を押して開き、その方法が本当に書いてあるかを確かめます。</p><ul><li>出典は、答えの中にある小さなリンクの印を押すと開きます。</li><li>パソコンでは別のタブで開きます。スマートフォンでは画面が切り替わるので、読み終わったら「戻る」でChatGPTに戻ります。</li></ul></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">6〜8分</span><h3>参加者に配るメモにしてもらう</h3></div></div><p><strong>同じ会話</strong>で続けて送ります。</p><div class="prompt" id="w1p3">この表を、参加者に配るメモにします。いちばん大事な方法を3つ選び、やさしい言葉で、1つ1行にしてください。出典は残してください。</div><button class="copy" data-copy="w1p3">入力文をコピー</button></article>
+<details class="check"><summary>8〜10分：答え合わせと自己修正</summary><div class="inside"><p><strong>文面が見本と違っても、条件を満たしていればできています。</strong></p><ul><li>表に「方法」「理由」「出典」「出典の日付」の列がある。</li><li>選んだ範囲の出典が中心になっている。</li><li>開いた出典に、その方法が書いてあった。</li><li>3行のメモに、出典が残っている。</li></ul><p>実際に試したところ、公的機関を選ぶと農林水産省などの資料が並び、日付がわからない資料は「不明」と書かれました。専門店を選ぶと花屋さんのページが並びましたが、5つのうち4つが同じ1つのお店のページでした。出典が1つに偏っていないかも見ておきます。</p><p>範囲の指定どおりにならなかったときは、次の入力文で絞り直します。</p><div class="prompt" id="w1fix">範囲で指定したページだけを使って、もう一度表を作ってください。それ以外のページは使わないでください。列は「方法」「理由」「出典」「出典の日付」のままにしてください。</div><button class="copy" data-copy="w1fix">修正の入力文をコピー</button><p class="finish">確認が終わったら、講義画面に戻ります。</p></div></details>
+<details class="check"><summary>早く終わったら：範囲を変えて比べる</summary><div class="inside"><p><strong>新しい会話</strong>を開き、最初の型の【範囲】を、さっきと別のものに書き換えて送ります。出てくる出典の種類が、どう変わるかを比べます。</p></div></details>
+</section>
+
+<section id="work2" class="lesson" aria-labelledby="w2title">
+<div class="lesson-head"><span class="kicker">ワーク② · 10分</span><h2 id="w2title">作業に合わせて、思考量を選ぶ</h2><p>目的は、作業の中身を見て、思考量（考える量）を自分で選べるようになることです。さくら花店の6つの作業と、仕入れ先の比較を使います（架空の設定です）。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜2分</span><h3>作業カード6枚に、思考量の印を付ける</h3></div></div><p>それぞれの作業に、どの思考量がよいかを選びます。<strong>このページの中で選ぶだけで、どこにも送信・保存されません。</strong></p>
+<div class="cards" id="cards"></div>
+<p class="look">迷ったときの目安：すぐ終わるやり取りはInstant、ふつうはMedium、計算・比較・長い資料はHigh。</p></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">2〜4分</span><h3>Instant で「仕入れ先の比較」を送る</h3></div></div><p>ChatGPTで<strong>新しい会話</strong>を開き、入力欄の右のつまみを<strong>Instant</strong>にしてから、次の文章を貼り付けて送ります。答えが出るまでの時間も見ておきます。</p><div class="prompt" id="w2p"># 目的
+体験会の花材の仕入れ先を、月の費用で比べて選ぶ
+
+# 材料
+"""
+体験会は月に3回。1回に6名分の花材が必要。
+体験会の3日前までに、花材が届いていること。
+A社：1名分 800円／送料 1回 1,000円／最低注文 10名分から／注文から3日で届く
+B社：1名分 900円／送料 無料／最低注文 なし／注文から5日で届く
+"""
+
+# 出力の形
+- 月の費用：A社〇〇円、B社〇〇円（計算の式も書く）
+- 選ぶ会社と、理由を3行で
+- 注文のタイミングの注意を1行</div><button class="copy" data-copy="w2p">入力文をコピー</button></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">4〜7分</span><h3>High にして、同じ文章を送る</h3></div></div><p>もう一度<strong>新しい会話</strong>を開き、つまみを<strong>High</strong>にして、手順2と<strong>同じ文章</strong>を送ります。Highが選べないときは、Mediumにします。</p><p class="note">Highは、答えが出るまで30秒〜1分ほどかかることがあります。待っている間に、自分でも月の費用を計算してみましょう。</p></article>
+<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">7〜8分</span><h3>2つの答えを比べる</h3></div></div><p>送る文章はありません。次の3つを比べます。</p><ul><li>答えが出るまでに、かかった時間</li><li>選んだ会社（A社かB社か）</li><li>理由の中に「最低注文」の条件が出てくるか</li></ul></article>
+<details class="check"><summary>8〜10分：答え合わせと自己修正</summary><div class="inside"><ul><li>2つの設定（InstantとHigh）で、同じ依頼を送った。</li><li>かかった時間の違いがわかった。</li><li>月の費用を、自分でも計算して確かめた。</li><li>作業カードの印を、比べた結果を見て見直した。</li></ul><table class="ans"><tr><th>会社</th><th>1回の費用</th><th>月の費用（3回）</th></tr><tr><td>A社</td><td>最低注文が10名分なので 10×800円＋送料1,000円＝9,000円</td><td>27,000円</td></tr><tr><td>B社</td><td>6×900円＝5,400円</td><td>16,200円</td></tr></table><p><strong>B社が月に10,800円安くなります。</strong>B社は届くまで5日かかるので、体験会の8日前までに注文します。1名分の値段だけを見るとA社を選んでしまう、という所が落とし穴です。</p><p>作業カードの目安：①Instant　②Instant〜Medium　③Medium〜High　④High　⑤Medium〜High＋ウェブ検索　⑥High以上（印が違っていても、速さと正確さのどちらを優先するかで選べていれば大丈夫です）。</p><p>A社を選ぶ答えが出たときは、同じ会話で次の文章を送ります。</p><div class="prompt" id="w2fix">最低注文の条件を入れて、月の費用を計算し直してください。計算の式も書いてください。</div><button class="copy" data-copy="w2fix">修正の入力文をコピー</button><p class="finish">確認が終わったら、講義画面に戻ります。</p></div></details>
+<details class="check"><summary>早く終わったら：あいさつ文で比べる</summary><div class="inside"><p>作業カード①のあいさつ文を、InstantとHighでそれぞれ<strong>新しい会話</strong>で送り、違いが小さいことを確かめます。</p><div class="prompt" id="w2ex">体験会に来てくれたお客様への、お礼のあいさつ文を2文で書いてください。</div><button class="copy" data-copy="w2ex">入力文をコピー</button><p class="look">短いやり取りは、考える量を上げても、あまり変わりません。速いInstantで十分です。</p></div></details>
+</section>
+
+<section id="extra" class="lesson extra" aria-labelledby="extitle"><div class="lesson-head"><span class="kicker">予備ワーク · 5〜10分 · 講師の案内がある場合のみ</span><h2 id="extitle">同じ質問を、ウェブ検索あり・なしで比べる</h2><p>本編60分とは別の予備課題です。通常は実施しません。目的は、調べてから答えるときと、覚えていることから答えるときの違いを確かめることです。</p></div>
+<article class="step"><span class="time">0〜2分</span><h3>ウェブを使わずに答えてもらう</h3><p><strong>新しい会話</strong>で送ります。</p><div class="prompt" id="ex1">ウェブは使わずに、覚えている知識だけで答えてください。母の日に贈る花で、最近人気のものを3つ教えてください。</div><button class="copy" data-copy="ex1">入力文をコピー</button></article>
+<article class="step"><span class="time">2〜4分</span><h3>ウェブで調べて答えてもらう</h3><p>もう一度<strong>新しい会話</strong>で送ります。</p><div class="prompt" id="ex2">ウェブで調べて答えてください。母の日に贈る花で、最近人気のものを3つ、出典と出典の日付つきで教えてください。</div><button class="copy" data-copy="ex2">入力文をコピー</button></article>
+<details class="check"><summary>4〜6分：見比べる</summary><div class="inside"><ul><li>1つ目には出典がなく、2つ目には出典と日付がある。</li><li>「最近」の情報として使えるのはどちらか、説明できる。</li></ul><p>「最近」「いま」「今年」が入る質問は、調べてもらいます。</p></div></details>
+</section>
+
+<section id="guide" class="lesson extra" aria-labelledby="gdtitle"><div class="lesson-head"><span class="kicker">今日の操作 · 早見表</span><h2 id="gdtitle">ウェブ検索と思考量のつまみ</h2><p>画面は2026年10月時点のものです。表示の名前は、変わることがあります。</p></div>
+<div class="how"><div><b>ウェブ検索を使う</b>入力欄の左の「＋」を押し、「ウェブ検索」を選んでから送ります。依頼の中に「ウェブで調べて」と書いても調べます。答えに出典が付いていれば、調べてから答えたしるしです。</div><div><b>思考量を選ぶ</b>入力欄の右の「Medium ∨」を押すと、つまみが出ます。左ほど速く、右ほどじっくり考えます（Instant／Medium／High…）。プランによって選べない段階があります。選べる所だけで大丈夫です。</div><div><b>出典を開く</b>答えの中の小さなリンクの印を押すと、元のページが開きます。数字や大事な決まりごとの所だけでも、開いて確かめます。</div><div><b>使い終わったら</b>つまみの位置は、次に変えるまで残ります。Highのままだと簡単な質問でも時間がかかるので、作業が終わったらMediumに戻します。スマートフォンも、入力欄の近くの同じ表示から選べます。</div></div>
+</section>
+<div class="intro" style="margin-top:40px"><p><strong>今日の基本は、調べる・確かめる・考える量を選ぶ。</strong></p><p>対象・範囲・期間・受け取る形を指定して調べ、出典を開いて日付を確かめます。迷ったらMedium。計算や比較は上げ、やり取りは下げます。最後に確かめるのは、人です。</p><p class="small">このページは入力文のコピー用教材です。回答の提出や個人情報の入力はありません。ChatGPTへ送る内容は、ご自身で確認してください。</p></div>
+</main><footer>AI研修 第4回 ワーク用ページ · v1 · 2026年10月13日<br>演習の設定はすべて架空です。</footer><div class="status" id="status" role="status" aria-live="polite"></div>
+<script>
+const tasks=['体験会に来てくれたお客様への、お礼のあいさつ文（2文）','体験会の告知文の案を、方向を変えて3つ','先月の体験会の申込記録（30件）を、曜日ごとに集計する','2つの仕入れ先の条件を比べて、どちらが安いかを理由つきで選ぶ','切り花を長持ちさせる方法を、出典つきで調べる','30ページの業界の報告書を読み、店の来年の計画に関係する所をまとめる'];
+const marks='①②③④⑤⑥';
+document.getElementById('cards').innerHTML=tasks.map((t,i)=>`<div class="card"><p>${marks[i]} ${t}</p><fieldset><legend>${marks[i]}の思考量</legend>${['Instant','Medium','High'].map(v=>`<label><input type="radio" name="c${i}" value="${v}">${v}</label>`).join('')}</fieldset></div>`).join('');
+let messageTimer;
+function showMessage(text){const s=document.getElementById('status');s.textContent=text;clearTimeout(messageTimer);messageTimer=setTimeout(()=>{s.textContent=''},4500)}
+async function copyPrompt(button){const target=document.getElementById(button.dataset.copy);const text=target.textContent.trim();try{if(!navigator.clipboard||!window.isSecureContext)throw new Error('manual');await navigator.clipboard.writeText(text);const original=button.textContent;button.textContent='コピーしました';setTimeout(()=>{button.textContent=original},2200);showMessage('コピーしました。ChatGPTの入力欄に貼り付けてください。')}catch(e){const range=document.createRange();range.selectNodeContents(target);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);showMessage('文章を選択しました。長押し、または右クリックでコピーしてください。')}}
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',()=>copyPrompt(button)));
+</script>
+</body></html>
