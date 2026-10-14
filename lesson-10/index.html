@@ -1,126 +1,162 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>第10回 ワーク用ページ｜文章と画像を組み合わせて、伝わる資料を作る</title><style>
-:root{--ink:#1B1B2F;--ind:#2E2A5E;--acc:#4B3FD6;--cor:#E8573D;--grn:#1E8E5A;--tint:#F3F1FF;--line:#CFCBEF;--bg:#fff}
-@media (prefers-color-scheme:dark){:root{--ink:#EDEDF7;--ind:#CFCBFF;--acc:#9A92FF;--cor:#FF8A70;--grn:#4FD39A;--tint:#262447;--line:#43407A;--bg:#15142B}}
-*{box-sizing:border-box}
-body{overflow-wrap:anywhere;margin:0;background:var(--bg);color:var(--ink);font-family:"BIZ UDPGothic","Yu Gothic","Hiragino Sans","Meiryo",sans-serif;line-height:1.7;font-size:17px}
-main{max-width:760px;margin:0 auto;padding:16px}
-h1{font-size:1.45rem;color:var(--ind);margin:.4em 0 .2em}
-h2{font-size:1.25rem;color:var(--ind);border-bottom:3px solid var(--acc);padding-bottom:.2em;margin-top:2em}
-h3{font-size:1.05rem;margin:1.2em 0 .3em;color:var(--acc)}
-.lead{background:var(--tint);border-radius:14px;padding:12px 14px}
-.step{border:2px solid var(--line);border-radius:14px;padding:10px 12px;margin:12px 0}
-.step .t{font-weight:bold;color:var(--ind)}
-.step .m{font-size:.85rem;color:var(--acc);font-weight:bold}
-textarea{width:100%;font:inherit;font-size:16px;line-height:1.6;border:2px solid var(--line);border-radius:10px;padding:10px;background:var(--tint);color:var(--ink);resize:vertical}
-button.copy{display:block;width:100%;margin:8px 0 2px;padding:14px;border:0;border-radius:12px;background:var(--acc);color:#fff;font:inherit;font-weight:bold;font-size:1.05rem;cursor:pointer}
-button.copy.done{background:var(--grn)}
-button.copy.fail{background:var(--cor)}
-.msg{font-size:.88rem;min-height:1.3em;color:var(--ind)}
-.note{font-size:.9rem;color:var(--ind)}
-.warn{background:#FEF3D9;color:#5b3d00;border-radius:12px;padding:10px 12px;margin:10px 0}
-@media (prefers-color-scheme:dark){.warn{background:#4a3a14;color:#ffe9b0}}
-details{border:2px solid var(--line);border-radius:12px;padding:8px 12px;margin:10px 0}
-summary{font-weight:bold;cursor:pointer;color:var(--ind)}
-ul.chk{padding-left:1.2em}
-.imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
-.imgs figure{margin:0;text-align:center}
-.imgs img{width:100%;height:auto;border:2px solid var(--line);border-radius:10px;background:#fff}
-.imgs figcaption{font-size:.85rem}
-a.dl{display:inline-block;margin-top:4px;padding:6px 10px;border:2px solid var(--acc);border-radius:10px;color:var(--acc);font-weight:bold;text-decoration:none;font-size:.9rem}
-table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:4px 6px}th{background:var(--tint)}
-.foot{font-size:.8rem;color:var(--ind);margin:2.5em 0 1em}
-</style></head><body><main>
-<h1>第10回 ワーク用ページ｜文章と画像を組み合わせて、伝わる資料を作る</h1>
-<div class="lead"><p><b>使い方：コピー → ChatGPTに貼り付け → 送信</b>。このページとChatGPTを切り替えて使います。講義からは退出せず、講師が案内した時刻に講義画面へ戻ります。</p>
-<p>コピーボタンが使えないときは、枠の中の文字を長押し（パソコンはドラッグ）して選択し、コピーできます。ChatGPTへのログインは事前に済ませてください。</p>
-<p class="note">このページは<b>コピーを助ける補助教材</b>です。お題・手順・時間・完成条件・答え合わせは、講義のスライドに載っています。入力・ログイン・回答の提出はありません。登場する情報はすべて架空です。</p></div>
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="AI研修 第10回。文章と挿し絵を組み合わせてチラシのファイルを作り、1か所直して前後を比べ、AIにも点検してもらうワークの手順と、見本の挿し絵・見本のファイル、自己確認の基準をまとめた受講者用ページです。">
+<title>第10回 ワーク用ページ｜AI研修</title>
+<style>
+:root{--ink:#123537;--muted:#52696a;--green:#087e83;--paper:#f3f7f4;--line:#c9dad6;--white:#fff;--amber:#8b5316;--soft:#fff3dc}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.8 "Yu Gothic UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif}a{color:#086b72;text-underline-offset:4px}button,summary{touch-action:manipulation}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #b56b0c;outline-offset:4px}header{background:var(--ink);color:white;padding:48px 24px 34px}header>div,main,nav>div{max-width:860px;margin:auto}.eyebrow{font-size:14px;letter-spacing:.12em;color:#bce5dc;margin:0 0 10px}h1{font-size:clamp(28px,6vw,43px);line-height:1.35;letter-spacing:.03em;margin:0 0 14px}header p{max-width:680px;margin-bottom:0;color:#e1efea}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.chips span{font-size:13px;border:1px solid #638884;padding:3px 12px;border-radius:30px}nav{position:sticky;top:0;background:#fffefbef;border-bottom:1px solid var(--line);z-index:5}nav>div{display:flex;padding:10px 16px;gap:9px}nav a{flex:1;text-align:center;padding:8px 5px;font-size:15px;text-decoration:none;font-weight:700;border-radius:8px}nav a:hover{background:#e5f1eb}main{padding:28px 20px 60px}h2{font-size:28px;line-height:1.4;margin:0 0 8px}h3{font-size:20px;line-height:1.5;margin:0}.intro{padding:22px 24px;background:var(--white);border-left:5px solid var(--green)}.intro p{margin:0 0 12px}.intro p:last-child{margin:0}.small{font-size:14px;color:var(--muted)}.lesson{padding-top:45px}.lesson-head{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:18px}.lesson-head p{margin:6px 0 0}.kicker{font-weight:700;color:var(--green);font-size:14px;letter-spacing:.06em}.step{padding:24px;background:var(--white);border:1px solid var(--line);border-radius:12px;margin:14px 0}.step-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}.num{flex:none;width:32px;height:32px;background:var(--green);border-radius:50%;color:#fff;display:grid;place-items:center;font-size:17px;font-weight:bold}.time{font-size:13px;color:var(--muted);font-weight:600}.step p{margin:12px 0}.prompt{padding:17px 18px;background:#eef6f2;border-left:3px solid var(--green);white-space:pre-wrap;overflow-wrap:anywhere;user-select:text;font-size:18px;line-height:1.8;margin:14px 0 12px}.copy{border:0;border-radius:7px;background:var(--green);color:white;font-family:inherit;font-size:15px;font-weight:700;line-height:1.5;padding:11px 20px;min-height:44px;cursor:pointer}.copy:hover{background:#09656b}.copy:disabled{opacity:.8}.look{font-size:15px;color:#405d5a;padding-top:4px}.label{font-weight:700;display:block;font-size:14px;margin-bottom:5px}.choices{margin-top:14px;border-top:1px solid var(--line);padding-top:14px}.choices p{font-weight:600}.source{border:2px solid var(--green);padding:18px 22px;background:#eaf4ef;border-radius:10px}.source p{margin:0}.check{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}.check summary{padding:19px 24px;font-size:18px;font-weight:700;cursor:pointer;list-style-position:inside;background:#e2efe7}.check .inside{padding:6px 24px 24px}.check ul{padding-left:1.3em}.check li{margin:10px 0}.note{padding:14px 18px;background:var(--soft);color:#62421c;font-size:15px;border-radius:8px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pair div{background:#f2f7f4;padding:14px 18px;border-radius:8px}.pair h3{font-size:17px}.pair ul{padding-left:1.2em}.finish{margin-top:20px;font-weight:700;color:#075f64}.extra{border-top:1px solid var(--line);margin-top:30px}.status{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#123537;color:#fff;padding:12px 22px;border-radius:10px;z-index:10;max-width:90%;text-align:center;box-shadow:0 4px 20px #0003;pointer-events:none}.status:empty{display:none}footer{padding:25px 20px;border-top:1px solid var(--line);text-align:center;font-size:13px;color:var(--muted)}noscript p{padding:15px;background:var(--soft)}@media(max-width:560px){body{font-size:16px}header{padding:30px 20px}main{padding:22px 14px 44px}.intro{padding:18px}.step{padding:19px 17px}h2{font-size:25px}h3{font-size:19px}.prompt{font-size:17px;padding:15px}.pair{grid-template-columns:1fr}.check .inside{padding:5px 18px 20px}.check summary{padding:17px 18px}nav a{font-size:14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{nav,.copy,.status{display:none}header{background:#fff;color:#123537}header p,.eyebrow{color:#123537}details .inside{display:block}.step{break-inside:avoid}main{max-width:100%}}
+.memo{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:15px;margin:14px 0}.memo b{display:block;margin-bottom:4px}.memo ul{margin:0;padding-left:1.2em}
+.how{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.how div{background:#f2f7f4;border-radius:8px;padding:12px 16px;font-size:15px}.how b{display:block;margin-bottom:4px}@media(max-width:560px){.how{grid-template-columns:1fr}}
 
-<h2>ワーク①　本文を確認してから、案内画像を作る</h2>
-<div class="lead"><b>何のためのワーク？</b><br>場面（架空）：あなたは、社内の共用備品の貸出案内を作る担当になりました。ルールを知らずに予約を忘れたり、返却が遅れたりする人が出ないよう、期限と条件を1枚の案内にして伝えたい場面です。<br><b>ねらい：</b>AIに「本文 → 案内画像」の順に作らせ、材料と見比べる流れを体験します。作る画像は<b>初稿</b>で、次のワーク②で直します。</div>
-<p class="note">材料（架空）：予約は前日16時までに共通フォーム／受取・返却は受付（9〜17時）／返却は当日17時まで／一人1点／予約方法がわからなければ総務</p>
-<h3>① 1〜3分：本文を作らせる（新しい会話で。目立たせたい内容に合うものを1つ選ぶ）</h3>
-<div class="step"><div class="t">重点：予約期限　〔入力文＋材料〕</div>
-<textarea id="t1" readonly rows="12">次の情報から、社員向けの備品貸出案内に載せる短い文章を作ってください。見出しと、予約・受取・返却・利用条件に分けてください。いちばん目立たせたいのは予約期限です。時刻や条件は変えず、材料にない情報は加えないでください。
+.imgbox{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;margin:12px 0;text-align:center}.imgbox img{max-width:100%;height:auto;border:1px solid var(--line)}
+.dl{display:inline-block;margin-top:10px;background:var(--green);color:#fff;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:7px;min-height:44px;box-sizing:border-box}.dl:hover{background:#09656b}
+ol.ops{padding-left:1.4em}ol.ops li{margin:6px 0}
+</style>
+<style>
+.cmp{width:100%;border-collapse:collapse;background:#fff;font-size:15px;margin:12px 0}.cmp th,.cmp td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:middle}.cmp th{background:#e2efe7}.cmp select{font:inherit;font-size:15px;padding:6px 8px;min-height:40px;border:1px solid var(--line);border-radius:6px;background:#fff}
+.mat{border:2px solid var(--green);padding:16px 20px;background:#eaf4ef;border-radius:10px;margin:14px 0}.mat p{margin:0}
+@media(max-width:560px){.cmp{font-size:14px}.cmp th,.cmp td{padding:7px 6px}}
+</style>
+</head>
+<body>
+<header><div><p class="eyebrow">AI研修 · 第10回</p><h1>文章と画像で、<br>一枚の案内を作る。</h1><p>ワークで使う入力文と、見本の挿し絵・見本のファイルを、ここからコピー・保存できます。講師の説明を聞いた後、指定されたワークに進んでください。</p><div class="chips"><span>ログイン不要の教材ページ</span><span>スマートフォン対応</span><span>提出・回答の送信なし</span></div></div></header>
+<nav aria-label="ワークを選択"><div><a href="#work1">ワーク①</a><a href="#work2">ワーク②</a><a href="#samples">見本</a><a href="#extra">予備ワーク</a></div></nav>
+<main>
+<div class="intro"><p><strong>使い方は「コピー → ChatGPTに貼り付け → 送信」</strong></p><p>今日は<strong>通常のチャット</strong>を使います。ファイルができるまで<strong>30秒〜1分ほど</strong>かかります。できあがるまで、次の依頼は送らずに待ってください。</p><p>挿し絵には、第9回で作った画像か、下の<a href="#samples">見本の挿し絵</a>を使います。ワーク①でファイルが作れなかった人は、ワーク②で<a href="#samples">見本のファイル</a>を使えます。</p><p class="small">ChatGPTへのログインは事前に済ませてください。コピーボタンが使えない場合は、緑色の枠内の文章を長押し・選択してコピーできます。講義からは退出せず、講師が案内した時刻に講義画面へ戻ります。</p></div>
+<noscript><p>コピーボタンにはJavaScriptを使用します。ボタンが動かない場合も、枠内の文章を選択してコピーできます。</p></noscript>
 
-【材料】
-・予約は利用前日の16時までに、共通フォームから行う。
-・受取場所と返却場所は受付。
-・受付時間は9〜17時。
-・返却は利用当日の17時まで。
-・同時に借りられるのは一人1点。
-・予約方法がわからない場合は総務へ相談する。</textarea>
-<button class="copy" type="button" onclick="copyText('t1',this)">入力文と材料をコピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">重点：返却期限　〔入力文＋材料〕</div>
-<textarea id="t2" readonly rows="12">次の情報から、社員向けの備品貸出案内に載せる短い文章を作ってください。見出しと、予約・受取・返却・利用条件に分けてください。いちばん目立たせたいのは返却期限です。時刻や条件は変えず、材料にない情報は加えないでください。
+<div class="mat"><p><strong>チラシに載せる情報（架空）</strong></p><p>店舗名：さくら花店／企画：初心者向け花束づくり体験会<br>日時：毎月第1土曜日 14:00〜15:00<br>場所：さくら花店の店舗内（駅から歩いて5分）<br>参加費：1人1,000円（花材代込み）／定員：各回6名／持ち物：不要<br>申込方法：店頭でスタッフに申し込む（電話・インターネットでの申込はなし）<br>ひとこと：初めての方も、道具なしで参加できます</p><p class="small" style="margin-top:8px">必ず守る情報：日時・参加費・定員・持ち物・申込方法（店頭のみ）</p></div>
 
-【材料】
-・予約は利用前日の16時までに、共通フォームから行う。
-・受取場所と返却場所は受付。
-・受付時間は9〜17時。
-・返却は利用当日の17時まで。
-・同時に借りられるのは一人1点。
-・予約方法がわからない場合は総務へ相談する。</textarea>
-<button class="copy" type="button" onclick="copyText('t2',this)">入力文と材料をコピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">重点：予約・受取・返却の順番　〔入力文＋材料〕</div>
-<textarea id="t3" readonly rows="12">次の情報から、社員向けの備品貸出案内に載せる短い文章を作ってください。見出しと、予約・受取・返却・利用条件に分けてください。いちばん目立たせたいのは予約・受取・返却の順番です。時刻や条件は変えず、材料にない情報は加えないでください。
+<section id="work1" class="lesson" aria-labelledby="w1title">
+<div class="lesson-head"><span class="kicker">ワーク① · 10分</span><h2 id="w1title">見出しを選び、文章と挿し絵でチラシのファイルを作る</h2><p>さくら花店（架空の店です）の体験会のチラシ（A4縦）を作ります。目的は、本文を確かめ、見出しを選んでから、文章と画像を組み合わせた、あとから直せるファイルを作れるようになることです。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜2分</span><h3>本文を作ってもらう</h3></div></div><p>ChatGPTで<strong>通常のチャット</strong>の<strong>新しい会話</strong>を開きます。次の「本文の依頼」をコピーして貼り付け、<strong>【　】の所</strong>を、次の3つから1つ選んで書き換えてから送ります。</p><p class="look">選ぶもの：日時／参加費の手軽さ／初めてでも道具なしで参加できること</p><div class="prompt" id="w1p1"># 目的
+体験会のチラシに載せる本文を作る（まだファイルにはしない）
 
-【材料】
-・予約は利用前日の16時までに、共通フォームから行う。
-・受取場所と返却場所は受付。
-・受付時間は9〜17時。
-・返却は利用当日の17時まで。
-・同時に借りられるのは一人1点。
-・予約方法がわからない場合は総務へ相談する。</textarea>
-<button class="copy" type="button" onclick="copyText('t3',this)">入力文と材料をコピー</button><div class="msg" aria-live="polite"></div></div>
-<h3>② 3〜6分：同じ会話で案内画像を作る</h3>
-<div class="step"><div class="t">入力文（画像を作る）</div>
-<textarea id="t4" readonly rows="5">今確認した文章を使い、縦長の案内画像を1枚作ってください。上に見出しと重要情報、中央に予約・受取・返却のイラスト付き手順、下に利用条件と相談先を置いてください。白背景で大きな文字にし、時刻や条件は変えないでください。</textarea>
-<button class="copy" type="button" onclick="copyText('t4',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="warn">画像ができるまでの時間は保証できません。<b>6分の時点で完成していなければ</b>、下の共通見本画像を使ってください。画像生成が使えない・回数の上限に達した場合は、共通見本の気になる点を言葉にする練習に切り替えます（これは「画像を作った」ことにはなりません）。</div>
-<h3>共通見本画像（保存して使えます。制作側で用意した見本で、ChatGPTの出力ではありません）</h3>
-<div class="imgs"><figure><img src="./img/sample-1-reserve.png" alt="共通見本画像（重点：予約期限）"><figcaption>共通見本画像（重点：予約期限）</figcaption><a class="dl" href="./img/sample-1-reserve.png" download="共通見本_重点1予約期限.png">画像を保存</a></figure><figure><img src="./img/sample-2-return.png" alt="見本（重点：返却期限）／修正例"><figcaption>見本（重点：返却期限）／修正例</figcaption><a class="dl" href="./img/sample-2-return.png" download="見本_重点2返却期限.png">画像を保存</a></figure><figure><img src="./img/sample-3-order.png" alt="見本（重点：順番）"><figcaption>見本（重点：順番）</figcaption><a class="dl" href="./img/sample-3-order.png" download="見本_重点3順番.png">画像を保存</a></figure><figure><img src="./img/explain-errors.png" alt="説明用：誤りを入れた見本"><figcaption>説明用：誤りを入れた見本</figcaption><a class="dl" href="./img/explain-errors.png" download="説明用_誤りを入れた見本.png">画像を保存</a></figure><figure><img src="./img/explain-drift.png" alt="説明用：意図せず変わった例"><figcaption>説明用：意図せず変わった例</figcaption><a class="dl" href="./img/explain-drift.png" download="説明用_意図せず変わった例.png">画像を保存</a></figure></div>
-<details><summary>自己確認の基準（スライドと同じ）</summary><ul class="chk"><li>予約は前日16時まで</li><li>返却は当日17時まで（受付時間と混同していない）</li><li>一人1点と相談先が残っている</li><li>選んだ重点が目立つ</li><li>文字の誤りや情報の欠落を見つけられた</li><li>後で直す箇所を1つ決めた</li></ul></details>
+# 読む人
+初めて花束づくりをする、近所の方
 
-<h2>ワーク②　修正して、前と後を比べる</h2>
-<div class="lead"><b>何のためのワーク？</b><br>場面：ワーク①でできた初稿の案内に、直したい所が見つかりました。社員に出す前に直したい場面です。<br><b>ねらい：</b>変える部分と残す部分を分けて直し、前と後を見比べて、採用する版を自分で決めます。</div>
-<p class="note">ワーク①の画像、または共通見本の画像を使います。</p>
-<div class="step"><div class="t">入力枠（修正指示）　〔【どこを、どう変えるか】を書き換える〕</div>
-<textarea id="t5" readonly rows="7">この案内画像を修正してください。
-変更する部分：【どこを、どう変えるか】
-変更しない部分：予約期限、受付時間、返却期限、一人1点の条件、相談先。
-指定した箇所以外の文章と配置は、できるだけ維持してください。</textarea>
-<button class="copy" type="button" onclick="copyText('t5',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">記入例（返却期限を目立たせる場合）</div>
-<textarea id="t6" readonly rows="8">この案内画像を修正してください。
-変更する部分：返却期限を、画像の上部に大きく表示する。
-変更しない部分：予約期限、受付時間、返却期限、一人1点の条件、相談先。
-指定した箇所以外の文章と配置は、できるだけ維持してください。</textarea>
-<button class="copy" type="button" onclick="copyText('t6',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<details><summary>自己確認の基準（スライドと同じ）</summary><ul class="chk"><li>狙った変更が反映された</li><li>維持する条件が残った（予約期限・受付時間・返却期限・一人1点・相談先）</li><li>新しい誤りが生じていない</li><li>どちらの版を採用するか判断できた（悪化したら前の版を採用してよい）</li></ul></details>
-<p class="note">画像の編集が使えない場合：共通見本の改善点を選び、文字の会話で具体的な修正指示を作ってください（画像の修正を体験したことにはなりません）。</p>
+# 材料
+"""
+・店舗名：さくら花店
+・企画：初心者向け花束づくり体験会
+・日時：毎月第1土曜日 14:00〜15:00
+・場所：さくら花店の店舗内（駅から歩いて5分）
+・参加費：1人1,000円（花材代込み）
+・定員：各回6名
+・持ち物：不要
+・申込方法：店頭でスタッフに申し込む（電話・インターネットでの申込はなし）
+・ひとこと：初めての方も、道具なしで参加できます
+"""
 
-<h2>予備ワーク（講師の案内がある場合のみ）　経験のある社員向けに変更する</h2>
-<div class="lead"><b>何のためのワーク？</b><br>場面：同じ案内を、利用経験のある社員にも出したい。<b>ねらい：</b>読み手を変えて書き換え、期限・条件が変わらないかを比べます。</div>
-<div class="step"><div class="t">① 初めて使う社員向けの案内を作る　〔入力文＋材料〕</div>
-<textarea id="t7" readonly rows="12">次の情報から、初めて使う社員向けの備品貸出案内の文章を作ってください。予約・受取・返却の手順を、やさしく説明してください。時刻や条件は変えず、材料にない情報は加えないでください。
+# 出力の形
+- 見出し（20字以内）
+- いちばん目立たせたいこと：【日時／参加費の手軽さ／初めてでも道具なしで参加できること　から1つ選んで書き換える】
+- 当日の流れ（受付 → 花束づくり → 持ち帰り）
+- 日時・場所・参加費・定員・持ち物・申込方法
 
-【材料】
-・予約は利用前日の16時までに、共通フォームから行う。
-・受取場所と返却場所は受付。
-・受付時間は9〜17時。
-・返却は利用当日の17時まで。
-・同時に借りられるのは一人1点。
-・予約方法がわからない場合は総務へ相談する。</textarea>
-<button class="copy" type="button" onclick="copyText('t7',this)">入力文と材料をコピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">② 利用経験のある社員向けに変更する（同じ会話で）</div>
-<textarea id="t8" readonly rows="3">この案内を、利用経験のある社員向けに変更してください。説明を減らし、予約期限、返却期限、一人1点の条件を目立たせてください。時刻や条件は変えないでください。</textarea>
-<button class="copy" type="button" onclick="copyText('t8',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<p class="foot">AI研修 ワーク用コピー教材（初版）。講師ノートや案件の内部資料は含みません。入力・ログイン・回答の提出はありません。</p>
-</main><script>
-function copyText(id,btn){var t=document.getElementById(id);var s=t.value;var m=btn.parentNode.querySelector('.msg');
-function ok(){btn.classList.remove('fail');btn.classList.add('done');m.textContent='コピーしました。ChatGPTの入力欄に貼り付けてください。';}
-function fb(){try{t.removeAttribute('readonly');t.focus();t.select();t.setSelectionRange(0,t.value.length);var r=document.execCommand('copy');t.setAttribute('readonly','');if(r){ok();return;}}catch(e){}
-btn.classList.add('fail');m.textContent='コピーできませんでした。上の枠の文字を長押し（パソコンはドラッグ）して選択し、コピーしてください。';}
-if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(s).then(ok,fb);}else{fb();}}
-document.querySelectorAll('textarea').forEach(function(t){t.style.height='auto';t.style.height=Math.min(t.scrollHeight+6,520)+'px';});
-</script></body></html>
+# 必ず守ること
+日時・参加費・定員・持ち物・申込方法は、材料のまま一字も変えない。材料にない情報は加えない</div><button class="copy" data-copy="w1p1">本文の依頼をコピー</button></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">2〜3分</span><h3>本文の、必ず守る情報を確かめる</h3></div></div><p>送る文章はありません。上の<strong>チラシに載せる情報</strong>と、1行ずつ見比べます。</p><ul><li>日時・参加費・定員・持ち物・申込方法が、材料と一字も違わないか</li><li>申込方法に「電話」「インターネット」が足されていないか</li><li>材料にない文が足されていないか</li></ul></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">3〜5分</span><h3>見出しの案を3つ出してもらい、1つ選ぶ</h3></div></div><p><strong>同じ会話</strong>で送ります。</p><div class="prompt" id="w1p3">見出しの案を、20字以内で、違う方向で3つ出してください。材料にないことは書かないでください。</div><button class="copy" data-copy="w1p3">入力文をコピー</button><p>案を1つ選び、<strong>同じ会話</strong>で次の文章を送ります（【番号】を書き換える）。</p><div class="prompt" id="w1p3b">【番号】の見出しにしてください。ほかは変えないでください。</div><button class="copy" data-copy="w1p3b">入力文をコピー</button><p class="look">選ぶ基準：読む人に合うか／目立たせたいことと合っているか／材料にない言い切り（「必ず上手になれる」「大人気」など）がないか</p></article>
+<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">5〜7分</span><h3>挿し絵を添付して、チラシのファイルにしてもらう</h3></div></div><p>入力欄の<strong>「＋」</strong>から、挿し絵の画像を添付します（第9回の画像、または下の<a href="#samples">見本の挿し絵</a>）。そのあと、次の「一枚にする依頼」を貼って、<strong>同じ会話</strong>で送ります。</p><div class="prompt" id="w1p4">今確認した本文と、添付した画像で、A4縦のチラシを1枚作り、PowerPoint形式のファイルにしてください。
+
+# 配置
+上：見出しと、いちばん目立たせたいこと（大きく）
+中：添付した画像（挿し絵）と、当日の流れ
+下：日時・場所・参加費・定員・持ち物・申込方法
+
+# 見た目
+白い背景・大きな文字・色は挿し絵に合わせる
+
+# 必ず守ること
+本文の文字は変えない。日時・参加費・定員・持ち物・申込方法は一字も変えない</div><button class="copy" data-copy="w1p4">一枚にする依頼をコピー</button><p class="note">ファイルが作られずに文章だけが返ってきたら、入力欄の右の「思考量」を一段上げて、もう一度送ります。PowerPointがない人は、「PowerPoint形式」を「Word形式」に書き換えてもかまいません。</p></article>
+<article class="step"><div class="step-head"><span class="num">5</span><div><span class="time">7〜9分</span><h3>ダウンロードして開き、材料と比べる</h3></div></div><p>回答の中の<strong>ファイルのリンク</strong>を押すと、ダウンロードされます。開いて、材料と比べます。直したい所を<strong>1つだけ</strong>メモします（直すのはワーク②です）。</p><p class="look">直したい所の例：目立たせたいことが小さい／文字が枠からはみ出している／挿し絵が大きすぎて、日時や参加費の文字が小さい</p></article>
+<details class="check"><summary>9〜10分：確認ポイント（答え合わせ）</summary><div class="inside"><ul><li>日時・参加費・定員・持ち物・申込方法が、材料と一字も違わない。</li><li>申込方法に「電話」「インターネット」が足されていない。</li><li>見出しは自分で選んだ（材料にない言い切りがない）。</li><li>選んだことが上のほうに大きく書かれ、挿し絵が入っている。</li><li>直したい所を1つ決めた。</li></ul>
+<div class="memo"><b>実際に試した例（目立たせたいこと：初めてでも道具なしで参加できること）</b><ul><li>見出しの案：「はじめてでも安心！花束づくり」「道具いらずの花束づくり体験」「花束づくりを楽しもう！」</li><li>約50秒で、画像入りのPowerPointファイル（A4縦）ができた。文字は材料どおり</li><li>挿し絵が大きく、日時の文字は小さめだった → 直したい所</li></ul></div>
+<p class="finish">確認が終わったら、講義画面に戻ります。ワーク②で、この会話の続きを使います。<strong>会話は閉じずに残しておいてください。</strong></p></div></details>
+<details class="check"><summary>早く終わったら：文字を1か所、自分で直す</summary><div class="inside"><p>ダウンロードしたファイルを開き、直したい文字の所を押して、書き換えてみます。文字を選んで大きさの数字を変えると、文字の大きさも変えられます。直したら、<strong>名前を付けて保存</strong>します（例：体験会チラシ_v1_自分で直した）。</p></div></details>
+<details class="check"><summary>途中までのとき・ファイルが作れない／開けないとき</summary><div class="inside"><p>①〜③（本文と見出し）まで、できていれば大丈夫です。ワーク②では、下の<a href="#samples">見本のファイル</a>を使って進められます。</p></div></details>
+</section>
+
+<section id="work2" class="lesson" aria-labelledby="w2title">
+<div class="lesson-head"><span class="kicker">ワーク② · 10分</span><h2 id="w2title">チラシを1か所直し、前と後を比べ、点検してもらう</h2><p>ワーク①のチラシ（なければ見本のファイル）を、1か所だけ直します。目的は、変える所と残す所を分けて直し、項目ごとに比べ、AIの点検も使って、採用する版を決められるようになることです。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜2分</span><h3>「直す依頼」の【変える所】を書き換える</h3></div></div><p>次の「直す依頼」をコピーし、<strong>【　】の所</strong>を、ワーク①でメモした「直したい所」に書き換えます。</p><div class="prompt" id="w2p1">このチラシを、1か所だけ直して、PowerPoint形式のファイルにしてください。
+
+# 変える所
+【どこを、どうするか（例：ひとことを上部に大きく）】
+
+# 残す所
+- 日時・場所・参加費・定員・持ち物・申込方法は、一字も変えない
+- 挿し絵と、当日の流れは変えない
+- 指定した所以外の文字と配置は、できるだけそのままにする</div><button class="copy" data-copy="w2p1">直す依頼をコピー</button><p class="look">変える所の例：ひとことを上部に大きく／挿し絵を小さくして、日時と参加費の文字を大きく／はみ出している文字を枠に収める</p></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">2〜5分</span><h3>同じ会話で送り、直したファイルを開く</h3></div></div><p>ワーク①の<strong>同じ会話</strong>で送ります。できたら、リンクを押してダウンロードし、開きます。</p><p class="note"><strong>見本のファイルを使う人</strong>：<strong>新しい会話</strong>で、「＋」から<a href="#samples">見本のファイル</a>を添付し、下の「見本を使う人の直す依頼」を、【　】を書き換えて送ります（材料も一緒に渡すので、このあとの点検ができます）。</p><div class="prompt" id="w2p2">添付したチラシを、1か所だけ直して、PowerPoint形式のファイルにしてください。
+
+# 変える所
+【どこを、どうするか（例：挿し絵を小さくして、日時と参加費の文字を大きく）】
+
+# 残す所
+- 日時・場所・参加費・定員・持ち物・申込方法は、一字も変えない
+- 挿し絵と、当日の流れは変えない
+- 指定した所以外の文字と配置は、できるだけそのままにする
+
+# 最初の材料
+"""
+・店舗名：さくら花店
+・企画：初心者向け花束づくり体験会
+・日時：毎月第1土曜日 14:00〜15:00
+・場所：さくら花店の店舗内（駅から歩いて5分）
+・参加費：1人1,000円（花材代込み）
+・定員：各回6名
+・持ち物：不要
+・申込方法：店頭でスタッフに申し込む（電話・インターネットでの申込はなし）
+・ひとこと：初めての方も、道具なしで参加できます
+"""</div><button class="copy" data-copy="w2p2">見本を使う人の直す依頼をコピー</button></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">5〜7分</span><h3>直す前と後を、項目ごとに比べる</h3></div></div><p>直す前のファイルと、直したファイルを並べて、1項目ずつ確かめます。下の表で「同じ」「違う」を選んでいきます（選んだ内容は、どこにも送られません）。</p>
+<table class="cmp" id="cmp"><thead><tr><th>項目（材料）</th><th>直す前と後</th></tr></thead><tbody>
+<tr><td>日時（第1土曜日 14:00〜15:00）</td><td><select aria-label="日時"><option>未確認</option><option>同じ</option><option>違う</option></select></td></tr>
+<tr><td>場所（店舗内）</td><td><select aria-label="場所"><option>未確認</option><option>同じ</option><option>違う</option></select></td></tr>
+<tr><td>参加費（1,000円）</td><td><select aria-label="参加費"><option>未確認</option><option>同じ</option><option>違う</option></select></td></tr>
+<tr><td>定員（6名）</td><td><select aria-label="定員"><option>未確認</option><option>同じ</option><option>違う</option></select></td></tr>
+<tr><td>持ち物（不要）</td><td><select aria-label="持ち物"><option>未確認</option><option>同じ</option><option>違う</option></select></td></tr>
+<tr><td>申込方法（店頭のみ）</td><td><select aria-label="申込方法"><option>未確認</option><option>同じ</option><option>違う</option></select></td></tr>
+<tr><td>狙った所</td><td><select aria-label="狙った所"><option>未確認</option><option>頼んだとおり変わった</option><option>変わらなかった</option><option>変わりすぎた</option></select></td></tr>
+</tbody></table></article>
+<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">7〜8分</span><h3>AIにも、材料と比べて点検してもらう</h3></div></div><p><strong>同じ会話</strong>で送ります。「直さずに、挙げるだけ」を付けるのがコツです（付けないと、作り直して別の所が変わることがあります）。</p><div class="prompt" id="w2p4">直したチラシの文字を、最初の材料と比べて、違う所と、抜けている所を挙げてください。直さずに、挙げるだけにしてください。</div><button class="copy" data-copy="w2p4">入力文をコピー</button></article>
+<article class="step"><div class="step-head"><span class="num">5</span><div><span class="time">8〜9分</span><h3>採用する版を決め、名前を付けて保存する</h3></div></div><p>AIの点検と、自分の比べた表を見比べてから、どちらの版を使うかを決めます。直した後のほうが悪くなっていたら、<strong>前の版を採用してかまいません</strong>。</p><p class="look">名前の例：体験会チラシ_v2（前の版は消さずに残します）</p></article>
+<details class="check"><summary>9〜10分：答え合わせと自己修正</summary><div class="inside"><ul><li>狙った所が、頼んだとおりに変わった。</li><li>日時・場所・参加費・定員・持ち物・申込方法が、変わっていない。</li><li>AIの点検と、自分の比べた表の結果を見比べた。</li><li>どちらの版を使うか、理由をつけて決めた。</li></ul>
+<div class="memo"><b>実際に試した例（変える所：挿し絵を小さくして、日時と参加費の文字を大きく）</b><ul><li>挿し絵は小さくなり、日時と参加費の文字は少しだけ大きくなった。空いた所は余白のまま</li><li>ほかの文字は変わらなかった</li><li>AIの点検：材料にない一文「初めての方も気軽に花束づくりを楽しめます。」を見つけた（本文の段階から入っていた）</li></ul></div>
+<p>AIの点検と自分の表の結果が違ったときは、もう一度ファイルを開いて、自分の目で確かめます。</p><p class="finish">確認が終わったら、講義画面に戻ります。</p></div></details>
+<details class="check"><summary>早く終わったら：意図しない変更を、自分で直す</summary><div class="inside"><p>比べた表や点検で、頼んでいないのに変わった所があれば、その所だけ、自分でファイルを開いて直します。文字は押して書き換え、画像は押して角の丸を引っぱると大きさが変わります。直したら、名前を付けて保存します。</p></div></details>
+<details class="check"><summary>途中までのとき</summary><div class="inside"><p>①〜③（直す依頼を送って、前と後を比べる）まで、できていれば大丈夫です。</p></div></details>
+</section>
+
+<section id="samples" class="lesson" aria-labelledby="smtitle">
+<div class="lesson-head"><span class="kicker">見本 · 必要な人だけ</span><h2 id="smtitle">見本の挿し絵と、見本のファイル</h2><p>どちらもAIで作った架空のものです。実際の店・人・商品ではありません。</p></div>
+<h3>見本の挿し絵（文字の入っていない花束の画像）</h3>
+<div class="imgbox"><img src="img/sashie-hanataba.jpg" alt="木の作業台の上に置かれた、ピンクとクリーム色の花束のイラスト" width="552" height="552" loading="lazy"><br><a class="dl" href="img/sashie-hanataba.jpg" download="見本の挿し絵_花束.jpg">画像をダウンロード</a></div>
+<ul><li><strong>パソコン</strong>：「画像をダウンロード」を押す（「ダウンロード」フォルダに保存されます）。</li><li><strong>スマートフォン</strong>：画像を長押しして「写真に保存」（または「画像を保存」）。</li></ul>
+<h3 style="margin-top:24px">見本のファイル（直す前の版・v1）</h3>
+<p>ワーク①でファイルが作れなかった人が、ワーク②で使うチラシです（PowerPoint形式・A4縦1枚・約0.8MB）。挿し絵が大きく、日時の文字は小さめの版です。</p>
+<a class="dl" href="img/flyer-sample-v1.pptx" download="体験会チラシ_見本_v1.pptx">見本のファイルをダウンロード</a>
+<p class="small">スマートフォンでは開けない場合があります。ワーク②はパソコンで行うのがおすすめです。</p>
+</section>
+
+<section id="extra" class="lesson extra" aria-labelledby="extitle"><div class="lesson-head"><span class="kicker">予備ワーク · 5〜10分 · 講師の案内がある場合のみ</span><h2 id="extitle">読む人を変えた、もう一枚を作る</h2><p>本編60分とは別の予備課題です。通常は実施しません。目的は、読む人を変えても、必ず守る情報が変わらないことを確かめることです。</p></div>
+<article class="step"><span class="time">0〜3分</span><h3>常連のお客様向けの本文に変える</h3><p><strong>ワーク①の会話の続き</strong>で送ります。</p><div class="prompt" id="ex1">同じ材料で、何度も参加している常連のお客様向けの本文に変えてください。説明を減らし、日時と定員を目立たせてください。日時・参加費・定員・持ち物・申込方法は変えないでください。</div><button class="copy" data-copy="ex1">入力文をコピー</button></article>
+<article class="step"><span class="time">3〜6分</span><h3>最初の本文と比べる</h3><p>送る文章はありません。2つの本文を並べて見比べます。</p></article>
+<details class="check"><summary>見直す</summary><div class="inside"><ul><li>説明が減り、日時と定員が目立っている。</li><li>日時・参加費・定員・持ち物・申込方法が変わっていない。</li><li>2つの本文の違いを、自分の言葉で言える。</li></ul></div></details>
+</section>
+
+<div class="intro" style="margin-top:40px"><p><strong>今日の基本は、決める・一枚にする・直して選ぶ。</strong></p><p>載せる情報を決め、必ず守る情報と飾りを分けます。本文を確かめてから、文字は文書、画像は挿し絵として、直せるファイルで受け取ります。直すときは変える所と残す所を分け、項目ごとに比べ、AIの点検も使って、採用する版を自分で決めます。前の版を選んでもかまいません。</p><p class="small">このページは入力文のコピー用教材です。回答の提出や個人情報の入力はありません。他社のロゴ・キャラクター・写真は使わないでください。挿し絵には「画像はイメージです」を添えます。</p></div>
+</main><footer>AI研修 第10回 ワーク用ページ · v2 · 2026年10月14日<br>演習の設定と画像・ファイルはすべて架空です。</footer>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+<script>
+let messageTimer;
+function showMessage(text){const s=document.getElementById('status');s.textContent=text;clearTimeout(messageTimer);messageTimer=setTimeout(()=>{s.textContent=''},4500)}
+async function copyPrompt(button){const target=document.getElementById(button.dataset.copy);const text=target.textContent.trim();try{if(!navigator.clipboard||!window.isSecureContext)throw new Error('manual');await navigator.clipboard.writeText(text);const original=button.textContent;button.textContent='コピーしました';setTimeout(()=>{button.textContent=original},2200);showMessage('コピーしました。ChatGPTの入力欄に貼り付けてください。')}catch(e){const range=document.createRange();range.selectNodeContents(target);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);showMessage('文章を選択しました。長押し、または右クリックでコピーしてください。')}}
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',()=>copyPrompt(button)));
+</script>
+</body></html>

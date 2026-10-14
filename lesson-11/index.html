@@ -1,139 +1,120 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>第11回 ワーク用ページ｜うまくいった指示を、次の仕事でも使う</title><style>
-:root{--ink:#1B1B2F;--ind:#2E2A5E;--acc:#4B3FD6;--cor:#E8573D;--grn:#1E8E5A;--tint:#F3F1FF;--line:#CFCBEF;--bg:#fff}
-@media (prefers-color-scheme:dark){:root{--ink:#EDEDF7;--ind:#CFCBFF;--acc:#9A92FF;--cor:#FF8A70;--grn:#4FD39A;--tint:#262447;--line:#43407A;--bg:#15142B}}
-*{box-sizing:border-box}
-body{overflow-wrap:anywhere;margin:0;background:var(--bg);color:var(--ink);font-family:"BIZ UDPGothic","Yu Gothic","Hiragino Sans","Meiryo",sans-serif;line-height:1.7;font-size:17px}
-main{max-width:760px;margin:0 auto;padding:16px}
-h1{font-size:1.45rem;color:var(--ind);margin:.4em 0 .2em}
-h2{font-size:1.25rem;color:var(--ind);border-bottom:3px solid var(--acc);padding-bottom:.2em;margin-top:2em}
-h3{font-size:1.05rem;margin:1.2em 0 .3em;color:var(--acc)}
-.lead{background:var(--tint);border-radius:14px;padding:12px 14px}
-.step{border:2px solid var(--line);border-radius:14px;padding:10px 12px;margin:12px 0}
-.step .t{font-weight:bold;color:var(--ind)}
-.step .m{font-size:.85rem;color:var(--acc);font-weight:bold}
-textarea{width:100%;font:inherit;font-size:16px;line-height:1.6;border:2px solid var(--line);border-radius:10px;padding:10px;background:var(--tint);color:var(--ink);resize:vertical}
-button.copy{display:block;width:100%;margin:8px 0 2px;padding:14px;border:0;border-radius:12px;background:var(--acc);color:#fff;font:inherit;font-weight:bold;font-size:1.05rem;cursor:pointer}
-button.copy.done{background:var(--grn)}
-button.copy.fail{background:var(--cor)}
-.msg{font-size:.88rem;min-height:1.3em;color:var(--ind)}
-.note{font-size:.9rem;color:var(--ind)}
-.warn{background:#FEF3D9;color:#5b3d00;border-radius:12px;padding:10px 12px;margin:10px 0}
-@media (prefers-color-scheme:dark){.warn{background:#4a3a14;color:#ffe9b0}}
-details{border:2px solid var(--line);border-radius:12px;padding:8px 12px;margin:10px 0}
-summary{font-weight:bold;cursor:pointer;color:var(--ind)}
-ul.chk{padding-left:1.2em}
-.imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
-.imgs figure{margin:0;text-align:center}
-.imgs img{width:100%;height:auto;border:2px solid var(--line);border-radius:10px;background:#fff}
-.imgs figcaption{font-size:.85rem}
-a.dl{display:inline-block;margin-top:4px;padding:6px 10px;border:2px solid var(--acc);border-radius:10px;color:var(--acc);font-weight:bold;text-decoration:none;font-size:.9rem}
-table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:4px 6px}th{background:var(--tint)}
-.foot{font-size:.8rem;color:var(--ind);margin:2.5em 0 1em}
-</style></head><body><main>
-<h1>第11回 ワーク用ページ｜うまくいった指示を、次の仕事でも使う</h1>
-<div class="lead"><p><b>使い方：コピー → ChatGPTに貼り付け → 送信</b>。このページとChatGPTを切り替えて使います。講義からは退出せず、講師が案内した時刻に講義画面へ戻ります。</p>
-<p>コピーボタンが使えないときは、枠の中の文字を長押し（パソコンはドラッグ）して選択し、コピーできます。ChatGPTへのログインは事前に済ませてください。</p>
-<p class="note">このページは<b>コピーを助ける補助教材</b>です。お題・手順・時間・完成条件・答え合わせは、講義のスライドに載っています。入力・ログイン・回答の提出はありません。登場する情報はすべて架空です。</p></div>
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="AI研修 第11回。型を別の企画に使い回して育てるワークと、プロジェクトを作って短い依頼で比べるワークの手順・入力文・確認ポイントをまとめた受講者用ページです。">
+<title>第11回 ワーク用ページ｜AI研修</title>
+<style>
+:root{--ink:#123537;--muted:#52696a;--green:#087e83;--paper:#f3f7f4;--line:#c9dad6;--white:#fff;--amber:#8b5316;--soft:#fff3dc}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.8 "Yu Gothic UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif}a{color:#086b72;text-underline-offset:4px}button,summary{touch-action:manipulation}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #b56b0c;outline-offset:4px}header{background:var(--ink);color:white;padding:48px 24px 34px}header>div,main,nav>div{max-width:860px;margin:auto}.eyebrow{font-size:14px;letter-spacing:.12em;color:#bce5dc;margin:0 0 10px}h1{font-size:clamp(28px,6vw,43px);line-height:1.35;letter-spacing:.03em;margin:0 0 14px}header p{max-width:680px;margin-bottom:0;color:#e1efea}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.chips span{font-size:13px;border:1px solid #638884;padding:3px 12px;border-radius:30px}nav{position:sticky;top:0;background:#fffefbef;border-bottom:1px solid var(--line);z-index:5}nav>div{display:flex;padding:10px 16px;gap:9px}nav a{flex:1;text-align:center;padding:8px 5px;font-size:15px;text-decoration:none;font-weight:700;border-radius:8px}nav a:hover{background:#e5f1eb}main{padding:28px 20px 60px}h2{font-size:28px;line-height:1.4;margin:0 0 8px}h3{font-size:20px;line-height:1.5;margin:0}.intro{padding:22px 24px;background:var(--white);border-left:5px solid var(--green)}.intro p{margin:0 0 12px}.intro p:last-child{margin:0}.small{font-size:14px;color:var(--muted)}.lesson{padding-top:45px}.lesson-head{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:18px}.lesson-head p{margin:6px 0 0}.kicker{font-weight:700;color:var(--green);font-size:14px;letter-spacing:.06em}.step{padding:24px;background:var(--white);border:1px solid var(--line);border-radius:12px;margin:14px 0}.step-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}.num{flex:none;width:32px;height:32px;background:var(--green);border-radius:50%;color:#fff;display:grid;place-items:center;font-size:17px;font-weight:bold}.time{font-size:13px;color:var(--muted);font-weight:600}.step p{margin:12px 0}.prompt{padding:17px 18px;background:#eef6f2;border-left:3px solid var(--green);white-space:pre-wrap;overflow-wrap:anywhere;user-select:text;font-size:18px;line-height:1.8;margin:14px 0 12px}.copy{border:0;border-radius:7px;background:var(--green);color:white;font-family:inherit;font-size:15px;font-weight:700;line-height:1.5;padding:11px 20px;min-height:44px;cursor:pointer}.copy:hover{background:#09656b}.copy:disabled{opacity:.8}.look{font-size:15px;color:#405d5a;padding-top:4px}.label{font-weight:700;display:block;font-size:14px;margin-bottom:5px}.choices{margin-top:14px;border-top:1px solid var(--line);padding-top:14px}.choices p{font-weight:600}.source{border:2px solid var(--green);padding:18px 22px;background:#eaf4ef;border-radius:10px}.source p{margin:0}.check{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}.check summary{padding:19px 24px;font-size:18px;font-weight:700;cursor:pointer;list-style-position:inside;background:#e2efe7}.check .inside{padding:6px 24px 24px}.check ul{padding-left:1.3em}.check li{margin:10px 0}.note{padding:14px 18px;background:var(--soft);color:#62421c;font-size:15px;border-radius:8px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pair div{background:#f2f7f4;padding:14px 18px;border-radius:8px}.pair h3{font-size:17px}.pair ul{padding-left:1.2em}.finish{margin-top:20px;font-weight:700;color:#075f64}.extra{border-top:1px solid var(--line);margin-top:30px}.status{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#123537;color:#fff;padding:12px 22px;border-radius:10px;z-index:10;max-width:90%;text-align:center;box-shadow:0 4px 20px #0003;pointer-events:none}.status:empty{display:none}footer{padding:25px 20px;border-top:1px solid var(--line);text-align:center;font-size:13px;color:var(--muted)}noscript p{padding:15px;background:var(--soft)}@media(max-width:560px){body{font-size:16px}header{padding:30px 20px}main{padding:22px 14px 44px}.intro{padding:18px}.step{padding:19px 17px}h2{font-size:25px}h3{font-size:19px}.prompt{font-size:17px;padding:15px}.pair{grid-template-columns:1fr}.check .inside{padding:5px 18px 20px}.check summary{padding:17px 18px}nav a{font-size:14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{nav,.copy,.status{display:none}header{background:#fff;color:#123537}header p,.eyebrow{color:#123537}details .inside{display:block}.step{break-inside:avoid}main{max-width:100%}}
+.memo{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:15px;margin:14px 0}.memo b{display:block;margin-bottom:4px}.memo ul{margin:0;padding-left:1.2em}
+.how{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.how div{background:#f2f7f4;border-radius:8px;padding:12px 16px;font-size:15px}.how b{display:block;margin-bottom:4px}@media(max-width:560px){.how{grid-template-columns:1fr}}
 
-<h2>ワーク①　指示と材料を組み合わせて、使い回す</h2>
-<div class="lead"><b>何のためのワーク？</b><br>場面（架空）：あなたは社内のお知らせを書く担当。毎回一から頼むと形がそろわず書き忘れも出るので、使い回せる指示を一つ整えたい。<br><b>ねらい：</b>固定の指示（青）＋選ぶ部分（緑）＋今回の材料（赤）を組み合わせて実行し、結果ではなく指示のほうを1か所改善する流れを体験します。</div>
-<h3>材料A（架空）</h3>
-<div class="step"><div class="t">材料A</div>
-<textarea id="t9" readonly rows="4">11月1日から、会議室の予約を紙の予定表から共通フォームへ変更する。対象は会議室を利用する全社員。利用前日の17時までに予約する。急ぎの場合は総務へ相談する。問い合わせ先は総務。</textarea>
-<button class="copy" type="button" onclick="copyText('t9',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<h3>固定の指示（青）＋選ぶ部分（緑）＋材料A（赤）　〔文体・長さの組合せを1つ選んでコピー〕</h3>
-<div class="step"><div class="t">文体：丁寧　長さ：150字程度　〔指示＋材料A〕</div>
-<textarea id="t10" readonly rows="12">以下の材料を、社員向けの短いお知らせにしてください。
-見出しの後に、要点・対象・お願い・問い合わせの順で出してください。
-材料にない事実を追加せず、足りない情報は要確認としてください。
-文体：丁寧　長さ：150字程度
-今回の材料：11月1日から、会議室の予約を紙の予定表から共通フォームへ変更する。対象は会議室を利用する全社員。利用前日の17時までに予約する。急ぎの場合は総務へ相談する。問い合わせ先は総務。</textarea>
-<button class="copy" type="button" onclick="copyText('t10',this)">指示と材料Aをコピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">文体：丁寧　長さ：250字程度　〔指示＋材料A〕</div>
-<textarea id="t11" readonly rows="12">以下の材料を、社員向けの短いお知らせにしてください。
-見出しの後に、要点・対象・お願い・問い合わせの順で出してください。
-材料にない事実を追加せず、足りない情報は要確認としてください。
-文体：丁寧　長さ：250字程度
-今回の材料：11月1日から、会議室の予約を紙の予定表から共通フォームへ変更する。対象は会議室を利用する全社員。利用前日の17時までに予約する。急ぎの場合は総務へ相談する。問い合わせ先は総務。</textarea>
-<button class="copy" type="button" onclick="copyText('t11',this)">指示と材料Aをコピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">文体：簡潔　長さ：150字程度　〔指示＋材料A〕</div>
-<textarea id="t12" readonly rows="12">以下の材料を、社員向けの短いお知らせにしてください。
-見出しの後に、要点・対象・お願い・問い合わせの順で出してください。
-材料にない事実を追加せず、足りない情報は要確認としてください。
-文体：簡潔　長さ：150字程度
-今回の材料：11月1日から、会議室の予約を紙の予定表から共通フォームへ変更する。対象は会議室を利用する全社員。利用前日の17時までに予約する。急ぎの場合は総務へ相談する。問い合わせ先は総務。</textarea>
-<button class="copy" type="button" onclick="copyText('t12',this)">指示と材料Aをコピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">文体：簡潔　長さ：250字程度　〔指示＋材料A〕</div>
-<textarea id="t13" readonly rows="12">以下の材料を、社員向けの短いお知らせにしてください。
-見出しの後に、要点・対象・お願い・問い合わせの順で出してください。
-材料にない事実を追加せず、足りない情報は要確認としてください。
-文体：簡潔　長さ：250字程度
-今回の材料：11月1日から、会議室の予約を紙の予定表から共通フォームへ変更する。対象は会議室を利用する全社員。利用前日の17時までに予約する。急ぎの場合は総務へ相談する。問い合わせ先は総務。</textarea>
-<button class="copy" type="button" onclick="copyText('t13',this)">指示と材料Aをコピー</button><div class="msg" aria-live="polite"></div></div>
-<h3>指示の改善の例（結果ではなく、固定の指示のほうに1文足す）</h3>
-<div class="step"><div class="t">例：要点の書き方</div>
-<textarea id="t14" readonly rows="3">要点は箇条書きにしてください。</textarea>
-<button class="copy" type="button" onclick="copyText('t14',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<p class="note">固定の指示に、日付や「総務」を混ぜないでください。</p>
-<details><summary>自己確認の基準（スライドと同じ）</summary><ul class="chk"><li>共通の指示と今回の材料が分かれている</li><li>11月1日・前日17時・急ぎは総務が残っている</li><li>日付や総務を、固定する指示へ混ぜていない</li><li>選んだ文体と長さがおおむね反映された（字数の一致は問わない）</li></ul></details>
+.imgbox{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;margin:12px 0;text-align:center}.imgbox img{max-width:100%;height:auto;border:1px solid var(--line)}
+.dl{display:inline-block;margin-top:10px;background:var(--green);color:#fff;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:7px;min-height:44px;box-sizing:border-box}.dl:hover{background:#09656b}
+ol.ops{padding-left:1.4em}ol.ops li{margin:6px 0}
+</style>
+<style>
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.shots figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px}.shots img{max-width:100%;height:auto;border:1px solid var(--line);display:block;margin:auto}.shots figcaption{font-size:14px;color:var(--muted);margin-top:6px}
+@media(max-width:560px){.shots{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div><p class="eyebrow">AI研修 · 第11回</p><h1>毎回の説明を、<br>一度で済ませる。</h1><p>ワークで使う型・材料・プロジェクトの指示を、ここからコピーできます。講師の説明を聞いた後、指定されたワークに進んでください。</p><div class="chips"><span>ログイン不要の教材ページ</span><span>スマートフォン対応</span><span>提出・回答の送信なし</span></div></div></header>
+<nav aria-label="ワークを選択"><div><a href="#work1">ワーク①</a><a href="#work2">ワーク②</a><a href="#extra">予備ワーク</a><a href="#guide">早見表</a></div></nav>
+<main>
+<div class="intro"><p><strong>使い方は「コピー → ChatGPTに貼り付け → 送信」</strong></p><p>今日は<strong>通常のチャット</strong>を使います。型を試すときは、必ず<strong>新しい会話</strong>を開いてから送ってください（前のやり取りが、型の足りない所を補ってしまうため）。</p><p>型は、メモ帳やスマートフォンのメモに保存します。保存の操作が難しい人は、足す1行を決めるところまでで大丈夫です。</p><p class="small">ChatGPTへのログインは事前に済ませてください。コピーボタンが使えない場合は、緑色の枠内の文章を長押し・選択してコピーできます。講義からは退出せず、講師が案内した時刻に講義画面へ戻ります。</p></div>
+<noscript><p>コピーボタンにはJavaScriptを使用します。ボタンが動かない場合も、枠内の文章を選択してコピーできます。</p></noscript>
 
-<h2>ワーク②　新しい会話で、新しい材料に使い直す</h2>
-<div class="lead"><b>何のためのワーク？</b><br>場面（架空）：ワーク①の続き。整えた指示を、別のお知らせ（共用備品の貸出記録の変更）でも使い回したい。<br><b>ねらい：</b>新しい会話・新しい材料でも指示が使えるか確かめ、1か所改善した指示をv2として残します。</div>
-<h3>材料B（架空）</h3>
-<div class="step"><div class="t">材料B</div>
-<textarea id="t15" readonly rows="5">12月1日から、共用備品の貸出記録を共通フォームへ入力する。紙への記入は不要。対象は共用備品を借りる社員。備品を返した当日に入力する。現在借りたままの備品がある人は、12月5日までに状況を入力する。問い合わせ先は、このメモには記載されていない。</textarea>
-<button class="copy" type="button" onclick="copyText('t15',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<h3>指示＋材料B　〔文体・長さの組合せを1つ選んでコピー。ワーク①で改善した指示を使ってもよい〕</h3>
-<div class="step"><div class="t">文体：丁寧　長さ：150字程度　〔指示＋材料B〕</div>
-<textarea id="t16" readonly rows="12">以下の材料を、社員向けの短いお知らせにしてください。
-見出しの後に、要点・対象・お願い・問い合わせの順で出してください。
-材料にない事実を追加せず、足りない情報は要確認としてください。
-文体：丁寧　長さ：150字程度
-今回の材料：12月1日から、共用備品の貸出記録を共通フォームへ入力する。紙への記入は不要。対象は共用備品を借りる社員。備品を返した当日に入力する。現在借りたままの備品がある人は、12月5日までに状況を入力する。問い合わせ先は、このメモには記載されていない。</textarea>
-<button class="copy" type="button" onclick="copyText('t16',this)">指示と材料Bをコピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">文体：丁寧　長さ：250字程度　〔指示＋材料B〕</div>
-<textarea id="t17" readonly rows="12">以下の材料を、社員向けの短いお知らせにしてください。
-見出しの後に、要点・対象・お願い・問い合わせの順で出してください。
-材料にない事実を追加せず、足りない情報は要確認としてください。
-文体：丁寧　長さ：250字程度
-今回の材料：12月1日から、共用備品の貸出記録を共通フォームへ入力する。紙への記入は不要。対象は共用備品を借りる社員。備品を返した当日に入力する。現在借りたままの備品がある人は、12月5日までに状況を入力する。問い合わせ先は、このメモには記載されていない。</textarea>
-<button class="copy" type="button" onclick="copyText('t17',this)">指示と材料Bをコピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">文体：簡潔　長さ：150字程度　〔指示＋材料B〕</div>
-<textarea id="t18" readonly rows="12">以下の材料を、社員向けの短いお知らせにしてください。
-見出しの後に、要点・対象・お願い・問い合わせの順で出してください。
-材料にない事実を追加せず、足りない情報は要確認としてください。
-文体：簡潔　長さ：150字程度
-今回の材料：12月1日から、共用備品の貸出記録を共通フォームへ入力する。紙への記入は不要。対象は共用備品を借りる社員。備品を返した当日に入力する。現在借りたままの備品がある人は、12月5日までに状況を入力する。問い合わせ先は、このメモには記載されていない。</textarea>
-<button class="copy" type="button" onclick="copyText('t18',this)">指示と材料Bをコピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">文体：簡潔　長さ：250字程度　〔指示＋材料B〕</div>
-<textarea id="t19" readonly rows="12">以下の材料を、社員向けの短いお知らせにしてください。
-見出しの後に、要点・対象・お願い・問い合わせの順で出してください。
-材料にない事実を追加せず、足りない情報は要確認としてください。
-文体：簡潔　長さ：250字程度
-今回の材料：12月1日から、共用備品の貸出記録を共通フォームへ入力する。紙への記入は不要。対象は共用備品を借りる社員。備品を返した当日に入力する。現在借りたままの備品がある人は、12月5日までに状況を入力する。問い合わせ先は、このメモには記載されていない。</textarea>
-<button class="copy" type="button" onclick="copyText('t19',this)">指示と材料Bをコピー</button><div class="msg" aria-live="polite"></div></div>
-<h3>指示の改善の例</h3>
-<div class="step"><div class="t">例：期限が複数あるとき</div>
-<textarea id="t20" readonly rows="3">期限が複数ある場合は、誰が・いつまでに・何をするかを対応させて分けてください。</textarea>
-<button class="copy" type="button" onclick="copyText('t20',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<p class="note">改善した指示は「v2」としてメモに残します（v1も消さない）。指示を保存することと、回答だけを保存することは別です。</p>
-<details><summary>自己確認の基準（スライドと同じ）</summary><ul class="chk"><li>会議室・11月1日・前日17時が混入していない</li><li>返却当日（借りる社員）と12月5日（借りたままの人）が区別されている</li><li>問い合わせ先を勝手に総務にしていない（要確認）</li><li>改善した指示が、別のお知らせにも使える書き方</li></ul></details>
+<section id="work1" class="lesson" aria-labelledby="w1title">
+<div class="lesson-head"><span class="kicker">ワーク① · 10分</span><h2 id="w1title">第3回の型を、別の企画に使い回して育てる</h2><p>さくら花店（架空の店です）の「母の日のアレンジメント予約会」の案内を、型で作ります。目的は、型の【　】だけを書き換えて、新しい会話で同じ形の文章を作り、型を1行育てて確かめられるようになることです。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜3分</span><h3>型（v1）の【　】を書き換えて送る</h3></div></div><p>ChatGPTで<strong>新しい会話</strong>を開き、次の「型（v1）」を貼ります。<strong>【企画の名前】</strong>を「母の日のアレンジメント予約会」に、<strong>【ここに、企画の情報を貼る】</strong>を、下の「新しい企画の情報」に書き換えてから送ります。</p><div class="prompt" id="w1p1"># 役割
+あなたは、さくら花店のスタッフです。
 
-<h2>予備ワーク（講師の案内がある場合のみ）　文章ルールを参考資料として追加する</h2>
-<div class="lead"><b>何のためのワーク？</b><br>場面（架空）：社内に文章のルールがある。<br><b>ねらい：</b>ルールを参考資料として加え、指示と参考資料の役割の違いを確かめます。</div>
-<div class="step"><div class="t">入力文（同じ会話で）</div>
-<textarea id="t21" readonly rows="9">次の文章ルールを参考にして、お知らせを書き直してください。ただし、日付・対象・期限などの事実は変えないでください。
-【ルール】
-①一文を短くする。
-②読み手が行うことを先に書く。
-③「ご対応のほどよろしくお願いいたします」は「お願いします」にする。</textarea>
-<button class="copy" type="button" onclick="copyText('t21',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<p class="foot">AI研修 ワーク用コピー教材（初版）。講師ノートや案件の内部資料は含みません。入力・ログイン・回答の提出はありません。</p>
-</main><script>
-function copyText(id,btn){var t=document.getElementById(id);var s=t.value;var m=btn.parentNode.querySelector('.msg');
-function ok(){btn.classList.remove('fail');btn.classList.add('done');m.textContent='コピーしました。ChatGPTの入力欄に貼り付けてください。';}
-function fb(){try{t.removeAttribute('readonly');t.focus();t.select();t.setSelectionRange(0,t.value.length);var r=document.execCommand('copy');t.setAttribute('readonly','');if(r){ok();return;}}catch(e){}
-btn.classList.add('fail');m.textContent='コピーできませんでした。上の枠の文字を長押し（パソコンはドラッグ）して選択し、コピーしてください。';}
-if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(s).then(ok,fb);}else{fb();}}
-document.querySelectorAll('textarea').forEach(function(t){t.style.height='auto';t.style.height=Math.min(t.scrollHeight+6,520)+'px';});
-</script></body></html>
+# 目的
+【企画の名前】の案内を、3つの場所に合わせて作る
+
+# 材料
+"""
+【ここに、企画の情報を貼る】
+"""
+
+# 条件
+- 材料にないことは書かない
+- 日時・料金・申込方法は、3つすべてに入れる
+- 日時は、材料の書き方のまま書く
+
+# 出力の形
+## 1. 店頭掲示用
+見出しをつけて、本文は150字程度
+## 2. SNS投稿用
+100字程度。最後に、参加を呼びかける1文
+## 3. スタッフ向け連絡
+箇条書き。準備するものと、当日までにすること</div><button class="copy" data-copy="w1p1">型（v1）をコピー</button>
+<p><strong>新しい企画の情報（架空）</strong></p><div class="prompt" id="w1p1b">企画：母の日のアレンジメント予約会
+日時：母の日の前の週末（土・日）10:00〜17:00
+場所：さくら花店の店頭
+内容：母の日のアレンジメント（3,000円・5,000円の2種類）の予約を受け付ける
+受け取り：母の日の前日・当日に、店頭で
+申込方法：店頭でスタッフに伝える
+特典：予約した人に、メッセージカードを無料で付ける
+準備するもの：見本のアレンジメント2つ、予約票、案内掲示</div><button class="copy" data-copy="w1p1b">新しい企画の情報をコピー</button></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">3〜4分</span><h3>3つの見出しと、混ざっていないかを確かめる</h3></div></div><p>送る文章はありません。</p><ul><li>店頭掲示用・SNS投稿用・スタッフ向け連絡の3つに分かれているか</li><li>料金（3,000円・5,000円）・申込方法・特典が入っているか</li><li>前の企画（花束づくり体験会）の情報（14:00・1,000円・定員6名）が混ざっていないか</li></ul></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">4〜6分</span><h3>型に1行足して「v2」として保存する</h3></div></div><p>答えを見て気になった所を1つ選び、型の「# 条件」に足す1行を決めます。メモ帳などに型を貼り、その1行を足して、<strong>「母の日_3か所案内_v2」</strong>の名前で保存します。</p><p class="look">足す1行の例：「SNS投稿用には、受け取りの日も入れる」／「特典がある場合は、3つすべてに入れる」／「スタッフ向け連絡は、日付の早い順に並べる」</p><p class="note">足す1行には、特定の日付や名前を入れません。どの企画にも当てはまる書き方にします。</p></article>
+<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">6〜9分</span><h3>新しい会話で、v2の型を試す</h3></div></div><p>もう一度<strong>新しい会話</strong>を開き、v2の型（【　】は①と同じに書き換える）を送ります。足した1行が効いているか、①の答えと見比べます。</p></article>
+<details class="check"><summary>9〜10分：確認ポイント（答え合わせ）</summary><div class="inside"><ul><li>3つの見出しに分かれている。</li><li>料金（3,000円・5,000円）・申込方法・特典が入っている。</li><li>前の企画（花束づくり体験会）の情報が混ざっていない。</li><li>型に1行足して、名前を付けて保存した。</li><li>v2の型で、足した1行が効いていることを確かめた。</li></ul>
+<div class="memo"><b>実際に試した例</b><ul><li>v1：3つの見出しで返り、体験会の情報は混ざらず、特典も3つすべてに入った。ただし、SNS投稿用に受け取りの日が入らなかった</li><li>「SNS投稿用には、受け取りの日も入れる」を足したv2：SNS投稿用に受け取りの日が入った</li></ul></div>
+<p>足した1行が効かなかったときは、書き方を短く、はっきりさせて、もう一度試します。</p><p class="finish">確認が終わったら、講義画面に戻ります。</p></div></details>
+<details class="check"><summary>早く終わったら：型の一番上に使い方を書く</summary><div class="inside"><p>v2の型の一番上に、次の3行を書き足します（ほかの人に渡すときのため）。</p><div class="prompt" id="w1ex">何に使う型か：体験会・企画の案内を、3か所向けに作る
+使い方：【　】に企画名と材料を入れて、新しい会話で送る
+気をつけること：日時・料金は、送る前に材料と見比べる</div><button class="copy" data-copy="w1ex">3行をコピー</button></div></details>
+<details class="check"><summary>途中までのとき</summary><div class="inside"><p>①〜③（v1を送って、足す1行を決める）まで、できていれば大丈夫です。</p></div></details>
+</section>
+
+<section id="work2" class="lesson" aria-labelledby="w2title">
+<div class="lesson-head"><span class="kicker">ワーク② · 10分</span><h2 id="w2title">プロジェクトを作り、短い依頼で比べる</h2><p>目的は、プロジェクトに前提と店舗情報を入れて、短い依頼でも、店らしい文章が作れることを確かめることです。<strong>通常のチャット</strong>で行います。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜3分</span><h3>「さくら花店」のプロジェクトを作り、指示を貼る</h3></div></div><ol class="ops"><li>左のメニューの<strong>「プロジェクト」</strong>の横の<strong>「＋」</strong>を押す（メニューが閉じているときは、左上の家の形のボタンで開く）</li><li>名前に「さくら花店」と入れて、<strong>「プロジェクトを作成」</strong>を押す</li><li>できたプロジェクトの右上の<strong>「…」</strong>→<strong>「プロジェクト設定」</strong>を押す</li><li><strong>「指示」</strong>の欄に、下の「プロジェクトの指示」を貼り、<strong>「保存」</strong>を押す</li></ol>
+<div class="shots"><figure><img src="img/proj-1-plus.jpg" alt="左のメニューの「プロジェクト」の横にある「＋」" width="290" height="90" loading="lazy"><figcaption>① 「プロジェクト」の横の「＋」</figcaption></figure><figure><img src="img/proj-2-create.jpg" alt="プロジェクト名を入れて「プロジェクトを作成」を押す画面" width="512" height="264" loading="lazy"><figcaption>② 名前を入れて「プロジェクトを作成」</figcaption></figure><figure><img src="img/proj-3-menu.jpg" alt="プロジェクトの右上の「…」から「プロジェクト設定」を選ぶ画面" width="650" height="150" loading="lazy"><figcaption>③ 右上の「…」→「プロジェクト設定」</figcaption></figure><figure><img src="img/proj-4-settings.jpg" alt="プロジェクト設定の「指示」の欄に文章を入れ、「保存」を押す画面" width="512" height="644" loading="lazy"><figcaption>④ 「指示」に貼って「保存」</figcaption></figure></div>
+<div class="prompt" id="w2p1">あなたは、さくら花店のスタッフとして、お客様向けの文章を書きます。
+・言葉づかいは、やさしく丁寧に。専門用語は使わない
+・材料や、下の店舗情報にないことは書かない。わからないことは「要確認」と書く
+・日時は、材料の書き方のまま書く
+
+店舗情報：
+・さくら花店。駅から歩いて5分の商店街。定休日は月曜日。営業時間は10:00〜19:00
+・体験会：初心者向け花束づくり体験会。毎月第1土曜日 14:00〜15:00。参加費1人1,000円（花材代込み）。定員6名。持ち物不要
+・申込方法：店頭でスタッフに申し込む（電話・インターネットでの申込はなし）</div><button class="copy" data-copy="w2p1">プロジェクトの指示をコピー</button>
+<p class="note">画面は2026年10月時点のものです。プロジェクトが使えない人は、下の<a href="#noproj">「プロジェクトが使えないとき」</a>の手順で進めます。</p></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">3〜5分</span><h3>プロジェクトの中で、短い依頼を送る</h3></div></div><p>プロジェクトの画面の入力欄（「さくら花店 で新しいチャット」）に、次の一文だけを送ります。</p><div class="prompt" id="w2p2">来月の体験会の告知を、150字で書いてください。</div><button class="copy" data-copy="w2p2">入力文をコピー</button></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">5〜7分</span><h3>プロジェクトの外で、同じ一文を送る</h3></div></div><p>左のメニューの「新しいチャット」で、プロジェクトの<strong>外</strong>の新しい会話を開き、②と同じ一文を送ります。</p></article>
+<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">7〜8分</span><h3>2つの答えを比べる</h3></div></div><p>送る文章はありません。次の点を比べます。</p><ul><li>店の名前・日時（毎月第1土曜日 14:00〜15:00）・参加費（1,000円）・申込方法（店頭）が、正しく入っているか</li><li>想像で書いた所（材料にない日付など）はないか</li></ul><p class="note">メモリを有効にしている人は、プロジェクトの外でも、これまでの回で話したさくら花店の情報が出ることがあります。それは、メモリが前の会話を覚えているためです。何を覚えているかは自分で選べず、日付を想像で決めることもあります。</p></article>
+<article class="step"><div class="step-head"><span class="num">5</span><div><span class="time">8〜9分</span><h3>プロジェクトの中で、SNS用に直してもらう</h3></div></div><p>②の会話（プロジェクトの中）に戻って送ります。店の情報が残るかを確かめます。</p><div class="prompt" id="w2p5">この内容をSNS用に100字で書いてください。</div><button class="copy" data-copy="w2p5">入力文をコピー</button></article>
+<details class="check"><summary>9〜10分：確認ポイント（答え合わせ）</summary><div class="inside"><ul><li>プロジェクトの中の答えに、第1土曜日・14:00〜15:00・1,000円・店頭での申込が入っている。</li><li>プロジェクトの外の答えで、店の情報がない所・想像で決めた所（日付など）、またはメモリで覚えていた所を確かめた。</li><li>SNS用に直しても、店の情報が残っている。</li><li>短い依頼でも、プロジェクトの中なら説明が省けることがわかった。</li></ul>
+<div class="memo"><b>実際に試した例</b><ul><li>プロジェクトの中：毎月第1土曜日 14:00〜15:00・1,000円（花材代込み）・定員6名・店頭での申込が入った。SNS用に直しても残った</li><li>プロジェクトの外（通常のチャット）：メモリが前の会話を覚えていて、店の情報が入った</li><li>一時チャット：「11月7日（土）」と、材料にない日付を決めてしまった</li></ul></div>
+<p>メモリまかせでは、何が使われるか選べません。決まった前提は、プロジェクトに書いておくのが確実です。</p><p class="finish">確認が終わったら、講義画面に戻ります。</p></div></details>
+<details class="check"><summary>早く終わったら：答えの根拠を確かめる</summary><div class="inside"><p>プロジェクトの中の会話で送ります。</p><div class="prompt" id="w2ex">どの店舗情報をもとにしましたか。</div><button class="copy" data-copy="w2ex">入力文をコピー</button></div></details>
+<details class="check" id="noproj"><summary>プロジェクトが使えないとき</summary><div class="inside"><p>新しい会話の最初に、上の「プロジェクトの指示」を貼り、その下に「来月の体験会の告知を、150字で書いてください。」を続けて送ります。何も貼らずに同じ一文を送った会話と比べます。</p></div></details>
+<details class="check"><summary>途中までのとき・研修のあとで</summary><div class="inside"><p>①と②（プロジェクトを作って、中で送る）まで、できていれば大丈夫です。</p><p>ワークで作ったプロジェクトは、研修のあとに消してかまいません。消すときは、プロジェクトの右上の「…」→「プロジェクト設定」→「プロジェクトを削除」です（中の会話も消えます）。</p></div></details>
+</section>
+
+<section id="extra" class="lesson extra" aria-labelledby="extitle"><div class="lesson-head"><span class="kicker">予備ワーク · 5〜10分 · 講師の案内がある場合のみ</span><h2 id="extitle">カスタム指示に1行足して違いを見て、元に戻す</h2><p>本編60分とは別の予備課題です。通常は実施しません。会社のアカウントで設定を変えられない人は、見るだけでかまいません。</p></div>
+<article class="step"><span class="time">0〜2分</span><h3>カスタム指示に1行足して保存する</h3><p>左下の自分のアイコン →「パーソナライズ」→ 画面の下のほうの「カスタム指示」の「ChatGPT」を開き、次の1行を足して「保存」します。<strong>もとの内容があれば、先にメモに控えておきます。</strong></p><div class="prompt" id="ex1">回答の最後に、確かめたほうがよい点を1行書いてください。</div><button class="copy" data-copy="ex1">1行をコピー</button></article>
+<article class="step"><span class="time">2〜4分</span><h3>新しい会話で確かめる</h3><p>プロジェクトの外の<strong>新しい会話</strong>で送り、最後に1行が付くか確かめます。</p><div class="prompt" id="ex2">体験会のお礼のあいさつ文を2文で書いてください。</div><button class="copy" data-copy="ex2">入力文をコピー</button></article>
+<article class="step"><span class="time">4〜6分</span><h3>元に戻す</h3><p>カスタム指示から、足した1行を消して「保存」します。</p></article>
+<details class="check"><summary>見直す</summary><div class="inside"><ul><li>答えの最後に、確かめる点が1行付いた。</li><li>カスタム指示を、元の状態に戻した。</li></ul></div></details>
+</section>
+
+<section id="guide" class="lesson extra" aria-labelledby="gdtitle"><div class="lesson-head"><span class="kicker">今日のポイント · 早見表</span><h2 id="gdtitle">覚えておいてもらう、3つの方法</h2><p>画面は2026年10月時点のものです。表示の名前は、変わることがあります。</p></div>
+<div class="how"><div><b>① 型を保存して貼る</b>効く範囲：貼ったその会話。変えない所と【　】に分ける。日付・名前・場所・料金は【材料】の中だけ。同じ直しを2回頼んだら、型に1行足す（v1→v2）</div><div><b>② カスタム指示</b>効く範囲：すべての会話。左下のアイコン →「パーソナライズ」→「カスタム指示」。自分の立場・言葉づかい・いつもの約束を短く。個人情報・その日だけの情報は書かない</div><div><b>③ プロジェクト</b>効く範囲：その仕事の中の会話。「プロジェクト」の「＋」で作り、「…」→「プロジェクト設定」の「指示」に前提を書く。資料は「ソース」から</div><div><b>メモリ</b>会話から自動で覚える機能。「パーソナライズ」→「ChatGPT のメモリ」の「管理」で確かめ、消せる</div><div><b>一時チャット</b>履歴に残らない。ただし、メモリやカスタム指示は参照されることがある（2026年10月の画面表示）</div><div><b>入れる情報に注意</b>指示や資料は会話のたびにAIに渡される。お客様の名前・連絡先・社外秘は入れない。古くなったら直すか消す</div></div>
+</section>
+<div class="intro" style="margin-top:40px"><p><strong>今日の基本は、説明は一度だけ。</strong></p><p>決まった形の文章は型で、いつも同じ前提はカスタム指示で、仕事ごとの情報はプロジェクトで。迷ったら、まず型から始めて、同じ説明を何度も貼るようになったら、プロジェクトにまとめます。</p><p class="small">このページは入力文のコピー用教材です。回答の提出や個人情報の入力はありません。カスタム指示やプロジェクトに、お客様の情報や社外秘を入れないでください。</p></div>
+</main><footer>AI研修 第11回 ワーク用ページ · v2 · 2026年10月14日<br>演習の設定はすべて架空です。</footer>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+<script>
+let messageTimer;
+function showMessage(text){const s=document.getElementById('status');s.textContent=text;clearTimeout(messageTimer);messageTimer=setTimeout(()=>{s.textContent=''},4500)}
+async function copyPrompt(button){const target=document.getElementById(button.dataset.copy);const text=target.textContent.trim();try{if(!navigator.clipboard||!window.isSecureContext)throw new Error('manual');await navigator.clipboard.writeText(text);const original=button.textContent;button.textContent='コピーしました';setTimeout(()=>{button.textContent=original},2200);showMessage('コピーしました。ChatGPTの入力欄に貼り付けてください。')}catch(e){const range=document.createRange();range.selectNodeContents(target);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);showMessage('文章を選択しました。長押し、または右クリックでコピーしてください。')}}
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',()=>copyPrompt(button)));
+</script>
+</body></html>

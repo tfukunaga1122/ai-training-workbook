@@ -1,176 +1,267 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>第12回 ワーク用ページ｜自分の仕事で、AIを使ってみる</title><style>
-:root{--ink:#1B1B2F;--ind:#2E2A5E;--acc:#4B3FD6;--cor:#E8573D;--grn:#1E8E5A;--tint:#F3F1FF;--line:#CFCBEF;--bg:#fff}
-@media (prefers-color-scheme:dark){:root{--ink:#EDEDF7;--ind:#CFCBFF;--acc:#9A92FF;--cor:#FF8A70;--grn:#4FD39A;--tint:#262447;--line:#43407A;--bg:#15142B}}
-*{box-sizing:border-box}
-body{overflow-wrap:anywhere;margin:0;background:var(--bg);color:var(--ink);font-family:"BIZ UDPGothic","Yu Gothic","Hiragino Sans","Meiryo",sans-serif;line-height:1.7;font-size:17px}
-main{max-width:760px;margin:0 auto;padding:16px}
-h1{font-size:1.45rem;color:var(--ind);margin:.4em 0 .2em}
-h2{font-size:1.25rem;color:var(--ind);border-bottom:3px solid var(--acc);padding-bottom:.2em;margin-top:2em}
-h3{font-size:1.05rem;margin:1.2em 0 .3em;color:var(--acc)}
-.lead{background:var(--tint);border-radius:14px;padding:12px 14px}
-.step{border:2px solid var(--line);border-radius:14px;padding:10px 12px;margin:12px 0}
-.step .t{font-weight:bold;color:var(--ind)}
-.step .m{font-size:.85rem;color:var(--acc);font-weight:bold}
-textarea{width:100%;font:inherit;font-size:16px;line-height:1.6;border:2px solid var(--line);border-radius:10px;padding:10px;background:var(--tint);color:var(--ink);resize:vertical}
-button.copy{display:block;width:100%;margin:8px 0 2px;padding:14px;border:0;border-radius:12px;background:var(--acc);color:#fff;font:inherit;font-weight:bold;font-size:1.05rem;cursor:pointer}
-button.copy.done{background:var(--grn)}
-button.copy.fail{background:var(--cor)}
-.msg{font-size:.88rem;min-height:1.3em;color:var(--ind)}
-.note{font-size:.9rem;color:var(--ind)}
-.warn{background:#FEF3D9;color:#5b3d00;border-radius:12px;padding:10px 12px;margin:10px 0}
-@media (prefers-color-scheme:dark){.warn{background:#4a3a14;color:#ffe9b0}}
-details{border:2px solid var(--line);border-radius:12px;padding:8px 12px;margin:10px 0}
-summary{font-weight:bold;cursor:pointer;color:var(--ind)}
-ul.chk{padding-left:1.2em}
-.imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
-.imgs figure{margin:0;text-align:center}
-.imgs img{width:100%;height:auto;border:2px solid var(--line);border-radius:10px;background:#fff}
-.imgs figcaption{font-size:.85rem}
-a.dl{display:inline-block;margin-top:4px;padding:6px 10px;border:2px solid var(--acc);border-radius:10px;color:var(--acc);font-weight:bold;text-decoration:none;font-size:.9rem}
-table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border:1px solid var(--line);padding:4px 6px}th{background:var(--tint)}
-.foot{font-size:.8rem;color:var(--ind);margin:2.5em 0 1em}
-</style></head><body><main>
-<h1>第12回 ワーク用ページ｜自分の仕事で、AIを使ってみる</h1>
-<div class="lead"><p><b>使い方：コピー → ChatGPTに貼り付け → 送信</b>。このページとChatGPTを切り替えて使います。講義からは退出せず、講師が案内した時刻に講義画面へ戻ります。</p>
-<p>コピーボタンが使えないときは、枠の中の文字を長押し（パソコンはドラッグ）して選択し、コピーできます。ChatGPTへのログインは事前に済ませてください。</p>
-<p class="note">このページは<b>コピーを助ける補助教材</b>です。お題・手順・時間・完成条件・答え合わせは、講義のスライドに載っています。入力・ログイン・回答の提出はありません。登場する情報はすべて架空です。</p></div>
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="AI研修 第12回（最終回）。秋の体験会をアンケートとお客様の声から企画し、企画メモと告知文まで仕上げるワークの材料・依頼文・点検表をまとめた受講者用ページです。">
+<title>第12回 ワーク用ページ｜AI研修</title>
+<style>
+:root{--ink:#123537;--muted:#52696a;--green:#087e83;--paper:#f3f7f4;--line:#c9dad6;--white:#fff;--amber:#8b5316;--soft:#fff3dc}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.8 "Yu Gothic UI","Hiragino Kaku Gothic ProN",Meiryo,sans-serif}a{color:#086b72;text-underline-offset:4px}button,summary{touch-action:manipulation}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #b56b0c;outline-offset:4px}header{background:var(--ink);color:white;padding:48px 24px 34px}header>div,main,nav>div{max-width:860px;margin:auto}.eyebrow{font-size:14px;letter-spacing:.12em;color:#bce5dc;margin:0 0 10px}h1{font-size:clamp(28px,6vw,43px);line-height:1.35;letter-spacing:.03em;margin:0 0 14px}header p{max-width:680px;margin-bottom:0;color:#e1efea}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.chips span{font-size:13px;border:1px solid #638884;padding:3px 12px;border-radius:30px}nav{position:sticky;top:0;background:#fffefbef;border-bottom:1px solid var(--line);z-index:5}nav>div{display:flex;padding:10px 16px;gap:9px}nav a{flex:1;text-align:center;padding:8px 5px;font-size:15px;text-decoration:none;font-weight:700;border-radius:8px}nav a:hover{background:#e5f1eb}main{padding:28px 20px 60px}h2{font-size:28px;line-height:1.4;margin:0 0 8px}h3{font-size:20px;line-height:1.5;margin:0}.intro{padding:22px 24px;background:var(--white);border-left:5px solid var(--green)}.intro p{margin:0 0 12px}.intro p:last-child{margin:0}.small{font-size:14px;color:var(--muted)}.lesson{padding-top:45px}.lesson-head{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:18px}.lesson-head p{margin:6px 0 0}.kicker{font-weight:700;color:var(--green);font-size:14px;letter-spacing:.06em}.step{padding:24px;background:var(--white);border:1px solid var(--line);border-radius:12px;margin:14px 0}.step-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}.num{flex:none;width:32px;height:32px;background:var(--green);border-radius:50%;color:#fff;display:grid;place-items:center;font-size:17px;font-weight:bold}.time{font-size:13px;color:var(--muted);font-weight:600}.step p{margin:12px 0}.prompt{padding:17px 18px;background:#eef6f2;border-left:3px solid var(--green);white-space:pre-wrap;overflow-wrap:anywhere;user-select:text;font-size:18px;line-height:1.8;margin:14px 0 12px}.copy{border:0;border-radius:7px;background:var(--green);color:white;font-family:inherit;font-size:15px;font-weight:700;line-height:1.5;padding:11px 20px;min-height:44px;cursor:pointer}.copy:hover{background:#09656b}.copy:disabled{opacity:.8}.look{font-size:15px;color:#405d5a;padding-top:4px}.label{font-weight:700;display:block;font-size:14px;margin-bottom:5px}.choices{margin-top:14px;border-top:1px solid var(--line);padding-top:14px}.choices p{font-weight:600}.source{border:2px solid var(--green);padding:18px 22px;background:#eaf4ef;border-radius:10px}.source p{margin:0}.check{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}.check summary{padding:19px 24px;font-size:18px;font-weight:700;cursor:pointer;list-style-position:inside;background:#e2efe7}.check .inside{padding:6px 24px 24px}.check ul{padding-left:1.3em}.check li{margin:10px 0}.note{padding:14px 18px;background:var(--soft);color:#62421c;font-size:15px;border-radius:8px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}.pair div{background:#f2f7f4;padding:14px 18px;border-radius:8px}.pair h3{font-size:17px}.pair ul{padding-left:1.2em}.finish{margin-top:20px;font-weight:700;color:#075f64}.extra{border-top:1px solid var(--line);margin-top:30px}.status{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#123537;color:#fff;padding:12px 22px;border-radius:10px;z-index:10;max-width:90%;text-align:center;box-shadow:0 4px 20px #0003;pointer-events:none}.status:empty{display:none}footer{padding:25px 20px;border-top:1px solid var(--line);text-align:center;font-size:13px;color:var(--muted)}noscript p{padding:15px;background:var(--soft)}@media(max-width:560px){body{font-size:16px}header{padding:30px 20px}main{padding:22px 14px 44px}.intro{padding:18px}.step{padding:19px 17px}h2{font-size:25px}h3{font-size:19px}.prompt{font-size:17px;padding:15px}.pair{grid-template-columns:1fr}.check .inside{padding:5px 18px 20px}.check summary{padding:17px 18px}nav a{font-size:14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{nav,.copy,.status{display:none}header{background:#fff;color:#123537}header p,.eyebrow{color:#123537}details .inside{display:block}.step{break-inside:avoid}main{max-width:100%}}
+.memo{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:15px;margin:14px 0}.memo b{display:block;margin-bottom:4px}.memo ul{margin:0;padding-left:1.2em}
+.how{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}.how div{background:#f2f7f4;border-radius:8px;padding:12px 16px;font-size:15px}.how b{display:block;margin-bottom:4px}@media(max-width:560px){.how{grid-template-columns:1fr}}
 
-<h2>ワーク①　未完了を整理して、引き継ぎ文を作る</h2>
-<div class="lead"><b>何のためのワーク？</b><br>場面（架空）：あなたは問い合わせ対応の担当を別の人に引き継ぐことになった。手元の50件の記録から、まだ終わっていない案件を整理して、次の担当者に伝えたい。<br><b>ねらい：</b>目的に沿って、記録を抽出・集計し、引き継ぎ文に変える流れを体験します。AIの数字は、下の検算済みの数字と見比べて確認します。</div>
-<h3>元データ（問い合わせ対応の記録・50件・架空）　〔一括コピー〕</h3>
-<div class="step"><div class="t">元データ（50件）</div>
-<textarea id="t22" readonly rows="10">案件ID,問い合わせ区分,対応状況,問い合わせ内容
-Q-001,変更,完了,会議室Cの予約を別の部屋に変えたい
-Q-002,その他,完了,貸出ルールについて意見がある
-Q-003,予約,未対応,台車を明日の午前に借りたい
-Q-004,予約,完了,会議室Cを来週火曜の午後に使いたい
-Q-005,予約,完了,プロジェクターを明日の午後に借りたい
-Q-006,利用方法,完了,プロジェクターの接続方法がわからない
-Q-007,利用方法,完了,貸出できる備品の一覧を見たい
-Q-008,予約,確認中,カメラを今週金曜の午前に借りたい
-Q-009,予約,完了,モニターを来週水曜の午後に借りたい
-Q-010,その他,完了,共用備品の追加を希望する
-Q-011,その他,未対応,備品の汚れについて報告したい
-Q-012,利用方法,未対応,予約の確認画面の見方がわからない
-Q-013,取消,完了,カメラの貸出予約を取り消したい
-Q-014,利用方法,確認中,会議室の鍵の受け取り方を知りたい
-Q-015,予約,完了,会議室Aを来週火曜の午前に使いたい
-Q-016,変更,確認中,プロジェクターの貸出日を火曜から水曜へ変えたい
-Q-017,利用方法,完了,共通フォームにログインできない場合の対処を知りたい
-Q-018,利用方法,未対応,受付時間外に受け取る方法を知りたい
-Q-019,利用方法,完了,返却のときの手順を知りたい
-Q-020,取消,未対応,モニターの予約をキャンセルしたい
-Q-021,変更,未対応,ノートパソコンの返却日を1日延ばしたい
-Q-022,利用方法,確認中,共通フォームの入力方法がわからない
-Q-023,変更,未対応,会議室Aの利用人数を増やしたい
-Q-024,その他,確認中,備品の破損を見つけたので連絡したい
-Q-025,利用方法,完了,備品の返却場所を知りたい
-Q-026,取消,完了,ノートパソコンの予約を取り消したい
-Q-027,予約,確認中,スクリーンを今週木曜に借りたい
-Q-028,予約,確認中,マイクを来週木曜の午前に借りたい
-Q-029,利用方法,完了,予約の空き状況の見方を知りたい
-Q-030,予約,未対応,会議室Aを再来週月曜の午後に使いたい
-Q-031,変更,完了,カメラの貸出を午前から午後に変えたい
-Q-032,利用方法,確認中,入力画面で修正ボタンの場所がわからない
-Q-033,取消,確認中,プロジェクターの貸出をキャンセルしたい
-Q-034,変更,完了,マイクの貸出日を木曜から金曜へ変えたい
-Q-035,予約,完了,会議室Aを来月初めの午前に使いたい
-Q-036,予約,完了,会議室Bを今週木曜の午後に使いたい
-Q-037,予約,未対応,会議室Bを来週金曜の午前に使いたい
-Q-038,変更,完了,モニターの受取日を前倒しにしたい
-Q-039,予約,完了,タブレットを来週水曜の終日借りたい
-Q-040,予約,完了,ホワイトボードを明後日の午前に借りたい
-Q-041,変更,完了,会議室Aの予約を午前から午後に変えたい
-Q-042,取消,完了,タブレットの貸出をキャンセルしたい
-Q-043,変更,完了,台車の借りる日を翌週に変えたい
-Q-044,予約,完了,ノートパソコンを金曜の終日借りたい
-Q-045,取消,未対応,会議室Cの予約を取り消したい
-Q-046,変更,確認中,会議室Bの予約時間を1時間遅らせたい
-Q-047,予約,確認中,延長コードを来週月曜に借りたい
-Q-048,その他,確認中,会議室の空調について要望がある
-Q-049,取消,完了,会議室Aの木曜の予約をキャンセルしたい
-Q-050,取消,完了,会議室Bの予約をキャンセルしたい</textarea>
-<button class="copy" type="button" onclick="copyText('t22',this)">50件を一括コピー</button><div class="msg" aria-live="polite"></div></div>
-<h3>区分の意味（確認用・必要ならChatGPTに一緒に伝えてもよい）</h3>
-<div class="step"><div class="t">問い合わせ区分の意味</div>
-<textarea id="t23" readonly rows="9">予約：新しく備品の貸出や会議室の利用を申し込む
-変更：すでにある予約の日時や内容を変える
-取消：すでにある予約をやめる
-利用方法：使い方や手順を知りたい（質問）
-その他：上のどれにも当てはまらない（要望・報告など）</textarea>
-<button class="copy" type="button" onclick="copyText('t23',this)">区分の意味をコピー</button><div class="msg" aria-live="polite"></div></div>
-<h3>入力文</h3>
-<div class="step"><div class="t">① 0〜2分：新しい会話で先に送る（続けて、上の元データを貼る）</div>
-<textarea id="t24" readonly rows="4">以下は問い合わせ対応の記録（50件）です。列は案件ID・問い合わせ区分・対応状況・問い合わせ内容。確認中と未対応を未完了とします。まず受け取ったとだけ答えて。</textarea>
-<button class="copy" type="button" onclick="copyText('t24',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">② 2〜4分：未完了の抽出・集計</div>
-<textarea id="t25" readonly rows="3">未完了（確認中・未対応）を抽出し、合計と区分別・状態別の件数を表に。案件IDも全部並べて。完了は除く。</textarea>
-<button class="copy" type="button" onclick="copyText('t25',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">③ 4〜6分：引き継ぎ文（【全体像／具体的な対応】のどちらか先に伝えるほうを自分で選ぶ）</div>
-<textarea id="t26" readonly rows="3">次の担当者向けの引き継ぎ文を作って。【件数の全体像／残っている対応】を先に。記録にない約束は書かない。</textarea>
-<button class="copy" type="button" onclick="copyText('t26',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">④ 6〜8分：1か所修正</div>
-<textarea id="t27" readonly rows="3">【直したい箇所】を【どう直すか】に変更して。集計の数字は変えないで。</textarea>
-<button class="copy" type="button" onclick="copyText('t27',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<details><summary>自己確認：検算済みの数字（制作側でプログラムにより検算。全50件を手で数え直す必要はありません）</summary>
-<p>全50件＝完了28＋確認中12＋未対応10。<b>未完了は22件</b>（確認中12・未対応10）。</p>
-<table><tr><th>区分</th><th>確認中</th><th>未対応</th><th>計</th></tr><tr><td>予約</td><td>4</td><td>3</td><td>7</td></tr><tr><td>変更</td><td>2</td><td>2</td><td>4</td></tr><tr><td>取消</td><td>1</td><td>2</td><td>3</td></tr><tr><td>利用方法</td><td>3</td><td>2</td><td>5</td></tr><tr><td>その他</td><td>2</td><td>1</td><td>3</td></tr><tr><th>計</th><th>12</th><th>10</th><th>22</th></tr></table>
-<p>代表例（未完了）：Q-003（予約・未対応）、Q-011（その他・未対応）、Q-012（利用方法・未対応）、Q-008（予約・確認中）、Q-014（利用方法・確認中）、Q-016（変更・確認中）</p></details>
+.imgbox{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;margin:12px 0;text-align:center}.imgbox img{max-width:100%;height:auto;border:1px solid var(--line)}
+.dl{display:inline-block;margin-top:10px;background:var(--green);color:#fff;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:7px;min-height:44px;box-sizing:border-box}.dl:hover{background:#09656b}
+ol.ops{padding-left:1.4em}ol.ops li{margin:6px 0}
+</style>
+<style>
+.tbl{width:100%;border-collapse:collapse;background:#fff;font-size:15px;margin:12px 0}.tbl th,.tbl td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}.tbl th{background:#e2efe7}
+.ck{list-style:none;padding-left:0}.ck li{padding-left:1.6em;text-indent:-1.6em}.ck li:before{content:"□ ";font-weight:700;color:var(--green)}
+</style>
+</head>
+<body>
+<header><div><p class="eyebrow">AI研修 · 第12回（最終回）</p><h1>学んだことをつなげて、<br>一つの仕事を最後まで。</h1><p>ワークで使う材料と、工程ごとの依頼文を、ここからコピーできます。講師の説明を聞いた後、指定されたワークに進んでください。</p><div class="chips"><span>ログイン不要の教材ページ</span><span>スマートフォン対応</span><span>提出・回答の送信なし</span></div></div></header>
+<nav aria-label="ワークを選択"><div><a href="#materials">材料</a><a href="#work1">ワーク①</a><a href="#work2">ワーク②</a><a href="#guide">点検表</a></div></nav>
+<main>
+<div class="intro"><p><strong>使い方は「コピー → ChatGPTに貼り付け → 送信」</strong></p><p>今日のワークは、<strong>1つの会話</strong>で、工程を続けて進めます（前の工程の結果を、次の工程で使うため）。ワーク①を始めたら、ワーク②まで<strong>同じ会話</strong>を使います。思考量は<strong>Medium</strong>にしておけば、すべての工程を進められます。</p><p>第11回で「さくら花店」のプロジェクトを作った人は、その中の新しい会話で始めてもかまいません。前の回を欠席した人も、このページから材料と依頼文をコピーすれば進められます。</p><p class="small">ChatGPTへのログインは事前に済ませてください。コピーボタンが使えない場合は、緑色の枠内の文章を長押し・選択してコピーできます。講義からは退出せず、講師が案内した時刻に講義画面へ戻ります。</p></div>
+<noscript><p>コピーボタンにはJavaScriptを使用します。ボタンが動かない場合も、枠内の文章を選択してコピーできます。</p></noscript>
 
-<h2>ワーク②　自分の仕事で試し、直す</h2>
-<div class="lead"><b>何のためのワーク？</b><br>場面（架空）：ここまで練習した使い方を、自分の仕事で試す。実在の顧客情報・社内の機密資料は使わず、練習用の架空の材料を使う。<br><b>ねらい：</b>結果を使う人・材料・欲しい結果の形・判断条件を自分で決め、実行して1か所直し、次に使う場面を残します。</div>
-<h3>入力枠（5項目を自分で埋める）</h3>
-<div class="step"><div class="t">入力枠</div>
-<textarea id="t28" readonly rows="9">今回試す仕事：
-結果を使う人：
-使う材料：
-欲しい結果の形：
-よい結果か判断する条件：
+<section id="materials" class="lesson" aria-labelledby="mttitle">
+<div class="lesson-head"><span class="kicker">材料（架空）</span><h2 id="mttitle">今日の材料A・B・C</h2><p>さくら花店（架空の店です）の秋の体験会を企画するための材料です。工程②〜④の依頼文には、それぞれの材料がすでに入っています（ここは確認用）。</p></div>
+<details class="check"><summary>材料A　前回の体験会の参加者アンケート（24名）</summary><div class="inside"><div class="prompt" id="mA">番号,年代,初めての参加,次に参加したい時間帯,次に作りたいもの
+1,30代,はい,平日の夜,リース
+2,40代,はい,土曜の昼,花束
+3,20代,はい,平日の夜,リース
+4,60代以上,いいえ,土曜の昼,アレンジ
+5,30代,はい,平日の夜,リース
+6,50代,いいえ,日曜の朝,花束
+7,40代,はい,土曜の昼,リース
+8,30代,はい,平日の夜,アレンジ
+9,20代,はい,平日の夜,リース
+10,50代,いいえ,土曜の昼,花束
+11,40代,はい,平日の夜,リース
+12,60代以上,いいえ,日曜の朝,アレンジ
+13,30代,はい,平日の夜,花束
+14,40代,いいえ,土曜の昼,リース
+15,20代,はい,平日の夜,リース
+16,50代,はい,土曜の昼,花束
+17,30代,いいえ,平日の夜,リース
+18,40代,はい,土曜の昼,アレンジ
+19,60代以上,いいえ,日曜の朝,花束
+20,30代,はい,平日の夜,リース
+21,50代,いいえ,土曜の昼,アレンジ
+22,20代,はい,平日の夜,花束
+23,40代,いいえ,日曜の朝,花束
+24,30代,はい,土曜の昼,リース</div><button class="copy" data-copy="mA">材料Aをコピー</button></div></details>
+<details class="check"><summary>材料B　アンケートの自由記述（12件）</summary><div class="inside"><div class="prompt" id="mB">1. 先生が丁寧に教えてくれて、初めてでも作れた。
+2. 花の種類がもっと選べるとうれしい。
+3. 1時間だと少し短く、最後は急いでしまった。
+4. 作業机が狭く、隣の人とぶつかった。
+5. 持ち帰り用の袋があって助かった。
+6. 平日の夜にも開いてほしい。
+7. スタッフの方が明るくて楽しかった。
+8. 駐車場の場所がわかりにくかった。
+9. 季節の花を使えたのがよかった。
+10. 子ども連れでも参加できる回がほしい。
+11. 説明が早くて、ついていけない所があった。
+12. できあがった花束の写真を撮ってもらえてうれしかった。</div><button class="copy" data-copy="mB">材料Bをコピー</button></div></details>
+<details class="check"><summary>材料C　店舗情報・秋の体験会の条件</summary><div class="inside"><div class="prompt" id="mC">・さくら花店。駅から歩いて5分の商店街。定休日は月曜日。営業時間は10:00〜19:00
+・いまの体験会：毎月第1土曜日 14:00〜15:00、定員6名、参加費1人1,000円
+・秋の体験会：11月に1回、追加で開く。スタッフは2名まで出せる
+・店舗内の作業机は6席。平日は19:00に閉店
+・申込方法：店頭でスタッフに申し込む</div><button class="copy" data-copy="mC">材料Cをコピー</button></div></details>
+</section>
 
-この材料を使って、上の結果を作ってください。</textarea>
-<button class="copy" type="button" onclick="copyText('t28',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">追加の指示の入力枠</div>
-<textarea id="t29" readonly rows="3">【直したい箇所】を【どう直すか】に変更してください。【残したい内容】は変えないでください。</textarea>
-<button class="copy" type="button" onclick="copyText('t29',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<h3>練習用の短い材料（架空。題材①〜④で使えます。実在の顧客情報・社内の機密資料は使わないでください）</h3>
-<div class="step"><div class="t">① 作業メモ（→ 引き継ぎ文を作る）</div>
-<textarea id="t30" readonly rows="10">・備品貸出の月次集計は、10月分まで完了。11月分は未着手。
-・共通フォームの入力項目の見直し案を作成中。総務の確認待ち。
-・会議室Bの鍵の受け渡し方法について、利用者から質問が2件。回答は未送信。
-・備品の追加希望（モニター）は予算確認中。
-・毎週月曜に未返却の備品を確認する。今週分は実施済み。</textarea>
-<button class="copy" type="button" onclick="copyText('t30',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">② 問い合わせと対応ルール（→ 返信案を作る）</div>
-<textarea id="t31" readonly rows="12">【問い合わせ】
-共通フォームに入力したのに、予約の確認メールが届きません。どうすればよいですか。
-【対応ルール】
-・確認メールは入力から1時間以内に届く。
-・届かないときは、入力したメールアドレスに誤りがないか確認してもらう。
-・誤りがなければ総務へ連絡してもらう。
-・予約は入力した時点で受け付けられる。</textarea>
-<button class="copy" type="button" onclick="copyText('t31',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">③ 候補と条件（→ 条件に沿って比べる）</div>
-<textarea id="t32" readonly rows="9">【条件】8人で会議をする。プロジェクターを使う。
-【候補】
-・会議室A：定員6人、窓あり、プロジェクターなし
-・会議室B：定員10人、窓なし、プロジェクターあり
-・会議室C：定員4人、窓あり、プロジェクターあり</textarea>
-<button class="copy" type="button" onclick="copyText('t32',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<div class="step"><div class="t">④ 長い説明（→ 初めて読む人向けに直す）</div>
-<textarea id="t33" readonly rows="6">備品を借りるときは、まず共通フォームに、借りたい備品の名前と、利用する日を入力します。入力は、利用の前日の16時までに行います。利用の当日は、受付で備品を受け取ります。受付時間は9時から17時までです。使い終わったら、当日の17時までに、受付へ返却します。同時に借りられる備品は、一人1点までです。</textarea>
-<button class="copy" type="button" onclick="copyText('t33',this)">コピー</button><div class="msg" aria-live="polite"></div></div>
-<p class="note">⑤ 前半の問い合わせ記録を別の目的で整理する場合は、上の「元データ（50件）」を使います。題材が決まらない場合の共通課題：前半の50件の記録で、引き継ぎ文から「上司への状況報告」に用途を変える。</p>
-<details><summary>自己確認の基準（スライドと同じ）</summary><ul class="chk"><li>今回試す仕事と、結果を使う人が書けた</li><li>判断条件を、実行の前に書いた</li><li>実際の結果がある</li><li>修正版がある（前と後を見比べた）</li><li>次に使う場面を一文、残した</li></ul></details>
+<section id="work1" class="lesson" aria-labelledby="w1title">
+<div class="lesson-head"><span class="kicker">ワーク① · 10分</span><h2 id="w1title">データと声から、企画を1つ選び、弱い点を確かめる</h2><p>目的は、工程②〜④をつなげて、データと声に基づいて自分で企画を選び、弱い点を先に確かめられるようになることです。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜3分</span><h3>工程②　データを集計する</h3></div></div><p><strong>新しい会話</strong>（プロジェクトがあればその中）を開き、思考量を<strong>Medium</strong>にして送ります。結果の<strong>合計が24名</strong>か確かめます。</p><div class="prompt" id="w1p1"># 目的
+秋の体験会を企画するために、前回の参加者アンケートを集計する
 
-<h2>予備ワーク（講師の案内がある場合のみ）　自分の指示を、固定と差し替えに分ける</h2>
-<div class="lead"><b>何のためのワーク？</b><br>場面（架空）：ワーク②で作った指示を、次の仕事でも使い回したい。<br><b>ねらい：</b>固定する条件と差し替える材料に分け、別の材料で使い直せるか確かめます。</div>
-<p>ワーク②の自分の指示を、固定する条件（目的・結果の形・判断条件・守るルール）と、差し替える材料に分けてメモし、新しい会話で別の材料（上の練習用材料など）に使い直します。固定の条件に日付・名前・場所などを混ぜないでください。</p>
-<p class="foot">AI研修 ワーク用コピー教材（初版）。講師ノートや案件の内部資料は含みません。入力・ログイン・回答の提出はありません。</p>
-</main><script>
-function copyText(id,btn){var t=document.getElementById(id);var s=t.value;var m=btn.parentNode.querySelector('.msg');
-function ok(){btn.classList.remove('fail');btn.classList.add('done');m.textContent='コピーしました。ChatGPTの入力欄に貼り付けてください。';}
-function fb(){try{t.removeAttribute('readonly');t.focus();t.select();t.setSelectionRange(0,t.value.length);var r=document.execCommand('copy');t.setAttribute('readonly','');if(r){ok();return;}}catch(e){}
-btn.classList.add('fail');m.textContent='コピーできませんでした。上の枠の文字を長押し（パソコンはドラッグ）して選択し、コピーしてください。';}
-if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(s).then(ok,fb);}else{fb();}}
-document.querySelectorAll('textarea').forEach(function(t){t.style.height='auto';t.style.height=Math.min(t.scrollHeight+6,520)+'px';});
-</script></body></html>
+# 材料
+"""
+番号,年代,初めての参加,次に参加したい時間帯,次に作りたいもの
+1,30代,はい,平日の夜,リース
+2,40代,はい,土曜の昼,花束
+3,20代,はい,平日の夜,リース
+4,60代以上,いいえ,土曜の昼,アレンジ
+5,30代,はい,平日の夜,リース
+6,50代,いいえ,日曜の朝,花束
+7,40代,はい,土曜の昼,リース
+8,30代,はい,平日の夜,アレンジ
+9,20代,はい,平日の夜,リース
+10,50代,いいえ,土曜の昼,花束
+11,40代,はい,平日の夜,リース
+12,60代以上,いいえ,日曜の朝,アレンジ
+13,30代,はい,平日の夜,花束
+14,40代,いいえ,土曜の昼,リース
+15,20代,はい,平日の夜,リース
+16,50代,はい,土曜の昼,花束
+17,30代,いいえ,平日の夜,リース
+18,40代,はい,土曜の昼,アレンジ
+19,60代以上,いいえ,日曜の朝,花束
+20,30代,はい,平日の夜,リース
+21,50代,いいえ,土曜の昼,アレンジ
+22,20代,はい,平日の夜,花束
+23,40代,いいえ,日曜の朝,花束
+24,30代,はい,土曜の昼,リース
+"""
+
+# 手順
+計算の道具を使って計算する
+
+# 出力の形
+- 「次に参加したい時間帯」ごとの人数の表
+- 「次に作りたいもの」ごとの人数の表
+- それぞれ、一番下に合計の人数
+- 「平日の夜」を選んだ人の、年代と「初めての参加」の内訳</div><button class="copy" data-copy="w1p1">工程②　集計の依頼をコピー</button><p class="look">集計に30秒〜1分かかります。</p></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">3〜5分</span><h3>工程③　お客様の声を分類する</h3></div></div><p><strong>同じ会話</strong>で送ります。<strong>合計が12件</strong>か確かめます。</p><div class="prompt" id="w1p2">次の12件の声を、「良かった点」「困った点」「要望」に分けてください。
+1つの声は1つの種類だけに入れ、種類ごとの件数と番号、合計の件数を書いてください。
+"""
+1. 先生が丁寧に教えてくれて、初めてでも作れた。
+2. 花の種類がもっと選べるとうれしい。
+3. 1時間だと少し短く、最後は急いでしまった。
+4. 作業机が狭く、隣の人とぶつかった。
+5. 持ち帰り用の袋があって助かった。
+6. 平日の夜にも開いてほしい。
+7. スタッフの方が明るくて楽しかった。
+8. 駐車場の場所がわかりにくかった。
+9. 季節の花を使えたのがよかった。
+10. 子ども連れでも参加できる回がほしい。
+11. 説明が早くて、ついていけない所があった。
+12. できあがった花束の写真を撮ってもらえてうれしかった。
+"""</div><button class="copy" data-copy="w1p2">工程③　分類の依頼をコピー</button></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">5〜7分</span><h3>工程④　案を出して、基準で選ぶ</h3></div></div><p><strong>同じ会話</strong>で送ります。<strong>【基準1】【基準2】【基準3】</strong>を、下の例から3つ選んで書き換えてから送ります。並んだ案から、<strong>自分で1つ選びます</strong>（2つを組み合わせてもかまいません）。</p><p class="look">基準の例：データの希望に合う／スタッフ2名でできる／困った点を1つ直せる／初めての人が来やすい／作業机6席に収まる</p><div class="prompt" id="w1p3"># 目的
+11月に1回追加する、秋の体験会の企画を決める
+
+# 材料
+ここまでの集計と分類の結果、と、次の条件だけを使う
+"""
+・さくら花店。駅から歩いて5分の商店街。定休日は月曜日。営業時間は10:00〜19:00
+・いまの体験会：毎月第1土曜日 14:00〜15:00、定員6名、参加費1人1,000円
+・秋の体験会：11月に1回、追加で開く。スタッフは2名まで出せる
+・店舗内の作業机は6席。平日は19:00に閉店
+・申込方法：店頭でスタッフに申し込む
+"""
+
+# お願い
+1. 秋の体験会の案を3つ出す。互いに違う方向にする。表にする（列は「案」「内容（1行）」「もとにしたデータや声」）
+2. 次の3つの基準で評価し、合う順に並べる。理由を1行ずつ書く
+   基準：【基準1】【基準2】【基準3】
+3. 材料にない金額や日付は書かない。必要なら「要確認」と書く</div><button class="copy" data-copy="w1p3">工程④　案の依頼をコピー</button><p class="note">AIの並べた順番は参考です。選ぶのは自分です。</p></article>
+<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">7〜9分</span><h3>選んだ案の弱い点を聞き、対策を決める</h3></div></div><p><strong>同じ会話</strong>で、【選んだ案】を書き換えて送ります。挙がった弱い点から1つ選んで対策を決め、<strong>選んだ案・選んだ理由・弱い点と対策</strong>をメモに書きます（ワーク②で使います）。</p><div class="prompt" id="w1p4">【選んだ案】を選びます。選んだ案の弱い点を3つ挙げてください。材料にないことは想像で書かず、確かめが必要な所として書いてください。</div><button class="copy" data-copy="w1p4">入力文をコピー</button></article>
+<details class="check"><summary>9〜10分：確認ポイント（答え合わせ）</summary><div class="inside"><ul><li>集計の合計が24名（平日の夜 11名・リース 11名）。</li><li>分類の合計が12件。</li><li>案が、集計と声の結果に基づいている（材料にないことを足していない）。</li><li>選んだ案・理由・弱い点と対策をメモに書いた。</li></ul>
+<div class="memo"><b>正しい集計と、実際に試した例</b><ul><li>時間帯：平日の夜 11・土曜の昼 9・日曜の朝 4／作りたいもの：リース 11・花束 8・アレンジ 5（どちらも24名）</li><li>平日の夜の11名：20〜30代が10名・初めての参加が10名・リースが8名</li><li>分類：良かった点5件・困った点4件・要望3件＝12件</li><li>AIの1位は「土曜の昼のゆったり花束づくり」（19:00閉店が理由）。データの希望が最も多い「平日の夜のリースづくり」は2位。例では、データの希望を理由に平日の夜を選んだ</li><li>弱い点：①開催時間（19:00閉店）②作業スペース（机が狭い）③説明の進め方（時間が短い・説明が早い）</li></ul></div>
+<p>選んだ案は、人それぞれでかまいません。データと声を理由に言えて、弱い点と対策を1つ決められていれば大丈夫です。</p><p class="finish">確認が終わったら、講義画面に戻ります。<strong>会話は閉じずに残しておいてください。</strong></p></div></details>
+<details class="check"><summary>早く終わったら：ここまでをまとめる</summary><div class="inside"><div class="prompt" id="w1ex">ここまでにわかったことを、3行でまとめてください。</div><button class="copy" data-copy="w1ex">入力文をコピー</button><p class="look">返ってきた3行は、メモに残しておきます。</p></div></details>
+<details class="check" id="example"><summary>途中までのとき・案の例</summary><div class="inside"><p>①〜③まで、できていれば大丈夫です。ワーク②は、次の「案の例」から始められます。</p><div class="prompt" id="w1ex2">平日の夜に、初めての人向けの秋のリースづくり。開催時間は、閉店の19:00までに終えるか、閉店後に開けるかを店長に相談。定員6名。スタッフ2名。説明はゆっくり、見本を見せながら。</div><button class="copy" data-copy="w1ex2">案の例をコピー</button></div></details>
+</section>
+
+<section id="work2" class="lesson" aria-labelledby="w2title">
+<div class="lesson-head"><span class="kicker">ワーク② · 10分</span><h2 id="w2title">選んだ企画を、形にして確かめる</h2><p>ワーク①で選んだ秋の体験会を、企画メモと告知文にします。目的は、立場を変えた読み・見比べ・点検表で確かめられるようになることです。ワーク①の<strong>同じ会話</strong>で続けます。</p></div>
+<article class="step"><div class="step-head"><span class="num">1</span><div><span class="time">0〜3分</span><h3>工程⑤　企画メモを作る</h3></div></div><p>【　】を、ワーク①で選んだ案（1行）に書き換えて送ります。</p><div class="prompt" id="w2p1">選んだ案（【ここに、選んだ案を1行で】）で、店長向けの企画メモを作ってください。
+
+# 出力の形
+- 見出しは5つ：結論／理由／内容／心配な点と対策／お願い
+- 各見出し3行まで。A4で1枚
+- 理由には、ここまでの集計と分類の結果の数字や声を入れる
+- 材料にない金額や日付は「要確認」と書く</div><button class="copy" data-copy="w2p1">工程⑤　企画メモの依頼をコピー</button></article>
+<article class="step"><div class="step-head"><span class="num">2</span><div><span class="time">3〜4分</span><h3>店長の立場で読んでもらう</h3></div></div><p><strong>同じ会話</strong>で送ります。答えられない質問があれば、「〇〇を要確認として、企画メモに書き足してください」と送ります。</p><div class="prompt" id="w2p2">店長の立場で、この企画メモを読んで、質問しそうなことを3つ挙げてください。</div><button class="copy" data-copy="w2p2">入力文をコピー</button></article>
+<article class="step"><div class="step-head"><span class="num">3</span><div><span class="time">4〜7分</span><h3>工程⑥　告知文を、型で作る</h3></div></div><p>第3回・第11回の「3か所案内の型」に、<strong>読む人</strong>の1行を足したものです。【　】を、選んだ案に書き換えて、<strong>同じ会話</strong>で送ります。決まっていないこと（参加費など）は「要確認」と書きます。</p><div class="prompt" id="w2p3"># 役割
+あなたは、さくら花店のスタッフです。
+
+# 目的
+【企画の名前】の案内を、3つの場所に合わせて作る
+
+# 材料
+"""
+【選んだ案の、企画・日時・場所・参加費・定員・申込方法。決まっていないことは「要確認」】
+"""
+
+# 条件
+- 材料にないことは書かない
+- 日時・料金・申込方法は、3つすべてに入れる
+- 日時は、材料の書き方のまま書く
+- 読む人：平日の夜に来てほしい、20〜30代の初めての人
+
+# 出力の形
+## 1. 店頭掲示用
+見出しをつけて、本文は150字程度
+## 2. SNS投稿用
+100字程度。最後に、参加を呼びかける1文
+## 3. スタッフ向け連絡
+箇条書き。準備するものと、当日までにすること</div><button class="copy" data-copy="w2p3">工程⑥　告知文の型をコピー</button><p class="look">材料の書き方の例：企画：秋のリースづくり体験会（初めての方向け）／日時：11月の平日の夜（日にちと時間は要確認）／場所：さくら花店の店舗内／参加費：要確認／定員：6名／申込方法：店頭でスタッフに申し込む</p></article>
+<article class="step"><div class="step-head"><span class="num">4</span><div><span class="time">7〜9分</span><h3>企画メモと告知文を、見比べてもらう</h3></div></div><p><strong>同じ会話</strong>で送ります。違いがあれば、材料と決めたことに戻って確かめ、正しいほうに合わせて直します。</p><div class="prompt" id="w2p4">企画メモと告知文で、日時・定員・参加費・申込方法が同じか、表にして比べてください。直さずに、比べるだけにしてください。</div><button class="copy" data-copy="w2p4">入力文をコピー</button></article>
+<details class="check"><summary>9〜10分：最後の点検表で見直す</summary><div class="inside"><ul class="ck"><li>数字が材料どおり（24名・11名・定員・参加費）</li><li>日時・申込方法が、企画メモと告知文でそろっている</li><li>決まっていないこと（参加費など）は「要確認」のまま</li><li>理由の想像が入っていない</li><li>個人情報・社外秘が入っていない</li></ul>
+<div class="memo"><b>実際に試した例</b><ul><li>企画メモ：理由に「24人中、平日夜希望11人、リース希望11人」「声6：平日の夜にも開いてほしい」。日時・参加費は「要確認」</li><li>店長の質問：開催時間（何時から／閉店後のスタッフ）、6名で作業できるか、リースの材料費と採算</li><li>見比べ：申込方法は一致。定員が、企画メモ「最大6名」／告知文「6名」と書き方に違い</li></ul></div>
+<p class="finish">確認が終わったら、講義画面に戻ります。全12回の総まとめです。おつかれさまでした。</p></div></details>
+<details class="check"><summary>早く終わったら：工程⑦　告知画像を作る</summary><div class="inside"><p><strong>通常のチャット</strong>で送ります（一時チャットでは画像を作れません）。画像に文字・ロゴ・人が入っていないか確かめます。</p><div class="prompt" id="w2ex">告知に添える、イメージ画像を1枚作ってください。
+
+# 用途
+SNSの投稿と店頭の告知に添える
+
+# 被写体
+秋の花材で作ったリース（1つ）
+
+# 背景
+明るい花店の店内の、木の作業台の上
+
+# 構図
+少し上から見て、リースが中央
+
+# 色と光
+赤、オレンジ、深い緑。夕方のあたたかい光
+
+# 画風
+やわらかいイラスト。落ち着いた雰囲気
+
+# 比率
+正方形
+
+# 入れないもの
+- 画像の中に、文字やロゴは入れない
+- 人は描かない
+- 実際の写真と取り違えられるような写真風にはしない</div><button class="copy" data-copy="w2ex">工程⑦　画像の依頼をコピー</button></div></details>
+<details class="check"><summary>途中までのとき</summary><div class="inside"><p>①〜③（企画メモ・店長の質問・告知文）まで、できていれば大丈夫です。ワーク①が途中までだった人は、<a href="#example">案の例</a>をコピーして、①の【　】に入れてください。</p></div></details>
+</section>
+
+<section id="guide" class="lesson extra" aria-labelledby="gdtitle"><div class="lesson-head"><span class="kicker">いつでも使える · 点検表と工程表</span><h2 id="gdtitle">最後の点検表と、工程表のひな形</h2><p>ご自分の仕事でAIを使うときにも、そのまま使えます。</p></div>
+<h3>最後の点検表</h3>
+<ul class="ck"><li>数字が材料どおり（合計・件数）</li><li>日時・申込方法が、決めたとおり</li><li>決まっていないことは「要確認」のまま</li><li>理由の想像が入っていない</li><li>画像に文字・ロゴ・人が入っていない</li><li>個人情報・社外秘が入っていない</li></ul>
+<h3 style="margin-top:20px">工程ごとに使う機能（今日の例）</h3>
+<table class="tbl"><thead><tr><th>工程</th><th>使う機能（学んだ回）</th><th>思考量</th></tr></thead><tbody>
+<tr><td>① 方向を考える</td><td>壁打ち（第8回）</td><td>Instant</td></tr>
+<tr><td>② データを集計する</td><td>集計・検算（第6回）</td><td>Medium</td></tr>
+<tr><td>③ 声を分類する</td><td>分類・件数で確かめる（第7回）</td><td>Medium</td></tr>
+<tr><td>④ 案を出して選ぶ</td><td>案を広げる・基準で選ぶ（第8回）</td><td>Instant→Medium</td></tr>
+<tr><td>⑤ 企画メモ</td><td>骨組み → 本文（第5回）</td><td>Medium</td></tr>
+<tr><td>⑥ 告知文</td><td>型（第3回・第11回）</td><td>Instant〜Medium</td></tr>
+<tr><td>⑦ 告知画像</td><td>6つの材料（第9回）</td><td>―</td></tr>
+<tr><td>⑧ 点検と残す</td><td>一枚にする・比べる（第10回）／型・プロジェクト（第11回）</td><td>―</td></tr>
+</tbody></table>
+<h3 style="margin-top:20px">工程表のひな形</h3>
+<table class="tbl"><thead><tr><th>項目</th><th>書くこと（さくら花店の例）</th></tr></thead><tbody>
+<tr><td>目的（一文で）</td><td>秋の体験会を、データと声から企画して告知する</td></tr>
+<tr><td>材料</td><td>アンケート・自由記述・店舗情報</td></tr>
+<tr><td>工程</td><td>集計 → 分類 → 案を選ぶ → 企画メモ → 告知文 → 画像 → 点検</td></tr>
+<tr><td>使う機能と回</td><td>第6回・第7回・第8回・第5回・第3回・第9回・第10回</td></tr>
+<tr><td>確かめる所</td><td>合計・件数・要確認・理由の想像・個人情報</td></tr>
+</tbody></table>
+</section>
+
+<section id="extra" class="lesson extra" aria-labelledby="extitle"><div class="lesson-head"><span class="kicker">予備ワーク · 5〜10分 · 講師の案内がある場合のみ</span><h2 id="extitle">自分の仕事を、工程に分ける</h2><p>本編60分とは別の予備課題です。通常は実施しません。<strong>会社の名前やお客様の情報は書かないでください。</strong></p></div>
+<article class="step"><span class="time">0〜3分</span><h3>目的を一文で書く</h3><p>毎月・毎週くり返している仕事を1つ選び、上の「工程表のひな形」の「目的（一文で）」をメモに書きます。</p></article>
+<article class="step"><span class="time">3〜6分</span><h3>工程に分けてもらう</h3><p><strong>新しい会話</strong>で、【目的】を書き換えて送ります。</p><div class="prompt" id="ex1">【目的】という仕事を、AIに1回か2回で頼める大きさの工程に分けてください。工程ごとに、使うとよい機能と、人が確かめる所も書いてください。私の会社の名前やお客様の情報は書かないので、一般的な例で考えてください。</div><button class="copy" data-copy="ex1">入力文をコピー</button></article>
+<article class="step"><span class="time">6〜8分</span><h3>明日試す工程を1つ決める</h3><p>出てきた工程の中から、明日10分で試せるものを1つ選び、メモに書きます。</p></article>
+<details class="check"><summary>見直す</summary><div class="inside"><ul><li>目的を一文で書けた。</li><li>工程ごとに、人が確かめる所がある。</li><li>明日試す工程を1つ決めた。</li></ul></div></details>
+</section>
+<div class="intro" style="margin-top:40px"><p><strong>全12回、おつかれさまでした。</strong></p><p>決めるのは人、確かめるのも人。明日、10分で試せる工程を1つ、ぜひ試してみてください。</p><p class="small">このページは入力文のコピー用教材です。回答の提出や個人情報の入力はありません。演習の材料はすべて架空です。</p></div>
+</main><footer>AI研修 第12回 ワーク用ページ · v2 · 2026年10月14日<br>演習の設定とデータはすべて架空です。</footer>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+<script>
+let messageTimer;
+function showMessage(text){const s=document.getElementById('status');s.textContent=text;clearTimeout(messageTimer);messageTimer=setTimeout(()=>{s.textContent=''},4500)}
+async function copyPrompt(button){const target=document.getElementById(button.dataset.copy);const text=target.textContent.trim();try{if(!navigator.clipboard||!window.isSecureContext)throw new Error('manual');await navigator.clipboard.writeText(text);const original=button.textContent;button.textContent='コピーしました';setTimeout(()=>{button.textContent=original},2200);showMessage('コピーしました。ChatGPTの入力欄に貼り付けてください。')}catch(e){const range=document.createRange();range.selectNodeContents(target);const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range);showMessage('文章を選択しました。長押し、または右クリックでコピーしてください。')}}
+document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',()=>copyPrompt(button)));
+</script>
+</body></html>
